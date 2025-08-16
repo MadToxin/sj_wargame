@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dataIndex battleScribeVersion="2.03" name="SJ Wargeame Test" indexUrl="https://github.com/MadToxin/sj_wargame" xmlns="http://www.battlescribe.net/schema/dataIndexSchema">
+  <dataIndexEntries>
+    <dataIndexEntry filePath="SJ wargame.gstz" dataType="gamesystem" dataId="c1c8-3310-c638-7238" dataName="SJ wargame" dataBattleScribeVersion="2.03" dataRevision="16"/>
+    <dataIndexEntry filePath="Generic_Forces_2.catz" dataType="catalogue" dataId="4192-c0ad-311f-32c8" dataName="Generic Forces" dataBattleScribeVersion="2.03" dataRevision="17"/>
+    <dataIndexEntry filePath="Generic_Forces.catz" dataType="catalogue" dataId="6c60-234a-de3b-bc73" dataName="Generic Forces" dataBattleScribeVersion="2.03" dataRevision="2"/>
+  </dataIndexEntries>
+</dataIndex>
