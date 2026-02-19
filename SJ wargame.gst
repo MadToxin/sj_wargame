@@ -190,7 +190,7 @@ This unit cannot be targeted by attacks from Units not within 12&quot; as long a
       <description>This unit ignores any and all Terrain penalties and restrictions and cannot gain a Cover Save from them, unless it is Embarked into a City Block, in which case it behaves as normal. It can move over any Units or Impassable Terrain, but cannot end a Move inside them or within Close Combat Range unless it Charged. In addition, any attacks made against it (save for special rules) subtract 3 from the FS.</description>
     </rule>
     <rule id="27ec-5ed0-150d-bac1" name="Small" hidden="false">
-      <description>This Vehicle may embark upon a Transport. If it does so, it takes up the space of two Squads.</description>
+      <description>This Vehicle may embark upon a Transport. If it does so, it takes up the space of two Squads. Unlike other Vehicles, this Unit may gain Cover Saves from Terrain.</description>
     </rule>
     <rule id="0233-0910-edc0-c3cf" name="Deployable" hidden="false">
       <description>If this unit embarks into a Transport with friendly units within, each Squad within does not take up space for every other friendly Squad inside (i.e. Two Deployable Squads would gain two free transport spaces in a Transport with two other Squads inside. Each Squad gives one free space for the Deployable Unit).</description>

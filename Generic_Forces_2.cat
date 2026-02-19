@@ -1011,6 +1011,11 @@
                         <condition field="selections" scope="b471-1f31-cc31-6e9f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="143e-509e-0c44-f74b" type="equalTo"/>
                       </conditions>
                     </modifier>
+                    <modifier type="increment" field="4151-68d2-a08d-d1c8" value="1">
+                      <conditions>
+                        <condition field="selections" scope="b471-1f31-cc31-6e9f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="97fb-f8de-c702-8f03" type="equalTo"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="e935-9a84-4b80-06e6">Infantry, Line</characteristic>
@@ -1078,7 +1083,7 @@
                     </modifier>
                     <modifier type="increment" field="4151-68d2-a08d-d1c8" value="1">
                       <conditions>
-                        <condition field="selections" scope="b471-1f31-cc31-6e9f" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9da-1eac-107c-3e84" type="equalTo"/>
+                        <condition field="selections" scope="b471-1f31-cc31-6e9f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="97fb-f8de-c702-8f03" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -1155,6 +1160,11 @@
                     <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="6">
                       <conditions>
                         <condition field="selections" scope="b471-1f31-cc31-6e9f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="143e-509e-0c44-f74b" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="4151-68d2-a08d-d1c8" value="1">
+                      <conditions>
+                        <condition field="selections" scope="b471-1f31-cc31-6e9f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="97fb-f8de-c702-8f03" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -2995,15 +3005,6 @@ The Resurgent</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6419-bbcd-ad85-3e84" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="0bda-9801-c802-f465" name="Heavy Coilrifle" hidden="false" collective="false" import="true" targetId="4347-4e96-af04-b614" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="0d75-bf50-2c92-2db9" value="0.0"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b8c-b0a0-fce1-0f54" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="875e-a644-985b-92f7" type="max"/>
-          </constraints>
-        </entryLink>
         <entryLink id="b1ed-9f92-29c5-92e4" name="Control Node" hidden="true" collective="false" import="true" targetId="dda6-592c-8302-f39a" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -4359,11 +4360,6 @@ The Resurgent</description>
                         <condition field="selections" scope="4233-841c-1be3-2e2e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bc62-0b95-38cc-a827" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="increment" field="5278-8770-e2e8-da31" value="1">
-                      <conditions>
-                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1c7-4be0-a950-1acf" type="equalTo"/>
-                      </conditions>
-                    </modifier>
                     <modifier type="set" field="0f78-b21c-a7c1-8fc6" value="4+">
                       <conditions>
                         <condition field="selections" scope="4233-841c-1be3-2e2e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bc62-0b95-38cc-a827" type="equalTo"/>
@@ -4397,16 +4393,6 @@ The Resurgent</description>
                     <modifier type="set" field="4151-68d2-a08d-d1c8" value="5">
                       <conditions>
                         <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="18a1-58ab-85c1-9bbc" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="increment" field="4151-68d2-a08d-d1c8" value="1">
-                      <conditions>
-                        <condition field="selections" scope="4233-841c-1be3-2e2e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e44a-6c1c-c9ea-c017" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="increment" field="4151-68d2-a08d-d1c8" value="1">
-                      <conditions>
-                        <condition field="selections" scope="4233-841c-1be3-2e2e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b6c1-ab77-40e5-e8b6" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -5985,6 +5971,7 @@ The Resurgent</description>
             <modifier type="set" field="name" value="PD(1)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="0f2d-1ab5-bf7c-3f57" name="Overwatch" hidden="false" targetId="2e08-89c4-09c9-ac8b" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="de7c-65d5-12a9-4c68" name="Vehicles" hidden="false" targetId="62ea-a052-d768-3ca1" primary="false"/>
@@ -6224,11 +6211,11 @@ The Resurgent</description>
       <profiles>
         <profile id="a72d-c694-6ca5-5d54" name="Guided Bomb" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">12&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">4&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">-</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">2/10</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">-</characteristic>
-            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">One Use, Incineration (6), Powerful, Blast (10), Bomb</characteristic>
+            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">One Use, Incineration (6), Blast (5), Bomb</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6390,6 +6377,7 @@ The Resurgent</description>
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink id="e9be-cbb5-2fb2-d4b0" name="Small" hidden="false" targetId="27ec-5ed0-150d-bac1" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="a7d1-609c-fa4d-9cd0" name="Vehicles" hidden="false" targetId="62ea-a052-d768-3ca1" primary="false"/>
@@ -7079,10 +7067,12 @@ Mental-Linked Loyalty</description>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="34e0-ae97-f0dc-5eb8" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="increment" field="0d75-bf50-2c92-2db9" value="20.0">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8a15-c028-63ba-d5eb" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
               </modifiers>
-              <costs>
-                <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="20.0"/>
-              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -8846,9 +8836,6 @@ Mental-Linked Loyalty</description>
           </constraints>
           <selectionEntries>
             <selectionEntry id="1c44-2416-4b38-c431" name="Two Flamethrowers" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="0d75-bf50-2c92-2db9" value="10.0"/>
-              </modifiers>
               <entryLinks>
                 <entryLink id="4b35-f48b-b37b-ee96" name="Flamethrower" hidden="false" collective="false" import="true" targetId="bb55-6bdf-777d-9f34" type="selectionEntry">
                   <constraints>
@@ -8862,9 +8849,6 @@ Mental-Linked Loyalty</description>
               </costs>
             </selectionEntry>
             <selectionEntry id="3488-8564-52c5-2484" name="Two Incineration Rifles" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="0d75-bf50-2c92-2db9" value="25.0"/>
-              </modifiers>
               <entryLinks>
                 <entryLink id="dff4-a1e3-d544-0641" name="Incineration Rifle" hidden="false" collective="false" import="true" targetId="8c58-fa14-0f7e-fc11" type="selectionEntry">
                   <constraints>
@@ -11319,6 +11303,19 @@ Machinist-Prime</description>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="ed76-332c-26c5-a156" name="Unique Wargear" hidden="false" collective="false" import="true" targetId="4e44-c416-c9c7-d9ac" type="selectionEntryGroup"/>
+        <entryLink id="60e5-c395-59a8-bcd1" name="Control Node" hidden="true" collective="false" import="true" targetId="dda6-592c-8302-f39a" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f99-5539-6d1c-462f" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e955-545e-e68d-79ab" type="max"/>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e43d-5545-c3a7-69fd" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="0.0"/>
