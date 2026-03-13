@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4192-c0ad-311f-32c8" name="Generic Forces" revision="17" battleScribeVersion="2.03" authorName="MadToxin" authorContact="https://www.worldanvil.com/author/MadToxin" authorUrl="https://www.worldanvil.com/w/stellar-journey-madtoxin/a/wargame-prototype-article" library="false" gameSystemId="c1c8-3310-c638-7238" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4192-c0ad-311f-32c8" name="Generic Forces" revision="18" battleScribeVersion="2.03" authorName="MadToxin" authorContact="https://www.worldanvil.com/author/MadToxin" authorUrl="https://www.worldanvil.com/w/stellar-journey-madtoxin/a/wargame-prototype-article" library="false" gameSystemId="c1c8-3310-c638-7238" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="eeda-0700-45a6-9d5b" name="Line Detachment" hidden="false">
       <categoryLinks>
@@ -37,35 +37,40 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09a0-f448-05d0-3258" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="3615-290b-da41-aab0" name="Allegiance:" hidden="true" targetId="7504-ff60-207e-addd" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c8e-d976-d80c-06b2" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="4a1f-0fad-f78c-3588" name="Armoured Detachment" publicationId="53d2-8b59-fd84-65d1" hidden="false">
       <categoryLinks>
-        <categoryLink id="6d91-3cf8-b040-7923" name="Troops" publicationId="53d2-8b59-fd84-65d1" hidden="false" targetId="432d-7ecb-be55-6066" primary="false">
+        <categoryLink id="2221-3cf8-b040-7923" name="Troops" publicationId="53d2-8b59-fd84-65d1" hidden="false" targetId="432d-7ecb-be55-6066" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e074-d964-54c7-c27d" type="min"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a17-33a9-dacf-e72c" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="350f-084b-e42c-8dd1" name="HQ" hidden="false" targetId="4980-6931-903e-3b8b" primary="false">
+        <categoryLink id="87a5-5554-5e80-f40e" name="HQ" hidden="false" targetId="4980-6931-903e-3b8b" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45ca-4fba-47e5-c5f0" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c002-472d-f2c9-9fbf" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="e3fb-3e3c-e51d-9681" name="Armour" publicationId="53d2-8b59-fd84-65d1" hidden="false" targetId="89c9-eec7-1790-b258" primary="false">
+        <categoryLink id="555b-3e3c-e51d-9681" name="Armour" publicationId="53d2-8b59-fd84-65d1" hidden="false" targetId="89c9-eec7-1790-b258" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="684d-f71d-0ca9-cb44" type="min"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="855e-53f7-da51-cc4d" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="4422-0746-c132-6775" name="Support Elements" publicationId="53d2-8b59-fd84-65d1" hidden="false" targetId="8adc-f774-8adb-f07d" primary="false">
+        <categoryLink id="6662-0746-c132-6775" name="Support Elements" publicationId="53d2-8b59-fd84-65d1" hidden="false" targetId="8adc-f774-8adb-f07d" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4545-91d2-a86f-ff97" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e004-f4c7-b19a-46de" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="6bab-b411-5130-95d9" name="Elites" publicationId="53d2-8b59-fd84-65d1" hidden="false" targetId="e144-251f-52ad-6a90" primary="false">
+        <categoryLink id="333b-b411-5130-95d9" name="Elites" publicationId="53d2-8b59-fd84-65d1" hidden="false" targetId="e144-251f-52ad-6a90" primary="false">
           <modifiers>
             <modifier type="increment" field="4568-2278-4032-080f" value="1.0">
               <conditions>
@@ -78,6 +83,11 @@
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4568-2278-4032-080f" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="1682-c2a4-823b-48ac" name="Allegiance:" hidden="true" targetId="7504-ff60-207e-addd" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7c4-dd63-de91-06ba" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="793e-385b-a9d5-7086" name="Superheavy Detachment" publicationId="53d2-8b59-fd84-65d1" hidden="false">
@@ -85,6 +95,11 @@
         <categoryLink id="b74f-79cb-8327-3b12" name="Superheavies" hidden="false" targetId="8406-21f0-38de-499c" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8ba-9a7e-2f13-62c0" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="ebe6-7694-fb14-77c5" name="Allegiance:" hidden="true" targetId="7504-ff60-207e-addd" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09cf-0036-351e-f72a" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -126,6 +141,11 @@
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3913-5818-cd3d-b851" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7514-5e76-25bf-16ef" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="57d0-db5e-fee6-3e23" name="Allegiance:" hidden="true" targetId="7504-ff60-207e-addd" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1e5-7653-8b6f-fa14" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -521,7 +541,7 @@
                       <modifiers>
                         <modifier type="set" field="0d75-bf50-2c92-2db9" value="0.0">
                           <conditions>
-                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1c7-4be0-a950-1acf" type="equalTo"/>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1c7-4be0-a950-1acf" type="equalTo"/>
                           </conditions>
                         </modifier>
                       </modifiers>
@@ -532,7 +552,7 @@
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0970-88e7-0970-0233" type="min"/>
                           </constraints>
                         </entryLink>
-                        <entryLink id="0f38-6fd9-4f06-8e33" name="Layered Chain Blade Weapons" hidden="false" collective="false" import="true" targetId="127d-46ee-76ee-d47b" type="selectionEntry">
+                        <entryLink id="0f38-6fd9-4f06-8e33" name="Improved LCBW" hidden="false" collective="false" import="true" targetId="545c-2931-29c5-87e1" type="selectionEntry">
                           <constraints>
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e214-1fd6-be75-e385" type="max"/>
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8576-869d-72ff-8bfb" type="min"/>
@@ -540,7 +560,7 @@
                         </entryLink>
                       </entryLinks>
                       <costs>
-                        <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="0.0"/>
+                        <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="10.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -906,6 +926,23 @@
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7952-0b9d-41a5-d2de" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="8055-d719-6194-a111" name="Structure-Carbon Reinforcement" hidden="false" collective="false" import="true" targetId="2479-3345-b912-0f6e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="18a1-58ab-85c1-9bbc" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="0d75-bf50-2c92-2db9" value="10.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6447-1b72-a355-2e35" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2af4-c134-5c02-109e" type="max"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -1343,13 +1380,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="16eb-7318-5187-972d" name="Heavy Weapons Choice" publicationId="53d2-8b59-fd84-65d1" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="ff36-3948-ef6d-db5a" name="Precision Fire (x)" hidden="false" targetId="1406-e132-d5d1-2c98" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Precision Fire (5+)"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
       <entryLinks>
         <entryLink id="0c30-cbf5-b545-7a8a" name="Railgun" hidden="false" collective="false" import="true" targetId="b387-8a4f-368b-1f2f" type="selectionEntry">
           <constraints>
@@ -1600,13 +1630,6 @@ Core-Born</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="44bc-3165-b48d-5993" name="Heavy Weapons Teams" hidden="false" collective="false" import="true" type="unit">
-      <infoLinks>
-        <infoLink id="7629-2f1f-e068-0f64" name="Precision Fire (x)" hidden="false" targetId="1406-e132-d5d1-2c98" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Precision Fire (6+)"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
       <selectionEntries>
         <selectionEntry id="ef35-f5d0-3458-88a4" name="Heavy Weapon Squad" hidden="false" collective="false" import="true" type="model">
           <modifiers>
@@ -2425,14 +2448,19 @@ The Resurgent</description>
           <characteristics>
             <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">-</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">1</characteristic>
-            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">1/5</characteristic>
+            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">-/5</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">-</characteristic>
-            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Melee</characteristic>
+            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Piercing (6+), Melee</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink id="47ff-3049-7b94-437a" name="Melee" hidden="false" targetId="da69-5ba1-e3a0-60db" type="rule"/>
+        <infoLink id="921c-39f2-7c4c-7c98" name="Piercing (x)" hidden="false" targetId="1a78-84b6-1f44-8ad2" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Piercing (6+)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="0.0"/>
@@ -2518,11 +2546,6 @@ The Resurgent</description>
     <selectionEntry id="a838-7056-5d14-938f" name="Support Weapon Section" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="b5ce-5807-3961-eedb" name="Sniper" hidden="false" targetId="4a86-2dcd-4bc0-9d9e" type="rule"/>
-        <infoLink id="472d-ea5d-d90f-c362" name="Precision Fire (x)" hidden="false" targetId="1406-e132-d5d1-2c98" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Precision Fire (6+)"/>
-          </modifiers>
-        </infoLink>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="a65e-44a3-10ed-d9a5" name="Support Weapon Squad" hidden="false" collective="false" import="true" type="model">
@@ -3142,15 +3165,20 @@ The Resurgent</description>
           <characteristics>
             <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">24&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">3</characteristic>
-            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">2/6</characteristic>
+            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">4/6</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">6</characteristic>
-            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Very Heavy, Suppression</characteristic>
+            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Very Heavy, Suppression, Piercing (5+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink id="588c-064b-6105-7f5b" name="Suppression" hidden="false" targetId="f4af-829f-39d0-e64d" type="rule"/>
         <infoLink id="9bed-bb54-1593-1107" name="Very Heavy" hidden="false" targetId="8de0-307b-38db-ffcb" type="rule"/>
+        <infoLink id="a611-b5c3-5b4e-4534" name="Piercing (x)" hidden="false" targetId="1a78-84b6-1f44-8ad2" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Piercing (5+)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="15.0"/>
@@ -3160,7 +3188,7 @@ The Resurgent</description>
       <profiles>
         <profile id="2533-c0bd-5a21-6c68" name="Jetpacks" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
           <characteristics>
-            <characteristic name="Description" typeId="dc90-7f60-c435-a043">When selected to Move, a unit with this wargear may choose to increase its Mv Value by 6&quot; and gaining the Flying Ability for this Round&apos;s Movement and Shooting Phases. For that Round, that Unit, if it is an Infantry Unit, reduces their FS by 1 if they do not have the Relentless Ability.</characteristic>
+            <characteristic name="Description" typeId="dc90-7f60-c435-a043">When selected to Move, a unit where all models are equipped with this wargear may choose to increase its Mv Value by 6&quot; and gain the Flying Ability for this Round&apos;s Movement and Shooting Phases. For that Round, that Unit, if it is an Infantry Unit, reduces their FS by 1 and may not fire Heavy or Very Heavy Weapons unless they have the Relentless Ability.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3172,8 +3200,7 @@ The Resurgent</description>
       <profiles>
         <profile id="137a-1bba-6c50-fff6" name="Orbital Insertion Backpack" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
           <characteristics>
-            <characteristic name="Description" typeId="dc90-7f60-c435-a043">Allows Deep Strike for the unit, and allows it to be placed into Reserve separate from its Detachment. In addition, this unit may disembark from a Aircraft Transport that is Hovering. When doing so, they scatter 2d3&quot;. All other rules apply.
-</characteristic>
+            <characteristic name="Description" typeId="dc90-7f60-c435-a043">If every model in this Unit is equipped with this Wargear, It may be placed into Deep Strike. In addition, this unit may jump from a Aircraft Transport it is embarked in that is not Hovering, When doing so, they are treated as having made a Deep Strike manouvre being placed anywhere on the line where the Transport moved that Turn., and scatter 2d3 instead of the regular amount. All other rules apply.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3214,9 +3241,9 @@ The Resurgent</description>
     </selectionEntry>
     <selectionEntry id="2471-c453-e1f9-4c36" name="Direct Comms Relay" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="8577-8cfd-270a-29b5" name="Direct Comms Relay" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
+        <profile id="b063-7a29-e71c-c938" name="Direct Comms Relay" hidden="false" typeId="6aff-fae8-88fc-a7f0" typeName="Command Wargear">
           <characteristics>
-            <characteristic name="Description" typeId="dc90-7f60-c435-a043">In the command phase, this unit may select one friendly unit on the board. Until the next Command Phase, that unit is treated as if it is always in Command Range.</characteristic>
+            <characteristic name="Description" typeId="ff8d-1504-fb82-c241">In the command phase, this Unit may select one friendly unit on the board. Until the next Command Phase, that unit is treated as if it is always in Command Range.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3226,9 +3253,9 @@ The Resurgent</description>
     </selectionEntry>
     <selectionEntry id="47e4-05c5-300c-77a0" name="Comms Array" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="6ab7-eeec-0f03-fbf6" name="Comms Array" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
+        <profile id="bc11-8a68-c5a3-8c28" name="Comms Array" hidden="false" typeId="6aff-fae8-88fc-a7f0" typeName="Command Wargear">
           <characteristics>
-            <characteristic name="Description" typeId="dc90-7f60-c435-a043">In the Command Phase, a unit with this wargear may select an enemy unit within 24&quot; that they can see. Until the end of the turn, attacks made with weapons with the Indirect Fire may subtract their FS from scatter distance.</characteristic>
+            <characteristic name="Description" typeId="ff8d-1504-fb82-c241">In the Command Phase, a Unit with this wargear may select an enemy unit within 24&quot; that they can see. Until the end of the turn, attacks made with weapons with the Indirect Fire may subtract their FS from scatter distance.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3341,7 +3368,7 @@ The Resurgent</description>
                       <modifiers>
                         <modifier type="set" field="0d75-bf50-2c92-2db9" value="0.0">
                           <conditions>
-                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1c7-4be0-a950-1acf" type="equalTo"/>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1c7-4be0-a950-1acf" type="equalTo"/>
                           </conditions>
                         </modifier>
                       </modifiers>
@@ -3352,7 +3379,7 @@ The Resurgent</description>
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f5c-b766-13db-875a" type="min"/>
                           </constraints>
                         </entryLink>
-                        <entryLink id="923e-5a03-7539-96ed" name="Layered Chain Blade Weapons" hidden="false" collective="false" import="true" targetId="127d-46ee-76ee-d47b" type="selectionEntry">
+                        <entryLink id="923e-5a03-7539-96ed" name="Improved LCBW" hidden="false" collective="false" import="true" targetId="545c-2931-29c5-87e1" type="selectionEntry">
                           <constraints>
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac2e-b3fe-d6f1-bd4f" type="max"/>
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ada-4283-eb93-8b74" type="min"/>
@@ -3575,118 +3602,135 @@ The Resurgent</description>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="9d64-cc7c-a671-37c4" name="Merchant Lord Wargear" hidden="true" collective="false" import="true">
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="034d-e95e-840e-9f82" name="Merchant Lord Wargear" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e08b-4ebf-7722-3e5a" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a955-8802-c1f6-5f1d" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="192f-323b-e0ba-ccb2" name="Subatmospheric Dispersion Targeting Arrays" hidden="false" collective="false" import="true" targetId="889e-1695-7b73-ae28" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e08b-4ebf-7722-3e5a" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f122-4563-a516-0eea" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="0d75-bf50-2c92-2db9" value="10.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6447-1b72-a355-2e35" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="556b-c4ac-a0f5-7e36" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="437d-98c4-b853-5415" type="max"/>
               </constraints>
-              <entryLinks>
-                <entryLink id="7c1a-e8f5-f2f4-e938" name="Subatmospheric Dispersion Targeting Arrays" hidden="false" collective="false" import="true" targetId="889e-1695-7b73-ae28" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f122-4563-a516-0eea" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="decrement" field="0d75-bf50-2c92-2db9" value="10.0">
-                      <conditions>
-                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6447-1b72-a355-2e35" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="463b-530a-2444-8ebe" type="max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="80da-7451-3bb4-5fd3" name="Nano-Scale Composite Shielding" hidden="false" collective="false" import="true" targetId="6f02-a09c-c354-3d15" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f122-4563-a516-0eea" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="decrement" field="0d75-bf50-2c92-2db9" value="10.0">
-                      <conditions>
-                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6447-1b72-a355-2e35" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35c4-72c6-6360-e914" type="max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="fcd1-8f62-ea11-c389" name="Rad-Caster" hidden="false" collective="false" import="true" targetId="86d5-e213-11a0-4d36" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf89-73de-336d-86ad" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="decrement" field="0d75-bf50-2c92-2db9" value="10.0">
-                      <conditions>
-                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6447-1b72-a355-2e35" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c0f-5a1b-a122-89b5" type="max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="d277-145b-f594-051a" name="Cluster Frag Cannons" hidden="false" collective="false" import="true" targetId="7e8c-b73f-14ec-d2cb" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="decrement" field="0d75-bf50-2c92-2db9" value="10.0">
-                      <conditions>
-                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6447-1b72-a355-2e35" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1de2-53cf-38e8-dfa6" type="max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="6d7b-8784-6574-503e" name="Reinforced Communication Lines" hidden="false" collective="false" import="true" targetId="e2a2-c1be-8ef7-d418" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6680-03aa-fbff-c208" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="decrement" field="0d75-bf50-2c92-2db9" value="10.0">
-                      <conditions>
-                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6447-1b72-a355-2e35" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="921d-afce-b05e-6adf" type="max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="565e-59cd-8390-38d5" name="Etriaris Pattern-Composites" hidden="false" collective="false" import="true" targetId="9fa1-082a-4a67-4920" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6680-03aa-fbff-c208" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="decrement" field="0d75-bf50-2c92-2db9" value="10.0">
-                      <conditions>
-                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6447-1b72-a355-2e35" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54a5-a87a-fa08-ddc2" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+            </entryLink>
+            <entryLink id="c6c8-dc7f-ea05-b236" name="Nano-Scale Composite Shielding" hidden="false" collective="false" import="true" targetId="6f02-a09c-c354-3d15" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f122-4563-a516-0eea" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="0d75-bf50-2c92-2db9" value="10.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6447-1b72-a355-2e35" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bc9-8d39-7715-950f" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="5187-725b-d2cb-433a" name="Rad-Caster" hidden="false" collective="false" import="true" targetId="86d5-e213-11a0-4d36" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cf89-73de-336d-86ad" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="0d75-bf50-2c92-2db9" value="10.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6447-1b72-a355-2e35" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="497b-edcf-c46e-c240" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="e613-108f-b1ea-3a1b" name="Cluster Frag Cannons" hidden="false" collective="false" import="true" targetId="7e8c-b73f-14ec-d2cb" type="selectionEntry">
+              <modifiers>
+                <modifier type="decrement" field="0d75-bf50-2c92-2db9" value="10.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6447-1b72-a355-2e35" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="620f-2801-df27-bab0" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="7d31-812b-f20c-b525" name="Reinforced Communication Lines" hidden="false" collective="false" import="true" targetId="e2a2-c1be-8ef7-d418" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6680-03aa-fbff-c208" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="0d75-bf50-2c92-2db9" value="10.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6447-1b72-a355-2e35" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4ed-dd55-94fe-5b8e" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="f65d-0121-6a6c-1d49" name="Etriaris Pattern-Composites" hidden="false" collective="false" import="true" targetId="9fa1-082a-4a67-4920" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6680-03aa-fbff-c208" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="0d75-bf50-2c92-2db9" value="10.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6447-1b72-a355-2e35" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e43a-6dd4-092c-d250" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="2fba-a268-5c4a-1367" name="Structure-Carbon Reinforcement" hidden="false" collective="false" import="true" targetId="2479-3345-b912-0f6e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="18a1-58ab-85c1-9bbc" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="0d75-bf50-2c92-2db9" value="10.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6447-1b72-a355-2e35" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50f3-c9bf-464d-353a" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -5332,7 +5376,7 @@ The Resurgent</description>
                   </selectionEntryGroups>
                   <entryLinks>
                     <entryLink id="19c7-557d-f770-29ed" name="Coilrifle" hidden="false" collective="false" import="true" targetId="ef15-e272-754d-8328" type="selectionEntry"/>
-                    <entryLink id="33d3-222a-64c7-966e" name="Layered Chain Blade Weapons" hidden="false" collective="false" import="true" targetId="127d-46ee-76ee-d47b" type="selectionEntry"/>
+                    <entryLink id="33d3-222a-64c7-966e" name="Improved LCBW" hidden="false" collective="false" import="true" targetId="545c-2931-29c5-87e1" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="1df6-166e-4567-19e0" name="HAST 2" hidden="false" collective="false" import="true" defaultSelectionEntryId="c66a-99e4-b8ba-4e67">
@@ -5418,7 +5462,7 @@ The Resurgent</description>
                   </selectionEntryGroups>
                   <entryLinks>
                     <entryLink id="c66a-99e4-b8ba-4e67" name="Coilrifle" hidden="false" collective="false" import="true" targetId="ef15-e272-754d-8328" type="selectionEntry"/>
-                    <entryLink id="b1f4-4269-d811-7145" name="Layered Chain Blade Weapons" hidden="false" collective="false" import="true" targetId="127d-46ee-76ee-d47b" type="selectionEntry"/>
+                    <entryLink id="b1f4-4269-d811-7145" name="Improved LCBW" hidden="false" collective="false" import="true" targetId="545c-2931-29c5-87e1" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -5520,7 +5564,7 @@ The Resurgent</description>
                     <characteristic name="WS" typeId="5278-8770-e2e8-da31">1</characteristic>
                     <characteristic name="FS" typeId="439d-645b-d6e0-46b8">2</characteristic>
                     <characteristic name="HP" typeId="032c-dcbd-3324-1426">1</characteristic>
-                    <characteristic name="Ld" typeId="4151-68d2-a08d-d1c8">9</characteristic>
+                    <characteristic name="Ld" typeId="4151-68d2-a08d-d1c8">5</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5789,11 +5833,6 @@ The Resurgent</description>
         <infoLink id="4270-9970-bf54-e128" name="PD(x)" hidden="false" targetId="0e08-93ac-d607-9391" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="PD(2)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="92aa-41af-2ad2-53c9" name="Precision Fire (x)" hidden="false" targetId="1406-e132-d5d1-2c98" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Precision Fire (5+)"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -6094,11 +6133,6 @@ The Resurgent</description>
         <infoLink id="7f20-fce9-3028-dcfc" name="Flying" hidden="false" targetId="a2c0-6575-efe5-eff7" type="rule"/>
         <infoLink id="d749-2bf6-b1e7-4cbf" name="Drones" hidden="false" targetId="b606-0245-e86c-8469" type="rule"/>
         <infoLink id="8ca5-0605-2172-f656" name="Deployable" hidden="false" targetId="0233-0910-edc0-c3cf" type="rule"/>
-        <infoLink id="3a46-3c9c-910a-4259" name="Precision Fire (x)" hidden="false" targetId="1406-e132-d5d1-2c98" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Precision Fire (6+)"/>
-          </modifiers>
-        </infoLink>
         <infoLink id="24bb-def1-73de-7e2c" name="Overwatch" hidden="false" targetId="2e08-89c4-09c9-ac8b" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -6122,7 +6156,7 @@ The Resurgent</description>
                     <characteristic name="WS" typeId="5278-8770-e2e8-da31">1</characteristic>
                     <characteristic name="FS" typeId="439d-645b-d6e0-46b8">2</characteristic>
                     <characteristic name="HP" typeId="032c-dcbd-3324-1426">1</characteristic>
-                    <characteristic name="Ld" typeId="4151-68d2-a08d-d1c8">8</characteristic>
+                    <characteristic name="Ld" typeId="4151-68d2-a08d-d1c8">5</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6818,9 +6852,9 @@ The Resurgent</description>
           <characteristics>
             <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">8&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">1</characteristic>
-            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">1/7</characteristic>
+            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">2/7</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">-</characteristic>
-            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Magnetic Interference, Risky (6+)</characteristic>
+            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Magnetic Interference, Risky (6+), Piercing (5+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6829,6 +6863,11 @@ The Resurgent</description>
         <infoLink id="bd12-72b4-93b5-0c59" name="Risky (x)" hidden="false" targetId="328c-ce43-90c8-74bc" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Risky (6+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="0ede-a3ea-0efc-057d" name="Piercing (x)" hidden="false" targetId="1a78-84b6-1f44-8ad2" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Piercing (5+)"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -7120,11 +7159,6 @@ Mental-Linked Loyalty</description>
             <modifier type="set" field="name" value="PD (3)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="08c1-43ca-5e33-637b" name="Precision Fire (x)" hidden="false" targetId="1406-e132-d5d1-2c98" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Precision Fire (5+)"/>
-          </modifiers>
-        </infoLink>
         <infoLink id="bfbe-6706-db72-8f8d" name="Thunderous Charge (x)" hidden="false" targetId="eab6-cf5e-1838-2760" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Thunderous Charge (4)"/>
@@ -7242,37 +7276,6 @@ Mental-Linked Loyalty</description>
         <categoryLink id="81e9-5438-5708-49d3" name="Elites" hidden="false" targetId="e144-251f-52ad-6a90" primary="false"/>
         <categoryLink id="4aa1-8fd8-033d-94dc" name="Infantry" hidden="false" targetId="afcb-90dd-be5a-407f" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="d47a-3a92-93eb-8cb6" name="Cellean Elites" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6bc-35cc-d8e9-a77f" type="max"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5469-9ba6-2be5-1663" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="12e6-972b-10be-18e2" name="Old Cellean Elite Squad" hidden="false" typeId="0954-3b9f-8020-7034" typeName="Infantry">
-              <modifiers>
-                <modifier type="increment" field="4151-68d2-a08d-d1c8" value="1">
-                  <conditions>
-                    <condition field="selections" scope="cb7d-d7f1-f5e0-861a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6e3-a069-64a4-921d" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <characteristics>
-                <characteristic name="Unit Type" typeId="e935-9a84-4b80-06e6">Infantry</characteristic>
-                <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">7</characteristic>
-                <characteristic name="Sv" typeId="0f78-b21c-a7c1-8fc6">4+</characteristic>
-                <characteristic name="WS" typeId="5278-8770-e2e8-da31">6</characteristic>
-                <characteristic name="FS" typeId="439d-645b-d6e0-46b8">3</characteristic>
-                <characteristic name="HP" typeId="032c-dcbd-3324-1426">1</characteristic>
-                <characteristic name="Ld" typeId="4151-68d2-a08d-d1c8">9</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="50.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="a8a2-d4f4-cbe1-9ebb" name="Wargear" hidden="false" collective="false" import="true">
           <entryLinks>
@@ -7280,7 +7283,7 @@ Mental-Linked Loyalty</description>
               <modifiers>
                 <modifier type="increment" field="0d75-bf50-2c92-2db9" value="15.0">
                   <repeats>
-                    <repeat field="selections" scope="cb7d-d7f1-f5e0-861a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d47a-3a92-93eb-8cb6" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="cb7d-d7f1-f5e0-861a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b960-f997-cc93-3333" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
@@ -7290,9 +7293,84 @@ Mental-Linked Loyalty</description>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="b960-f997-cc93-3333" name="Squads" hidden="false" collective="false" import="true" defaultSelectionEntryId="dd71-1195-ac7b-fe36">
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a98b-4089-9870-65d6" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5452-704e-94e4-6687" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="92c7-1842-cdb4-8942" name="Cellean Elites w/ Improved LCBWs" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3708-479e-99a8-031c" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="19b6-d2a2-96e1-0bfd" name="Old Cellean Elite Squad" hidden="false" typeId="0954-3b9f-8020-7034" typeName="Infantry">
+                  <modifiers>
+                    <modifier type="increment" field="4151-68d2-a08d-d1c8" value="1">
+                      <conditions>
+                        <condition field="selections" scope="cb7d-d7f1-f5e0-861a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6e3-a069-64a4-921d" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="e935-9a84-4b80-06e6">Infantry</characteristic>
+                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">7</characteristic>
+                    <characteristic name="Sv" typeId="0f78-b21c-a7c1-8fc6">4+</characteristic>
+                    <characteristic name="WS" typeId="5278-8770-e2e8-da31">6</characteristic>
+                    <characteristic name="FS" typeId="439d-645b-d6e0-46b8">3</characteristic>
+                    <characteristic name="HP" typeId="032c-dcbd-3324-1426">1</characteristic>
+                    <characteristic name="Ld" typeId="4151-68d2-a08d-d1c8">9</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink id="bb88-2d94-c5cb-aeae" name="Improved LCBW" hidden="false" collective="false" import="true" targetId="545c-2931-29c5-87e1" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="0d75-bf50-2c92-2db9" value="0.0"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40b8-b616-4d98-2a88" type="max"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="634d-d15e-a5b2-fba5" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="65.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="dd71-1195-ac7b-fe36" name="Cellean Elites" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc76-85e6-9ea8-1380" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="eaa5-5e30-1380-626d" name="Old Cellean Elite Squad" hidden="false" typeId="0954-3b9f-8020-7034" typeName="Infantry">
+                  <modifiers>
+                    <modifier type="increment" field="4151-68d2-a08d-d1c8" value="1">
+                      <conditions>
+                        <condition field="selections" scope="cb7d-d7f1-f5e0-861a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6e3-a069-64a4-921d" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="e935-9a84-4b80-06e6">Infantry</characteristic>
+                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">7</characteristic>
+                    <characteristic name="Sv" typeId="0f78-b21c-a7c1-8fc6">4+</characteristic>
+                    <characteristic name="WS" typeId="5278-8770-e2e8-da31">6</characteristic>
+                    <characteristic name="FS" typeId="439d-645b-d6e0-46b8">3</characteristic>
+                    <characteristic name="HP" typeId="032c-dcbd-3324-1426">1</characteristic>
+                    <characteristic name="Ld" typeId="4151-68d2-a08d-d1c8">9</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="50.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="bcb1-da27-5fcc-a6a4" name="Layered Chain Blade Weapons" hidden="false" collective="false" import="true" targetId="127d-46ee-76ee-d47b" type="selectionEntry">
+        <entryLink id="bcb1-da27-5fcc-a6a4" name="Layered Chain Blade Weapon" hidden="false" collective="false" import="true" targetId="127d-46ee-76ee-d47b" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="0d75-bf50-2c92-2db9" value="0.0"/>
           </modifiers>
@@ -7506,11 +7584,6 @@ Mental-Linked Loyalty</description>
       <infoLinks>
         <infoLink id="d975-88c0-456f-d393" name="Independent Operators" hidden="false" targetId="9bf1-ee2a-2f02-afe7" type="rule"/>
         <infoLink id="c694-4ab6-3bd4-02b7" name="Relentless" hidden="false" targetId="4792-5dbf-12c0-dddf" type="rule"/>
-        <infoLink id="d82c-21a3-817b-3560" name="Precision Fire (x)" hidden="false" targetId="1406-e132-d5d1-2c98" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Precision Fire (6+)"/>
-          </modifiers>
-        </infoLink>
         <infoLink id="e539-f2d8-4454-0846" name="Overwatch" hidden="false" targetId="2e08-89c4-09c9-ac8b" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -7990,6 +8063,23 @@ Mental-Linked Loyalty</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e261-b9c5-382c-b627" type="max"/>
               </constraints>
             </entryLink>
+            <entryLink id="3d47-c561-7037-6c97" name="Structure-Carbon Reinforcement" hidden="false" collective="false" import="true" targetId="2479-3345-b912-0f6e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="18a1-58ab-85c1-9bbc" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="0d75-bf50-2c92-2db9" value="10.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6447-1b72-a355-2e35" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6340-2c21-a93e-5215" type="max"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="6ca8-94bb-c2e5-a460" name="Special Equipment" hidden="false" collective="false" import="true">
@@ -8214,7 +8304,7 @@ Mental-Linked Loyalty</description>
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="50.0"/>
+                <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="40.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="e44b-a7c2-1886-2aa8" name="Squad w/ LCBWs and Coilpistols" hidden="false" collective="false" import="true" type="model">
@@ -8254,7 +8344,7 @@ Mental-Linked Loyalty</description>
                 </profile>
               </profiles>
               <entryLinks>
-                <entryLink id="15e7-d1b5-a643-ce3e" name="Layered Chain Blade Weapons" hidden="false" collective="false" import="true" targetId="127d-46ee-76ee-d47b" type="selectionEntry">
+                <entryLink id="15e7-d1b5-a643-ce3e" name="Layered Chain Blade Weapon" hidden="false" collective="false" import="true" targetId="127d-46ee-76ee-d47b" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae9f-b6dc-2e0c-733b" type="max"/>
                     <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e950-1999-626d-760a" type="min"/>
@@ -8268,7 +8358,7 @@ Mental-Linked Loyalty</description>
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="50.0"/>
+                <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="40.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="4fb1-7183-06fa-efc7" name="Squad w/ Coilrifles" hidden="false" collective="false" import="true" type="model">
@@ -8316,7 +8406,7 @@ Mental-Linked Loyalty</description>
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="50.0"/>
+                <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="40.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="32f1-83c1-4bcd-c8a8" name="Squad w/ LCBWs and Amprhan Shields" hidden="false" collective="false" import="true" type="model">
@@ -8373,7 +8463,7 @@ Mental-Linked Loyalty</description>
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="50.0"/>
+                <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="40.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -8411,6 +8501,73 @@ Mental-Linked Loyalty</description>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8b0-3b56-a19c-3ea1" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="0a0f-7c8a-a5ee-c6cd" name="Merchant Lord Wargear" hidden="true" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e08b-4ebf-7722-3e5a" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3d63-6a45-dfbd-7d9c" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="64ad-d140-dc85-abe3" name="Nano-Scale Composite Shielding" hidden="false" collective="false" import="true" targetId="6f02-a09c-c354-3d15" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f122-4563-a516-0eea" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5084-7f2a-0fa0-25ed" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="c9c1-3113-7d49-df16" name="Cluster Frag Cannons" hidden="false" collective="false" import="true" targetId="7e8c-b73f-14ec-d2cb" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dce9-1669-2675-eb15" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="fe3f-c9ce-dbfa-53de" name="Reinforced Communication Lines" hidden="false" collective="false" import="true" targetId="e2a2-c1be-8ef7-d418" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6680-03aa-fbff-c208" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a36-0d6e-0e96-8e53" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="a06b-4168-e204-dfae" name="Etriaris Pattern-Composites" hidden="false" collective="false" import="true" targetId="9fa1-082a-4a67-4920" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6680-03aa-fbff-c208" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a8b-b877-c3ef-fc1a" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="40f8-498b-fc2a-7d1c" name="Structure-Carbon Reinforcement" hidden="false" collective="false" import="true" targetId="2479-3345-b912-0f6e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="18a1-58ab-85c1-9bbc" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b6c-41a9-efd1-8137" type="max"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -8907,11 +9064,6 @@ Mental-Linked Loyalty</description>
         <infoLink id="877d-d146-25d8-9a9b" name="Repair" hidden="false" targetId="dde0-059e-1e83-2fc4" type="rule"/>
         <infoLink id="d590-56e3-887f-53cf" name="Relentless" hidden="false" targetId="4792-5dbf-12c0-dddf" type="rule"/>
         <infoLink id="4163-ae97-c9a7-2b06" name="Stubborn" hidden="false" targetId="40b1-3fd8-3c07-cc0b" type="rule"/>
-        <infoLink id="e2de-c8fe-4fb4-58a7" name="Precision Fire (x)" hidden="false" targetId="1406-e132-d5d1-2c98" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Precision Fire (5+)"/>
-          </modifiers>
-        </infoLink>
         <infoLink id="d4cf-31b6-825e-b599" name="Efficient Operators" hidden="false" targetId="4456-5d7f-c802-2b6f" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -9610,9 +9762,9 @@ Mental-Linked Loyalty</description>
           <characteristics>
             <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">36&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">1</characteristic>
-            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">3/7</characteristic>
+            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">4/7</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">6</characteristic>
-            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Heavy, Stun, Magnetic Interference</characteristic>
+            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Heavy, Stun, Magnetic Interference, Piercing (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -9620,6 +9772,11 @@ Mental-Linked Loyalty</description>
         <infoLink id="383a-1de8-c8ca-fe18" name="Heavy" hidden="false" targetId="c75e-3438-9bd3-0761" type="rule"/>
         <infoLink id="1e84-114b-e0f5-6d9e" name="Stun" hidden="false" targetId="5bc0-cd89-de72-6647" type="rule"/>
         <infoLink id="30be-282d-1aa3-0b08" name="Magnetic Interference" hidden="false" targetId="374c-a727-2439-64eb" type="rule"/>
+        <infoLink id="446a-2294-d28d-9c34" name="Piercing (x)" hidden="false" targetId="1a78-84b6-1f44-8ad2" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Piercing (6+)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="20.0"/>
@@ -9631,9 +9788,9 @@ Mental-Linked Loyalty</description>
           <characteristics>
             <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">48&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">1</characteristic>
-            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">2/-</characteristic>
+            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">4/-</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">-</characteristic>
-            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Heavy, Suppression, Panic (2)</characteristic>
+            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Heavy, Suppression, Panic (2), Piercing (5+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -9643,6 +9800,11 @@ Mental-Linked Loyalty</description>
         <infoLink id="e05d-d396-f4e7-8755" name="Panic (x)" hidden="false" targetId="f0be-b368-bd26-5fb5" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Panic (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="065b-bf87-57c3-80f3" name="Piercing (x)" hidden="false" targetId="1a78-84b6-1f44-8ad2" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Piercing (5+)"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -9659,11 +9821,6 @@ Mental-Linked Loyalty</description>
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink id="6710-a59d-8cb5-ac1a" name="Precision Fire (x)" hidden="false" targetId="1406-e132-d5d1-2c98" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Precision Fire (4+)"/>
-          </modifiers>
-        </infoLink>
         <infoLink id="566d-a6b1-cc77-d4e8" name="Scouts" hidden="false" targetId="2f4f-58e6-4cd5-942a" type="rule"/>
         <infoLink id="60a5-01a2-dea1-42e5" name="Independent Operators" hidden="false" targetId="9bf1-ee2a-2f02-afe7" type="rule"/>
         <infoLink id="b48c-6cc5-a971-bc5c" name="Overwatch" hidden="false" targetId="2e08-89c4-09c9-ac8b" type="rule"/>
@@ -9791,7 +9948,7 @@ Mental-Linked Loyalty</description>
       <profiles>
         <profile id="4349-defc-7824-5d32" name="Control Node" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
           <characteristics>
-            <characteristic name="Description" typeId="dc90-7f60-c435-a043">A unit with this upgrade gains a Command Range of 12&quot;, as if it were an HQ unit, and loses the Drones Keyword, and gains a Ld statistic of 10. It does not gain any other benefits of the HQ unit type.</characteristic>
+            <characteristic name="Description" typeId="dc90-7f60-c435-a043">This Unit, and Units within 12&quot; of this Unit are considered to be within Command Range, only for the purposes of the Drones Ability.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -9803,7 +9960,7 @@ Mental-Linked Loyalty</description>
       <profiles>
         <profile id="7622-cbff-0447-f735" name="Logic Plague Caster" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
           <characteristics>
-            <characteristic name="Description" typeId="dc90-7f60-c435-a043">Any Unit where all Squads or Vehicles are equipped with this wargear may choose to use it instead of Shooting. When it does so, select one enemy Vehicle or Drones unit within 36&quot;. Roll as many d6 as the attacking unit&apos;s FS (including bonuses from e.g. the Take Aim Order), and for each 5+, the target unit suffers a penalty of -2 Ld, -1WS, and -1FS, as well as -1AV if it is a Vehicle, for the next d3 turns.</characteristic>
+            <characteristic name="Description" typeId="dc90-7f60-c435-a043">A Unit where all Squads or Vehicles are equipped with this wargear (ones in Joined Units do not need to have it, and vice versa) may choose to use it instead of Shooting. When it does so, select one enemy Vehicle or Drones unit within 36&quot;. Roll as many d6 as the attacking unit&apos;s FS (including bonuses from e.g. the Take Aim Order), and for each 5+, the target unit suffers a penalty of -2 Ld, -1WS, and -1FS, as well as -1AV if it is a Vehicle, until the end of that Unit&apos;s next turn. </characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -9815,7 +9972,7 @@ Mental-Linked Loyalty</description>
       <profiles>
         <profile id="0074-f639-fd9e-58bd" name="Incursion Data-Beam" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
           <characteristics>
-            <characteristic name="Description" typeId="dc90-7f60-c435-a043">Any Unit where all Squads or Vehicles are equipped with this wargear may choose to use it instead of Shooting. When it does so, select one enemy Vehicle or Drones unit within 24&quot;. Roll as many d6 as the attacking unit&apos;s FS (including bonuses from e.g. the Take Aim Order), and for each 5+, the target unit suffers a single attack which hits automatically, at AP 2/10 (Magnetic Interference). The unit must also take a Leadership Test, as if affected by a weapon with the Suppression and Stun Keywords, regardless of any saves were made or wounds were inflicted.</characteristic>
+            <characteristic name="Description" typeId="dc90-7f60-c435-a043">A Unit where all Squads or Vehicles are equipped with this wargear (ones in Joined Units do not need to have it, and vice versa) may choose to use it instead of Shooting. When it does so, select one enemy Vehicle or Drones unit within 24&quot;. Roll as many d6 as the attacking unit&apos;s FS (including bonuses from e.g. the Take Aim Order), and for each 5+, the target unit suffers a single attack which hits automatically, at AP 2/9 (Magnetic Interference). The unit must also take a Leadership Test, as if affected by a weapon with the Suppression and Stun Keywords, regardless of any saves were made or wounds were inflicted.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -10104,11 +10261,6 @@ Machinist-Prime</description>
                 <condition field="selections" scope="be5e-a428-61f1-c15e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80a0-5c32-9c8d-e2ca" type="equalTo"/>
               </conditions>
             </modifier>
-          </modifiers>
-        </infoLink>
-        <infoLink id="19f2-fa13-517c-fde3" name="Precision Fire (x)" hidden="false" targetId="1406-e132-d5d1-2c98" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Precision Fire (5+)"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -10424,7 +10576,7 @@ Machinist-Prime</description>
       <profiles>
         <profile id="4228-fd8f-71a7-36c7" name="Focus-Lock Rounds" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
           <characteristics>
-            <characteristic name="Description" typeId="dc90-7f60-c435-a043">When an enemy Unit is successfully damaged by a Unit with this Wargear, they are Focus-Locked. Until the start of the next Round, when a friendly Unit attacks it, it reduces that Unit&apos;s Cover Save by -1. </characteristic>
+            <characteristic name="Description" typeId="dc90-7f60-c435-a043">When an enemy Unit is successfully damaged by a Unit with this Wargear, they are Focus-Locked. Until the start of the next Round, when a friendly Unit attacks it, it reduces that Unit&apos;s Cover Save by -1.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -10446,9 +10598,9 @@ Machinist-Prime</description>
     </selectionEntry>
     <selectionEntry id="889e-1695-7b73-ae28" name="Subatmospheric Dispersion Targeting Arrays" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="8dea-07be-bd30-8046" name="Subatmospheric Dispersion Targeting Arrays" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
+        <profile id="8dea-07be-bd30-8046" name="Subatmospheric Dispersion Targeting Arrays" hidden="false" typeId="6aff-fae8-88fc-a7f0" typeName="Command Wargear">
           <characteristics>
-            <characteristic name="Description" typeId="dc90-7f60-c435-a043">In the Command Phase, the controlling player of this Wargear can choose two enemy Units currently on the board. Until the end of the round, those Units must re-roll successful Cover Saves.
+            <characteristic name="Description" typeId="ff8d-1504-fb82-c241">In the Command Phase, the controlling player of this Wargear can choose two enemy Units currently on the board. Until the end of the round, those Units must re-roll successful Cover Saves.
 </characteristic>
           </characteristics>
         </profile>
@@ -10500,12 +10652,12 @@ Machinist-Prime</description>
       <profiles>
         <profile id="4e4c-88d9-55c9-66b7" name="Veteran Sergeant" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
           <characteristics>
-            <characteristic name="Description" typeId="dc90-7f60-c435-a043">This Unit gains +1 Leadership, and, once per round, this Unit can choose to pass a Leadership Test, regardless of the roll. One Squad also gains 1 Layered Chain Blade Weapon.</characteristic>
+            <characteristic name="Description" typeId="dc90-7f60-c435-a043">This Unit gains +1 Leadership, and, once per round, this Unit can choose to pass a Leadership Test, regardless of the roll. One Squad also gains 1 Improved LCBW.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink id="7a19-731c-f993-d15f" name="Layered Chain Blade Weapon" hidden="false" collective="false" import="true" targetId="127d-46ee-76ee-d47b" type="selectionEntry">
+        <entryLink id="7a19-731c-f993-d15f" name="Improved LCBW" hidden="false" collective="false" import="true" targetId="545c-2931-29c5-87e1" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f641-0f6d-322f-2a81" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23a4-0b1a-52cb-0c18" type="max"/>
@@ -10566,7 +10718,7 @@ Machinist-Prime</description>
       <profiles>
         <profile id="d2a8-632c-c69b-0e81" name="Rad-Caster" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
           <characteristics>
-            <characteristic name="Description" typeId="dc90-7f60-c435-a043">In the Shooting Phase, instead of shooting, this unit can choose an enemy Unit within 24&quot;. Until the end of the Round, that enemy Unit worsens its Save by d3</characteristic>
+            <characteristic name="Description" typeId="dc90-7f60-c435-a043">In the Shooting Phase, instead of shooting, the models of a Unit with this Wargear can choose an enemy Unit within 24&quot;. Until the end of the Round, that enemy Unit worsens its Save by d3. </characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -10654,12 +10806,17 @@ Machinist-Prime</description>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">2</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">4/6</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">6</characteristic>
-            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Heavy</characteristic>
+            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Heavy, Piercing (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink id="6231-9908-18e8-1ba1" name="Heavy" hidden="false" targetId="c75e-3438-9bd3-0761" type="rule"/>
+        <infoLink id="1da5-1b98-6c21-d810" name="Piercing (x)" hidden="false" targetId="1a78-84b6-1f44-8ad2" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Piercing (6+)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="15.0"/>
@@ -10676,11 +10833,6 @@ Machinist-Prime</description>
         <infoLink id="7661-5163-65b4-9133" name="PD(x)" hidden="false" targetId="0e08-93ac-d607-9391" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="PD(2)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="54cc-1cd4-9d7e-0d4d" name="Precision Fire (x)" hidden="false" targetId="1406-e132-d5d1-2c98" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="6+"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -10985,7 +11137,7 @@ Machinist-Prime</description>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">1</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">4/-</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">-</characteristic>
-            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Incineration(1), Dangerous, Ignores Cover, Risky (6+), Rout</characteristic>
+            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Incineration(1), Dangerous, Ignores Cover, Risky (4+), Rout</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -11005,7 +11157,7 @@ Machinist-Prime</description>
         <infoLink id="ed15-0838-fd36-b740" name="Rout" hidden="false" targetId="31cd-09ac-2183-d6ca" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="25.0"/>
+        <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="10.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8d20-60ac-aa35-2859" name="Nanomantic Discipline" hidden="false" collective="false" import="true" type="upgrade">
@@ -11049,9 +11201,9 @@ Machinist-Prime</description>
           <characteristics>
             <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">6&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">-</characteristic>
-            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">4/6</characteristic>
+            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">-/6</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">-</characteristic>
-            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Pistol, Rout, Incineration (5), Ignores Cover, Blast (3), Corrosion</characteristic>
+            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Pistol, Rout, Incineration (5), Ignores Cover, Blast (3), Corrosion, Piercing (5+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -11070,6 +11222,11 @@ Machinist-Prime</description>
           </modifiers>
         </infoLink>
         <infoLink id="3340-090a-9c36-9d08" name="Ignores Cover" hidden="false" targetId="43c5-12ad-acad-8118" type="rule"/>
+        <infoLink id="4128-96d0-3acb-a5f0" name="Piercing (x)" hidden="false" targetId="1a78-84b6-1f44-8ad2" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Piercing (5+)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="0.0"/>
@@ -11325,7 +11482,7 @@ Machinist-Prime</description>
       <profiles>
         <profile id="aa78-9842-acc0-e424" name="Inspirational Symbol" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
           <characteristics>
-            <characteristic name="Description" typeId="dc90-7f60-c435-a043">Choose one Squad within this Unit. This Unit and Friendly Infantry Units (that do not have the Drones Ability) within 3&quot; of that Squad gain +1 Ld and fall back one less d6 when rolling to Fall Back. (If this reduces the amount to 0, the Unit does not fall back.)</characteristic>
+            <characteristic name="Description" typeId="dc90-7f60-c435-a043">Choose one Squad within this Unit. This Unit gains +1 Ld and falls back one less d6 when rolling to Fall Back. (If this reduces the amount to 0, the Unit does not fall back.)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -11337,7 +11494,7 @@ Machinist-Prime</description>
       <profiles>
         <profile id="e112-a34a-415f-a2b0" name="Jamming Systems" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
           <characteristics>
-            <characteristic name="Description" typeId="dc90-7f60-c435-a043">Enemy Units targeting this Unit or Friendly Units within 2&quot; of this Unit reduce their Weapons&apos; Range by half and their FS by 1.</characteristic>
+            <characteristic name="Description" typeId="dc90-7f60-c435-a043">Enemy Units targeting this Unit reduce their FS by 1. In addition, enemy Models (except when firing Indirect Fire) may only target this Unit if they are within 24&quot;.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -11349,7 +11506,7 @@ Machinist-Prime</description>
       <profiles>
         <profile id="553a-6aea-23de-f6c5" name="Medical Gear" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
           <characteristics>
-            <characteristic name="Description" typeId="dc90-7f60-c435-a043">Once per Phase, when a friendly Unit within 6&quot; is targeted by a Shooting Attack, that Unit can ignore the damage from as many failed armour saves as the Unit with this Wargear has Squads in it. (Damage from failed Cover Saves or ignored Armour Saves cannot be ignored, nor can damage from attacks with the Powerful keyword).</characteristic>
+            <characteristic name="Description" typeId="dc90-7f60-c435-a043">Once per Phase, when this Unit is targeted by a Shooting Attack, it can ignore the damage from as many failed armour saves as the Unit with this Wargear has Squads in it. (Damage from failed Cover Saves or ignored Armour Saves cannot be ignored, nor can damage from attacks with the Powerful keyword).</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -11359,9 +11516,9 @@ Machinist-Prime</description>
     </selectionEntry>
     <selectionEntry id="4637-6a18-bb56-6dc1" name="Orbital Comms Relay" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="dabb-39dc-01c5-d919" name="Orbital Comms Relay" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
+        <profile id="dabb-39dc-01c5-d919" name="Orbital Comms Relay" hidden="false" typeId="6aff-fae8-88fc-a7f0" typeName="Command Wargear">
           <characteristics>
-            <characteristic name="Description" typeId="dc90-7f60-c435-a043">Any scatter rolls (deep strike, indirect fire) made within 18&quot; and in Line of Sight of this Unit may re-roll the scatter roll.</characteristic>
+            <characteristic name="Description" typeId="ff8d-1504-fb82-c241">In the Command Phase, this Unit can activate this Wargear. Until the end of the Shooting Phase, any scatter rolls (deep strike, indirect fire) made within 18&quot; and in Line of Sight of this Unit may re-roll the scatter roll.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -11371,9 +11528,10 @@ Machinist-Prime</description>
     </selectionEntry>
     <selectionEntry id="9b62-62bc-b19d-827e" name="Radial Scanner" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="a6fe-d087-4623-0cfe" name="Radial Scanner" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
+        <profile id="a6fe-d087-4623-0cfe" name="Radial Scanner" hidden="false" typeId="6aff-fae8-88fc-a7f0" typeName="Command Wargear">
           <characteristics>
-            <characteristic name="Description" typeId="dc90-7f60-c435-a043">In the Command Phase, this Unit can choose an enemy Unit. Until the end of the Shooting Phase, all friendly Units make Shooting Attacks at that Unit gain +1 to their FS. In addition, Once per Round, either this Unit or one friendly Unit within 1&quot; may make the Suppressive Fire or Overwatch Fire reactions, ignoring the reaction limit (being able to react despite a unit having reacted, or another unit being able to react after this one, in the same phase).</characteristic>
+            <characteristic name="Description" typeId="ff8d-1504-fb82-c241">In the Command Phase, this Unit can choose an enemy Unit. Until the end of the Shooting Phase, all friendly Units make Shooting Attacks at that Unit gain +1 to their FS.
+In addition, Once per Round, this Unit may make the Suppressive Fire or Overwatch Fire reactions, ignoring the reaction limit (being able to react despite a unit having reacted, or another unit being able to react after this one, in the same phase).</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -11383,9 +11541,9 @@ Machinist-Prime</description>
     </selectionEntry>
     <selectionEntry id="cd2e-dd91-13e0-e41d" name="Stabilizer Reinforcement Protocols" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="341d-d8ee-b7f1-9af6" name="Stabilizer Reinforcement Protocols" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
+        <profile id="341d-d8ee-b7f1-9af6" name="Stabilizer Reinforcement Protocols" hidden="false" typeId="6aff-fae8-88fc-a7f0" typeName="Command Wargear">
           <characteristics>
-            <characteristic name="Description" typeId="dc90-7f60-c435-a043">In the Command Phase, this Unit can choose a friendly Unit. Until the end of the Shooting Phase, that Unit can ignore any modifiers to its FS (excluding penalties from Reactions).</characteristic>
+            <characteristic name="Description" typeId="ff8d-1504-fb82-c241">In the Command Phase, this Unit can activate this Wargear. Until the end of the Shooting Phase, this Unit can ignore any modifiers to its FS (excluding penalties from Reactions).</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -11395,9 +11553,9 @@ Machinist-Prime</description>
     </selectionEntry>
     <selectionEntry id="ea22-ddcc-0600-5163" name="Targeting Arrays" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="0e6a-ab95-40e5-c2f6" name="Targeting Arrays" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
+        <profile id="0e6a-ab95-40e5-c2f6" name="Targeting Arrays" hidden="false" typeId="6aff-fae8-88fc-a7f0" typeName="Command Wargear">
           <characteristics>
-            <characteristic name="Description" typeId="dc90-7f60-c435-a043">In the Command Phase, this Unit can improve the FS of a friendly Unit within 6&quot; by 1 until the end of the Round.</characteristic>
+            <characteristic name="Description" typeId="ff8d-1504-fb82-c241">In the Command Phase, this Unit can activate this Wargear. Until the end of the Shooting Phase, this Unit can ignore any modifiers to its FS (excluding penalties from Reactions).</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -11656,6 +11814,25 @@ Machinist-Prime</description>
         <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="545c-2931-29c5-87e1" name="Improved LCBW" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="0f89-8861-6e98-2a04" name="Improved LCBW" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">-</characteristic>
+            <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">1</characteristic>
+            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">1/5</characteristic>
+            <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">-</characteristic>
+            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Melee</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="041d-7c9c-c950-2892" name="Melee" hidden="false" targetId="da69-5ba1-e3a0-60db" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="585c-1f0a-d071-4ba0" name="Heavy Weapons Choice" hidden="false" collective="false" import="true">
@@ -11854,9 +12031,9 @@ Machinist-Prime</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0374-7634-2dc4-9522" type="max"/>
               </constraints>
               <profiles>
-                <profile id="35a1-ade8-1fb9-9064" name="Veteran of the Long Centuries" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
+                <profile id="35a1-ade8-1fb9-9064" name="Veteran of the Long Centuries" hidden="false" typeId="7299-d224-fc7e-7593" typeName="Commander Trait">
                   <characteristics>
-                    <characteristic name="Description" typeId="dc90-7f60-c435-a043">Every Weapon this Unit is equipped with gains the Ignores Cover Keyword, and the Unit gains +1 Ld, WS and FS.</characteristic>
+                    <characteristic name="Description" typeId="8866-d72c-fd6f-830b">Every Weapon this Unit&apos;s model is equipped with gains the Ignores Cover Keyword, and the Unit&apos;s model gains +1 Ld, WS and FS.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11879,9 +12056,9 @@ Machinist-Prime</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b7a-20a3-5abc-ba08" type="max"/>
               </constraints>
               <profiles>
-                <profile id="4f14-60e6-f13a-9241" name="Master of the Legions" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
+                <profile id="4f14-60e6-f13a-9241" name="Master of the Legions" hidden="false" typeId="7299-d224-fc7e-7593" typeName="Commander Trait">
                   <characteristics>
-                    <characteristic name="Description" typeId="dc90-7f60-c435-a043">At the Start of the Battle, three Units from this HQ&apos;s Detachment may be redeployed as if it were the deployment phase.</characteristic>
+                    <characteristic name="Description" typeId="8866-d72c-fd6f-830b">At the Start of the Battle, three Units from this HQ&apos;s Detachment may be redeployed as if it were the deployment phase.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11901,9 +12078,9 @@ Machinist-Prime</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5249-64ae-f383-c418" type="max"/>
               </constraints>
               <profiles>
-                <profile id="55d6-6a71-3794-01a3" name="Core-Born" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
+                <profile id="55d6-6a71-3794-01a3" name="Core-Born" hidden="false" typeId="7299-d224-fc7e-7593" typeName="Commander Trait">
                   <characteristics>
-                    <characteristic name="Description" typeId="dc90-7f60-c435-a043">Once per round, any time during any phase, this unit can change an Order issued to one of the Units in its Detachment.</characteristic>
+                    <characteristic name="Description" typeId="8866-d72c-fd6f-830b">Once per round, any time during any phase, this unit can change an Order issued to one of the Units in its Detachment.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11923,9 +12100,9 @@ Machinist-Prime</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d608-9aa1-dd5b-dc98" type="max"/>
               </constraints>
               <profiles>
-                <profile id="acf7-6905-e4f4-8171" name="Grim Responsibility" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
+                <profile id="acf7-6905-e4f4-8171" name="Grim Responsibility" hidden="false" typeId="7299-d224-fc7e-7593" typeName="Commander Trait">
                   <characteristics>
-                    <characteristic name="Description" typeId="dc90-7f60-c435-a043">For every friendly Squad or Vehicle that is destroyed within 12&quot; of this HQ, roll a d6. On a 6, this Unit gains either +1 Ld or +1 WS and FS.</characteristic>
+                    <characteristic name="Description" typeId="8866-d72c-fd6f-830b">For every friendly Squad or Vehicle that is destroyed within 12&quot; of this HQ, roll a d6. On a 6, this Unit gains either +1 Ld or +1 WS and FS.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11945,9 +12122,9 @@ Machinist-Prime</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91d0-0946-54e4-0523" type="max"/>
               </constraints>
               <profiles>
-                <profile id="663c-9a9f-d680-a625" name="Steel-Marshall" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
+                <profile id="663c-9a9f-d680-a625" name="Steel-Marshall" hidden="false" typeId="7299-d224-fc7e-7593" typeName="Commander Trait">
                   <characteristics>
-                    <characteristic name="Description" typeId="dc90-7f60-c435-a043">Every Vehicle Unit (Excluding Massive Units) within 8&quot; of this Unit gains Cover Saves as if they were Infantry.</characteristic>
+                    <characteristic name="Description" typeId="8866-d72c-fd6f-830b">Every Vehicle Unit (Excluding Massive Units) within this Unit gains Cover Saves from Terrain as if they were Infantry.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11967,9 +12144,9 @@ Machinist-Prime</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c512-94dd-bf73-dae1" type="max"/>
               </constraints>
               <profiles>
-                <profile id="2c9a-e7bb-4da6-9e2d" name="Lord of the Frost" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
+                <profile id="2c9a-e7bb-4da6-9e2d" name="Lord of the Frost" hidden="false" typeId="7299-d224-fc7e-7593" typeName="Commander Trait">
                   <characteristics>
-                    <characteristic name="Description" typeId="dc90-7f60-c435-a043">This Unit and every friendly Unit within 12&quot; gains +3&quot; to Mv when they are not in any Terrain.</characteristic>
+                    <characteristic name="Description" typeId="8866-d72c-fd6f-830b">This Unit and every friendly Unit within 12&quot; gains +3&quot; to Mv when they are not in any Terrain.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11989,9 +12166,9 @@ Machinist-Prime</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7245-7b7a-b1d7-b6d5" type="max"/>
               </constraints>
               <profiles>
-                <profile id="495d-6d12-786a-2820" name="The Resurgent" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
+                <profile id="495d-6d12-786a-2820" name="The Resurgent" hidden="false" typeId="7299-d224-fc7e-7593" typeName="Commander Trait">
                   <characteristics>
-                    <characteristic name="Description" typeId="dc90-7f60-c435-a043">Every friendly Unit within 12&quot; of this Unit gains +1 Ld and automatically passes any Leadership Tests for Combat Resolution.</characteristic>
+                    <characteristic name="Description" typeId="8866-d72c-fd6f-830b">Every friendly Unit within 12&quot; of this Unit gains +1 Ld and automatically passes any Leadership Tests for Combat Resolution.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -12011,9 +12188,9 @@ Machinist-Prime</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e37-e3ce-3cd3-389d" type="max"/>
               </constraints>
               <profiles>
-                <profile id="9c6b-dcc9-52e0-ba1d" name="Terrifying Presence" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
+                <profile id="9c6b-dcc9-52e0-ba1d" name="Terrifying Presence" hidden="false" typeId="7299-d224-fc7e-7593" typeName="Commander Trait">
                   <characteristics>
-                    <characteristic name="Description" typeId="dc90-7f60-c435-a043">Every enemy Unit within 12&quot; of this Unit suffers a penalty of -1 Ld, and, when shooting this Unit or others within 3&quot; of it, reduce their FS by -1, and when Charging and in Close Combat Range, reduce WS by -1.</characteristic>
+                    <characteristic name="Description" typeId="8866-d72c-fd6f-830b">Every enemy Unit within 12&quot; of this Unit suffers a penalty of -1 Ld, and, when shooting this Unit, reduce their FS by -1, and when Charging and in Close Combat Range, reduce WS by -1.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -12033,9 +12210,9 @@ Machinist-Prime</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a717-4156-336c-6526" type="max"/>
               </constraints>
               <profiles>
-                <profile id="bf16-019c-8b45-d02c" name="Master of the Wastes" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
+                <profile id="bf16-019c-8b45-d02c" name="Master of the Wastes" hidden="false" typeId="7299-d224-fc7e-7593" typeName="Commander Trait">
                   <characteristics>
-                    <characteristic name="Description" typeId="dc90-7f60-c435-a043">This Unit, and every friendly Unit within 6&quot; do not suffer any Terrain penalties, and, if in Rough or Difficult Terrain, improve their Cover Save by 1.</characteristic>
+                    <characteristic name="Description" typeId="8866-d72c-fd6f-830b">This Unit does not suffer any Terrain penalties, and, if in Rough or Difficult Terrain, improve their Cover Save by 1.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -12055,9 +12232,9 @@ Machinist-Prime</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ad7-2af2-8a32-8274" type="max"/>
               </constraints>
               <profiles>
-                <profile id="85bf-8260-6892-85f6" name="Champion of Cellea" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
+                <profile id="85bf-8260-6892-85f6" name="Champion of Cellea" hidden="false" typeId="7299-d224-fc7e-7593" typeName="Commander Trait">
                   <characteristics>
-                    <characteristic name="Description" typeId="dc90-7f60-c435-a043">Twice per game, this unit can change its Strategic Approach. In addition, it gains the Walking Terror Ability and +1 WS.</characteristic>
+                    <characteristic name="Description" typeId="8866-d72c-fd6f-830b">This Unit&apos;s model gains the Walking Terror Ability and +1 WS. In addition, Units within 9&quot; can, once per Round, change the Order they were issued.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -12080,9 +12257,9 @@ Machinist-Prime</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36e2-4442-dac5-18ab" type="max"/>
               </constraints>
               <profiles>
-                <profile id="0dfb-d0a3-72bc-6485" name="Merchant Lord" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
+                <profile id="0dfb-d0a3-72bc-6485" name="Merchant Lord" hidden="false" typeId="7299-d224-fc7e-7593" typeName="Commander Trait">
                   <characteristics>
-                    <characteristic name="Description" typeId="dc90-7f60-c435-a043">An Army with this HQ can select two pieces of Wargear from other Allegiances to be equipped onto itself.</characteristic>
+                    <characteristic name="Description" typeId="8866-d72c-fd6f-830b">An Army with this HQ can select two pieces of Wargear from other Allegiances to be equipped onto any HQ Unit (including Bodyguard Squads) in the army.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -12102,9 +12279,9 @@ Machinist-Prime</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d89b-1ff4-f2af-99bb" type="max"/>
               </constraints>
               <profiles>
-                <profile id="8380-a2a4-33b2-4995" name="Mental-Linked Loyalty" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
+                <profile id="8380-a2a4-33b2-4995" name="Mental-Linked Loyalty" hidden="false" typeId="7299-d224-fc7e-7593" typeName="Commander Trait">
                   <characteristics>
-                    <characteristic name="Description" typeId="dc90-7f60-c435-a043">Once per Phase, this Unit can select one friendly Unit within 18&quot; that just failed a Leadership Test. That Unit does instead passes it.</characteristic>
+                    <characteristic name="Description" typeId="8866-d72c-fd6f-830b">Once per Phase, this Unit can select one friendly Unit within 18&quot; that just failed a Leadership Test. That Unit does instead passes it.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -12124,9 +12301,9 @@ Machinist-Prime</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="388a-2686-50bb-6d62" type="max"/>
               </constraints>
               <profiles>
-                <profile id="277f-1d02-986d-a506" name="Machinist-Prime" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
+                <profile id="277f-1d02-986d-a506" name="Machinist-Prime" hidden="false" typeId="7299-d224-fc7e-7593" typeName="Commander Trait">
                   <characteristics>
-                    <characteristic name="Description" typeId="dc90-7f60-c435-a043">This Unit gains the Repair and SHD(2) Abilities. When it uses Repair, the Unit rolls 5d6, and the roll succeeds on a 5+. It may use Repair and shoot in the same round as well.</characteristic>
+                    <characteristic name="Description" typeId="8866-d72c-fd6f-830b">This Unit gains the Repair and SHD(2) Abilities. When it uses Repair, the Unit rolls 5d6, and the roll succeeds on a 5+. It may use Repair and shoot in the same round as well.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>

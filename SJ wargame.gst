@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="c1c8-3310-c638-7238" name="SJ wargame" revision="16" battleScribeVersion="2.03" authorName="MadToxin" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="c1c8-3310-c638-7238" name="SJ wargame" revision="17" battleScribeVersion="2.03" authorName="MadToxin" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>SJ Wargame list builder</readme>
   <publications>
     <publication id="53d2-8b59-fd84-65d1" name="Wargame Prototype" shortName="SJ Wargame" publisher="Stellar Journey Wargame Prototype Design Doc" publicationDate="9.11.2024" publisherUrl="https://www.worldanvil.com/w/stellar-journey-madtoxin/a/wargame-prototype-article"/>
@@ -56,9 +56,14 @@
         <characteristicType id="dc90-7f60-c435-a043" name="Description"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="99a7-11af-4cbf-9643" name="Strategic Approach">
+    <profileType id="6aff-fae8-88fc-a7f0" name="Command Wargear">
       <characteristicTypes>
-        <characteristicType id="3b99-2f20-fb5e-b057" name="Description"/>
+        <characteristicType id="ff8d-1504-fb82-c241" name="Description"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="7299-d224-fc7e-7593" name="Commander Trait">
+      <characteristicTypes>
+        <characteristicType id="8866-d72c-fd6f-830b" name="Description"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -118,11 +123,8 @@ Vehicles have a AV stat, which represents their armour. They also sometimes have
     <categoryEntry id="c897-8acc-3ad3-cca0" name="Command (Sub-Type)" hidden="false">
       <rules>
         <rule id="0cd5-58b4-a217-8716" name="Command (Sub-Type)" hidden="false">
-          <description>This unit leads a Detachment. They have a command range, stated in the unit&apos;s sheet. In addition, they get to choose a Strategic Approach from a list of effects, strategic plans, and philosophies, when deploying;[br]
-
-[b]One HQ must be selected as a Commander. [/b] This is the leader of your army, and must take a Commander Trait, chosen from the selected Allegiance&apos;s options, at no cost. Only one HQ can be the Commander, and they can only have one Trait.
-
-This unit cannot be targeted by attacks from Units not within 12&quot; as long as it is within 1&quot; of a friendly unit.</description>
+          <description>This unit leads a Detachment. They have a command range, stated in the unit&apos;s sheet. One HQ must be selected as a Commander. This is the leader of your army, and must take a Commander Trait, chosen from the selected Allegiance&apos;s options, at no cost. Only one HQ can be the Commander, and they can only have one Trait.
+This Unit may join a friendly Unit of the same type. It may join when deploying, or by moving to within 1&quot; of any Model in a Unit. When joined, this Model and the Models in the Unit it joined are considered a single Unit, and so all rules that concern &quot;this Unit&quot; apply to both the Command Unit and the Unit it Joined, and wounds are allocated the same way. Units also move the distance they normally would, but must remain in Cohesion as normal. When making a Leadership Check for the Unit, the Check can be made with any Ld value present in the Unit.</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -154,13 +156,13 @@ This unit cannot be targeted by attacks from Units not within 12&quot; as long a
       <description>If an enemy Infantry unit suffers a Wound from an attack due to this weapon, that unit must make a Leadership Test. If failed, it reduces its WS and FS by 1 and halves its movement and cannot React until the end of the next Round. In addition, attackers in combat against the target gain a +1 to Combat Initiative tests until the end of the next Round.</description>
     </rule>
     <rule id="4792-5dbf-12c0-dddf" name="Relentless" hidden="false">
-      <description>Squads in this unit can fire Heavy weapons at full FS even despite having moved.</description>
+      <description>Squads with this Ability can fire Heavy weapons at full FS even despite having moved. </description>
     </rule>
     <rule id="b50f-35aa-ff9b-417c" name="Slow" hidden="false">
       <description>This unit cannot Advance.</description>
     </rule>
     <rule id="40b1-3fd8-3c07-cc0b" name="Stubborn" hidden="false">
-      <description>This unit does not take penalties for being Half-Functional or from the Panic (x) Keyword. </description>
+      <description>This Unit ignores the first Injury Mark it gains in the Shooting Phase. It also rolls one die less whenever it Retreats (including when doing so because of the Rout Keyword).</description>
     </rule>
     <rule id="d83b-8850-6009-1008" name="Close Combat Specialists" hidden="false">
       <description>This unit gains a +1 to Combat Initiative rolls in Close Combat.</description>
@@ -169,34 +171,34 @@ This unit cannot be targeted by attacks from Units not within 12&quot; as long a
       <description>This unit moves a further 3&quot; extra when issued the Advance Order or when Charging, and gains +1&quot; to Pile In Moves.</description>
     </rule>
     <rule id="b606-0245-e86c-8469" name="Drones" hidden="false">
-      <description>While in Command Range, this Unit has a base Leadership stat of 11.</description>
+      <description>While in Command Range, this Unit has a base Ld of 11.</description>
     </rule>
     <rule id="38b0-0cfb-ba12-13b5" name="Transport (x)" hidden="false">
-      <description>This unit can transport x Squads in it (See Transport rules in rulebook).</description>
+      <description>A Vehicle with this Ability can transport x Squads within it.</description>
     </rule>
     <rule id="0e08-93ac-d607-9391" name="PD(x)" hidden="false">
-      <description>This unit can use x Point-Defense in a given round. (See PD section in rulebook)</description>
+      <description>This unit can use x Point-Defense. (See PD section in rulebook)</description>
     </rule>
     <rule id="d5df-bc22-befb-7cd0" name="SHD(x)" hidden="false">
       <description>This unit has x Hardened Plasma Shield Layers. (See SHD section in rulebook)</description>
     </rule>
     <rule id="fb8e-2662-6d89-8230" name="Tracked" hidden="false">
-      <description>This unit ignores penalties from Rough Terrain.</description>
+      <description>Vehicles with this Ability do not suffer penalties from Rough Terrain.</description>
     </rule>
     <rule id="1673-aa92-4a6a-b502" name="Walker" hidden="false">
-      <description>This unit ignores penalties from Rough Terrain or Difficult Terrain</description>
+      <description>Vehicles with this Ability do not suffer penalties from Rough Terrain or Difficult Terrain.</description>
     </rule>
     <rule id="a2c0-6575-efe5-eff7" name="Flying" hidden="false">
-      <description>This unit ignores any and all Terrain penalties and restrictions and cannot gain a Cover Save from them, unless it is Embarked into a City Block, in which case it behaves as normal. It can move over any Units or Impassable Terrain, but cannot end a Move inside them or within Close Combat Range unless it Charged. In addition, any attacks made against it (save for special rules) subtract 3 from the FS.</description>
+      <description>Models with this Ability ignore any and all Terrain penalties and restrictions and cannot gain a Cover Save from them, unless they are Embarked into a City Block, in which case they behaves as normal. They can move over any Units or Impassable Terrain, but cannot end a Move inside them or within Close Combat Range unless they Charged. In addition, any attacks made against them (save for special rules) subtract 3 from the FS.</description>
     </rule>
     <rule id="27ec-5ed0-150d-bac1" name="Small" hidden="false">
-      <description>This Vehicle may embark upon a Transport. If it does so, it takes up the space of two Squads. Unlike other Vehicles, this Unit may gain Cover Saves from Terrain.</description>
+      <description>Unlike other Vehicles, this Unit may gain Cover Saves from Terrain. In addition, a Vehicle with this Ability may embark upon a Transport. If it does so, it takes up the space of two Squads. </description>
     </rule>
     <rule id="0233-0910-edc0-c3cf" name="Deployable" hidden="false">
       <description>If this unit embarks into a Transport with friendly units within, each Squad within does not take up space for every other friendly Squad inside (i.e. Two Deployable Squads would gain two free transport spaces in a Transport with two other Squads inside. Each Squad gives one free space for the Deployable Unit).</description>
     </rule>
     <rule id="4a86-2dcd-4bc0-9d9e" name="Sniper" hidden="false">
-      <description>When selecting targets for this unit, treat its weapons&apos; range as 1.5 times the range they would be (I.e: a Railcannon&apos;s 36&quot; becomes 54&quot;)</description>
+      <description>When selecting targets for this unit, treat its weapons&apos; range as 1.5 times the range they would be (I.e: a Railcannon&apos;s 48&quot; becomes 72&quot;)</description>
     </rule>
     <rule id="af9c-3abb-e521-f6e3" name="Pistol" hidden="false">
       <description>This weapon can be shot even when in Close Combat Range.</description>
@@ -205,7 +207,7 @@ This unit cannot be targeted by attacks from Units not within 12&quot; as long a
       <description>This weapon can only be used in Close Combat Range, in the Fight Phase.</description>
     </rule>
     <rule id="43c5-12ad-acad-8118" name="Ignores Cover" hidden="false">
-      <description>No cover saves can be made against attack made with this weapon.</description>
+      <description>No cover saves can be made against attacks made with this weapon.</description>
     </rule>
     <rule id="374c-a727-2439-64eb" name="Magnetic Interference" hidden="false">
       <description>Attacks made with this weapon ignore every SHD when targeting an enemy Vehicle. Those SHD are not destroyed, are treated as if destroyed when resolving attacks made with this Weapon.
@@ -221,7 +223,7 @@ This unit cannot be targeted by attacks from Units not within 12&quot; as long a
       <description>The hit rolls for this attack may be re-rolled once.</description>
     </rule>
     <rule id="1bc8-4a61-b424-0d67" name="Indirect Fire" hidden="false">
-      <description>This Weapon may be fired even if the firing unit does not see the target. Make sure to declare which Squads or Vehicles do so before firing, if some can see and others not. When doing so, before making attacks, pick a Squad in the target unit. Then, scatter (with the same process as Deep Strike, scattering 3d3&quot;. Then, from that point, measure the same distance as the weapon&apos;s Incineration(x) rule&apos;s value (1&quot; if none listed) in every direction. Do this once, and use the resulting point for all of the same type of Weapon in the Unit. If any Squads of the target unit are within it, the attacks proceed as normal, following all normal rules and keywords except counting Blast(x) with the amount of Squads within the area. Any non-target Units that are within the area, friendly, enemy, or othewise, are hit the same way. </description>
+      <description>This Weapon may be fired even if the firing unit does not see the target. Make sure to declare which Squads or Vehicles do so before firing, if some can see and others not. When doing so, before making attacks, pick a Squad in the target unit. Then, scatter (with the same process as Deep Strike, scattering 3d3&quot;. Then, from that point, measure the same distance as the weapon&apos;s Incineration(x) rule&apos;s value (1&quot; if none listed) in every direction. Do this once, and use the resulting point for all of the same type of Weapon in the Unit. If any Squads of the target unit are within it, the attacks proceed as normal, following all normal rules and keywords except counting Blast(x) with the amount of Squads within the area. Any non-target Units that are within the area, friendly, enemy, or othewise, are hit the same way.</description>
     </rule>
     <rule id="de72-d220-8c83-4e19" name="One Use" hidden="false">
       <description>This Weapon can only be used once per battle.</description>
@@ -236,7 +238,7 @@ This unit cannot be targeted by attacks from Units not within 12&quot; as long a
       <description>When damaged by this weapon, Vehicles take two HP of damage instead of one. Infantry are destroyed instantly, regardless of current HP, and may not use any damage mitigation rolls they may have.</description>
     </rule>
     <rule id="f14c-3797-d8d4-ae21" name="Simple Programming" hidden="false">
-      <description>This Unit always passes Leadership Tests (except for Reactions). However, if outside of Command Range, it must move, shoot, and charge, if possible, toward the closest enemy Unit as long as it is not in Command Range. </description>
+      <description>This Unit always passes Leadership Tests (except for Reactions). However, if outside of Command Range, it must move, shoot, and charge, if possible, toward the closest enemy Unit as long as it is not in Command Range. If Joined by a Unit that does not have this Ability, this Ability has no effect.</description>
     </rule>
     <rule id="8ee7-9315-8b62-2af6" name="Walking Terror" hidden="false">
       <description>When engaged in Close Combat, opposing units reduce their Leadership by 2.</description>
@@ -245,19 +247,19 @@ This unit cannot be targeted by attacks from Units not within 12&quot; as long a
       <description>When this weapon attacks Infantry, do not roll to save as normal. Instead, the attacker rolls a d6 for each hit. On a 2+, the weapon inflicts 1 wound. If the target has Power Armour, the roll is 3+, and for HAST Suits, the roll succeeds on a 5+. Against targets with the Drones Keyword, the roll target is increased by 2. (i.e Power armour becomes a 5+, HAST suits become a 7+ and thus impossible). It cannot target Aircraft.</description>
     </rule>
     <rule id="69a5-9eb2-99bd-9167" name="Scavenge" hidden="false">
-      <description>When this unit destroys an enemy unit, place a token on one of the Squads or Vehicles to be destroyed. When this unit is within 2&quot; of that token, it may do an Action and gain one of the following: Each Squad gets one of the following; +1 WS, +1 FS, +1 Mv or +1 Ld. One Squad may either take a Weapon from the Heavy weapons list or Support Weapons list for no cost. The Unit gains one of the Wargear of the enemy unit. </description>
+      <description>When this unit destroys an enemy unit, place a token on one of the Squads or Vehicles to be destroyed. When this unit is within 2&quot; of that token, it may do an Action and gain one of the following: Each Squad gets one of the following; +1 WS, +1 FS, +1 Mv or +1 Ld. One Squad may either take a Weapon from the Heavy weapons list or Support Weapons list for no cost. The Unit gains one of the Wargear of the enemy unit.</description>
     </rule>
     <rule id="dde0-059e-1e83-2fc4" name="Repair" hidden="false">
-      <description>A unit may choose to do an Action to use this ability on a friendly Vehicle within 2&quot;. If it does so, roll a d6 for each Squad or Vehicle in the Unit. For each roll of 6, restore 1 HP in the targeted Unit. If restored when all Vehicles are at full HP, place a new Vehicle of the same type into the unit within Cohesion, with 1 HP remaining. This Vehicle is part of this unit, and behaves as normal. Do not add a new Vehicle if the Unit has not suffered casualties.</description>
+      <description>A unit may choose to do an Action to use this ability on a friendly Vehicle within 2&quot;. If it does so, roll a d6 for each Squad or Vehicle with this Ability in the Unit. For each roll of 6, restore 1 HP in the targeted Unit. If restored when all Vehicles are at full HP, place a new Vehicle of the same type into the unit within Cohesion, with 1 HP remaining. This Vehicle is part of the target unit, and behaves as normal. New Vehicles may only be added up to as many as the original number of them in the Unit.</description>
     </rule>
     <rule id="8de0-307b-38db-ffcb" name="Very Heavy" hidden="false">
       <description>If an Infantry Squad firing this weapon has moved, it shoots this weapon at FS1, regardless of keywords. Vehicles are not affected.</description>
     </rule>
     <rule id="95bb-698d-55d1-0096" name="Bodyguard" hidden="false">
-      <description>This unit must be taken as an option for a Command Sub-Type Unit. If taken this way, it takes up no unit slot. In addition, if it stays within 12&quot; of the Command Unit it was taken for, it can re-roll hit rolls (Guided weapons instead gain +1 to hit). In addition, any Command Unit that is within 1&quot; of a Bodyguard Unit cannot be targeted by Shooting attacks.</description>
+      <description>This unit must be taken as an option for an HQ unit. If taken this way, it takes up no unit slot. In addition, when joined by an HQ Unit, it can re-roll hit rolls (Guided weapons instead gain +1 to hit) and every time a Squad in this Unit with this Ability would take Damage, roll a d6 for each point of Damage. On a 6+, it does not take that Damage.</description>
     </rule>
     <rule id="dced-f2dc-735a-9f6f" name="Corrosive Armaments" hidden="false">
-      <description>A Unit with this Ability adds the Corrosion Keyword to all of its Weapons.</description>
+      <description>Models with this Ability add the Corrosion Keyword to all of their Weapons.</description>
     </rule>
     <rule id="0a32-dd65-f129-a22e" name="Logic Plague Injection" hidden="false">
       <description>Any Vehicle or Drones Unit that suffers a wound from this weapon reduces their leadership, WS, FS, and Mv, by 2 until their next turn.</description>
@@ -266,19 +268,16 @@ This unit cannot be targeted by attacks from Units not within 12&quot; as long a
       <description>This Weapon can be shot as if the Unit is anywhere on the path it moved this turn (i.e. if it moved past an enemy unit and was 3&quot; from it at closest, you can shoot the weapon as if it was at that closest point, assuming it was in range)</description>
     </rule>
     <rule id="eab6-cf5e-1838-2760" name="Thunderous Charge (x)" hidden="false">
-      <description>When a unit with this Ability Charges another, each Squad or Vehicle can immediately make x unarmed close combat attacks (if x is 1, then even if the profile says 2 attacks, they only make 1).</description>
-    </rule>
-    <rule id="1406-e132-d5d1-2c98" name="Precision Fire (x)" hidden="false">
-      <description>When a unit with this ability makes ranged attacks, each attack that rolls a Hit Roll equal or above x+ (i.e 5+) gains the Ignores Cover Keyword. </description>
+      <description>When a Vehicle with this Ability Charges another, it can immediately make x unarmed close combat attacks (if x is 1, then even if the profile says 2 attacks, they only make 1).</description>
     </rule>
     <rule id="eb61-e5c9-a4fe-fae4" name="Lingering Hazard" hidden="false">
-      <description>Once the attack sequence is complete but before any Squads are removed, choose one destroyed Squad. When it is removed, place a marker in its place. For the next d3 rounds, the entire area within the Weapons Incineration(x) value or 3&quot; if no such keyword is present is treated as Difficult Terrain.</description>
+      <description>Once the attack sequence is complete but before any Squads are removed, choose one destroyed Squad. When it is removed, place a marker in its place. For the next d3 rounds, the entire area within 3&quot; is treated as Difficult Terrain.</description>
     </rule>
     <rule id="3b56-e6ff-e898-efb7" name="Corrosion" hidden="false">
       <description>At the end of the Shooting Phase, a unit that suffered a wound due to attacks from one or more Weapons with this ability reduces either its Sv, Ld, or FS and WS characteristics by 1. The attacker decides this.</description>
     </rule>
     <rule id="328c-ce43-90c8-74bc" name="Risky (x)" hidden="false">
-      <description>Every time an Infantry Unit attacks with this Weapon, after the attacks are resolved, roll a d6 for every weapon with this Keyword that was used. If you meet the target, the weapon overheats, and causes a single hit with AP -/-, to the user. No Cover Saves may be taken against this attack. </description>
+      <description>Every time an Infantry Unit attacks with this Weapon, after the attacks are resolved, roll a d6 for every weapon with this Keyword that was used. If you meet the target, the weapon overheats, and causes a single hit with AP -/-, to the user. No Cover Saves may be taken against this attack.</description>
     </rule>
     <rule id="4456-5d7f-c802-2b6f" name="Efficient Operators" hidden="false">
       <description>This Unit can do both a Normal Move and Shooting Attack normally, even if it did an Action that round. If it does, it reduces its FS and WS by 1 for the Round.</description>
@@ -287,13 +286,13 @@ This unit cannot be targeted by attacks from Units not within 12&quot; as long a
       <description>After attacks made with this weapon are resolved, draw a line from each model that had a weapon with this rule that was shot, to the target Unit. Any Squads or Vehicles underneath any line suffer a single hit from that Weapon. </description>
     </rule>
     <rule id="fc90-39c4-c466-f8f2" name="Nanomantic Manipulation" hidden="false">
-      <description>Nanomantic Manipulation: In the Command Phase, this Unit may choose between three effects that last until the end of the Round: 
-- Select one enemy Unit within 12&quot;. That Unit reduces their Mv stat by 2, and cannot Charge this Unit.
+      <description>In the Command Phase, this Unit may choose between three effects that last until the end of the Round: 
+- Select one enemy Unit within 12&quot;. That Unit reduces their Mv by 2, and any Combat Initiative Rolls by 2.
 - Every Friendly Unit within 6&quot; gains +1 to its Cover Saves.
-- This Unit doubles its Mv stat and gains +1 Ws..</description>
+- Models with this Ability double their Mv and gain +1 Ws.</description>
     </rule>
     <rule id="2e08-89c4-09c9-ac8b" name="Overwatch" hidden="false">
-      <description>This Unit gains +2 Ld when making Leadership tests for Reactions and does not take FS penalties when making the Suppressive Fire or Return Fire Reactions. </description>
+      <description>This Unit gains +2 Ld when making Leadership tests for Reactions and models with this Ability do not take FS penalties when making the Suppressive Fire or Return Fire Reactions. </description>
     </rule>
     <rule id="31cd-09ac-2183-d6ca" name="Rout" hidden="false">
       <description>When an Infantry Unit suffers a Wound from this Weapon, it must make a Leadership Test after the Shooting Attack is over. If failed, it Retreats (as described in the Morale Phase rules) 3d3&quot; away from the Attacking Unit.</description>
@@ -302,7 +301,10 @@ This unit cannot be targeted by attacks from Units not within 12&quot; as long a
       <description>When making a Leadership Test for Suppression or Rout, a weapon with this Keyword Reduces that Enemy&apos;s Leadership by x for that roll.</description>
     </rule>
     <rule id="a2ae-06fe-5511-dc5c" name="Support Unit" hidden="false">
-      <description>This unit cannot be targeted by attacks from Units not within 12&quot; as long as it is within 1&quot; of a friendly unit.</description>
+      <description>Models with this Ability may Join a Unit of its own type, like a Command Unit can. </description>
+    </rule>
+    <rule id="1a78-84b6-1f44-8ad2" name="Piercing (x)" hidden="false">
+      <description>A hit roll of x or higher results in that attack improving its AP to 1. Resolve these attacks separately.</description>
     </rule>
   </sharedRules>
 </gameSystem>
