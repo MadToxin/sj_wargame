@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="c1c8-3310-c638-7238" name="SJ wargame" revision="17" battleScribeVersion="2.03" authorName="MadToxin" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="c1c8-3310-c638-7238" name="SJ wargame" revision="18" battleScribeVersion="2.03" authorName="MadToxin" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>SJ Wargame list builder</readme>
   <publications>
     <publication id="53d2-8b59-fd84-65d1" name="Wargame Prototype" shortName="SJ Wargame" publisher="Stellar Journey Wargame Prototype Design Doc" publicationDate="9.11.2024" publisherUrl="https://www.worldanvil.com/w/stellar-journey-madtoxin/a/wargame-prototype-article"/>
@@ -123,8 +123,7 @@ Vehicles have a AV stat, which represents their armour. They also sometimes have
     <categoryEntry id="c897-8acc-3ad3-cca0" name="Command (Sub-Type)" hidden="false">
       <rules>
         <rule id="0cd5-58b4-a217-8716" name="Command (Sub-Type)" hidden="false">
-          <description>This unit leads a Detachment. They have a command range, stated in the unit&apos;s sheet. One HQ must be selected as a Commander. This is the leader of your army, and must take a Commander Trait, chosen from the selected Allegiance&apos;s options, at no cost. Only one HQ can be the Commander, and they can only have one Trait.
-This Unit may join a friendly Unit of the same type. It may join when deploying, or by moving to within 1&quot; of any Model in a Unit. When joined, this Model and the Models in the Unit it joined are considered a single Unit, and so all rules that concern &quot;this Unit&quot; apply to both the Command Unit and the Unit it Joined, and wounds are allocated the same way. Units also move the distance they normally would, but must remain in Cohesion as normal. When making a Leadership Check for the Unit, the Check can be made with any Ld value present in the Unit.</description>
+          <description>This unit leads a Detachment. They have a command range, stated in the unit&apos;s sheet. Any Units within the range are within Command Range. One HQ must be selected as a Commander. This is the leader of your army, and must take a Commander Trait, chosen from the selected Allegiance&apos;s options, at no cost. Only one HQ can be the Commander, and they can only have one Trait.</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -223,7 +222,7 @@ This Unit may join a friendly Unit of the same type. It may join when deploying,
       <description>The hit rolls for this attack may be re-rolled once.</description>
     </rule>
     <rule id="1bc8-4a61-b424-0d67" name="Indirect Fire" hidden="false">
-      <description>This Weapon may be fired even if the firing unit does not see the target. Make sure to declare which Squads or Vehicles do so before firing, if some can see and others not. When doing so, before making attacks, pick a Squad in the target unit. Then, scatter (with the same process as Deep Strike, scattering 3d3&quot;. Then, from that point, measure the same distance as the weapon&apos;s Incineration(x) rule&apos;s value (1&quot; if none listed) in every direction. Do this once, and use the resulting point for all of the same type of Weapon in the Unit. If any Squads of the target unit are within it, the attacks proceed as normal, following all normal rules and keywords except counting Blast(x) with the amount of Squads within the area. Any non-target Units that are within the area, friendly, enemy, or othewise, are hit the same way.</description>
+      <description>This Weapon may be fired even if the firing unit does not see the target. Make sure to declare which Squads or Vehicles do so before firing, if some can see and others not. When doing so, before making attacks, pick a Squad in the target unit. Then, scatter (with the same process as Deep Strike, scattering 4D3&quot;. Then, from that point, measure the same distance as the weapon&apos;s Incineration(x) rule&apos;s value (1&quot; if none listed), subtracted by 2 (to a minimum of 1&quot;) in every direction. Do this once, and use the resulting point for all of the same type of Weapon in the Unit. If any Squads of the target unit are within it, the attacks proceed as normal, following all normal rules and keywords except counting Blast(x) with the amount of Squads within the area. Any non-target Units that are within the area, friendly, enemy, or othewise, are hit the same way.</description>
     </rule>
     <rule id="de72-d220-8c83-4e19" name="One Use" hidden="false">
       <description>This Weapon can only be used once per battle.</description>
@@ -305,6 +304,9 @@ This Unit may join a friendly Unit of the same type. It may join when deploying,
     </rule>
     <rule id="1a78-84b6-1f44-8ad2" name="Piercing (x)" hidden="false">
       <description>A hit roll of x or higher results in that attack improving its AP to 1. Resolve these attacks separately.</description>
+    </rule>
+    <rule id="b2eb-dc59-d7ea-c52c" name="Joined Unit" hidden="false">
+      <description>Some Units may join a friendly Unit of the same type. By default, all Command sub-type Units may do this. A Unit may join another Unit when deploying, or by moving to within default Coherency the Unit. This is called a Joined Unit. When joined, this Model and the Models in the Unit it joined are considered a single Unit, and so all rules that concern &quot;this Unit&quot; apply to both the Command Unit and the Unit it Joined (however, rules that specify &quot;Models in this Unit&quot; or &quot;Models with this [rule]&quot; do not apply to the Joined Unit), and wounds are allocated the same way. Models within move the distance they normally would, and must remain in Cohesion as normal. When making a Leadership Check for the Unit, the Check can be made with any Ld value present in the Unit. When the Unit attacks, FS and WS are used on a model-by-model basis. When being attacked in Close Combat, the WS value of the unit is the majority, rounded up to the higher value.</description>
     </rule>
   </sharedRules>
 </gameSystem>

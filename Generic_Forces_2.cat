@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4192-c0ad-311f-32c8" name="Generic Forces" revision="18" battleScribeVersion="2.03" authorName="MadToxin" authorContact="https://www.worldanvil.com/author/MadToxin" authorUrl="https://www.worldanvil.com/w/stellar-journey-madtoxin/a/wargame-prototype-article" library="false" gameSystemId="c1c8-3310-c638-7238" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4192-c0ad-311f-32c8" name="Generic Forces" revision="18" battleScribeVersion="2.03" authorName="MadToxin" authorContact="https://www.worldanvil.com/author/MadToxin" authorUrl="https://www.worldanvil.com/w/stellar-journey-madtoxin/a/wargame-prototype-article" library="false" gameSystemId="c1c8-3310-c638-7238" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="eeda-0700-45a6-9d5b" name="Line Detachment" hidden="false">
       <categoryLinks>
@@ -1470,18 +1470,18 @@
         </rule>
         <rule id="2c96-c0f8-b50d-e561" name="Wargear of the Thousand Worlds" hidden="false">
           <description>Unique Units:
-Jury-rig Heavy Tank Squadron
-Destroyer Fighters
-Mode Team
+- Jury-rig Heavy Tank Squadron
+- Destroyer Fighters
+- Mode Team
 Unique Wargear:
-Prototypical Exo-Armour: - +10pts per squad, Maximum three Units
-Veteran Sergeant: - +20pts, Troops Only
-Arc-Flash Pistol: - +10pts, Coilpistol replacement option
-Skyshatter Cannon: - +25pts, Vehicle Weapon and Artillery Cannon replacement Option
-HQ Traits:
-Steel-Marshall
-Master of the Legions
-</description>
+- Prototypical Exo-Armour: - +10pts per squad, Armour Choice
+- Veteran Sergeant: - +20pts, Troops Only (Killbot Group excluded)
+- Arc-Flash Pistol: - +10pts, Coilpistol replacement option
+- Skyshatter Cannon: - +25pts, Vehicle Weapon and Artillery Cannon replacement Option
+Commander Traits:
+- Steel-Marshall
+- Master of the Legions
+- Grim Responsibility</description>
         </rule>
       </rules>
       <costs>
@@ -1506,19 +1506,20 @@ Master of the Legions
       </constraints>
       <rules>
         <rule id="e78b-51c4-f69f-da0a" name="The Technology of the Core" hidden="false">
-          <description>Infantry gain +1 FS when they are within 3&quot; of another Infantry Unit. Plasma Cannons and Heavy Plasma Cannons may be taken for 15 points less than their normal price.</description>
+          <description>Units gain +1 FS when shooting at the same enemy Unit another friendly Unit within 3&quot; (If two Units are a Unit and its Joined Unit, this bonus is not gained) has shot in the same Phase. Plasma Cannons and Heavy Plasma Cannons may be taken for 15 points less than their normal price.</description>
         </rule>
         <rule id="0f8c-71cb-e190-73b7" name="Core Engineering" hidden="false">
           <description>Unique Units:
-Mobile Heavy Support Squad
-Executioner AB-FSP
+- Mobile Heavy Support Squad
+- Executioner AB-FSP
 Unique Wargear:
-Plasma Rifle (Weapon) - +10pts, Support Weapon Choice
-Subatmospheric Dispersion Targeting Arrays - +50pts, HQ only
-Nano-Scale Composite Shielding- +60 pts, Three Units maximum
-HQ Traits:
-Veteran of the Long Centurie
-Core-Born</description>
+- Enhanced Power Armour: - +15pts per squad, Armour Choice
+- Plasma Rifle (Weapon) - +10pts, Support Weapon Choice
+- Subatmospheric Dispersion Targeting Arrays - +50pts, HQ only
+- Nano-Scale Composite Shielding- +60 pts, Three Units maximum
+Commander Traits:
+- Veteran of the Long Centurie
+- Core-Born</description>
         </rule>
       </rules>
       <costs>
@@ -1556,7 +1557,7 @@ Core-Born</description>
       <selectionEntryGroups>
         <selectionEntryGroup id="2266-2209-3b2e-7fa6" name="Trucks" hidden="false" collective="false" import="true" defaultSelectionEntryId="1c0d-91cb-59cf-000d">
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="731a-e8be-a8f6-02a7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="731a-e8be-a8f6-02a7" type="min"/>
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="467d-98eb-b539-0f52" type="max"/>
           </constraints>
           <selectionEntries>
@@ -1854,18 +1855,20 @@ Core-Born</description>
       </constraints>
       <rules>
         <rule id="3c7f-fed5-a1a6-8553" name="Legacy of a Warrior Culture" hidden="false">
-          <description>Close Combat Squads gain Line, and all Transport Choices (except Dropship Squadrons) gain +3 Movement. In addition, all Infantry Units gain +1WS and +2Ld when in Close Combat Range, and Command Squad units can take Layered Chain Blade Weapons at no additional cost.</description>
+          <description>Close Combat Squads gain Line, and all Transport Choices (except Dropship Squadrons) gain +3 Movement. In addition, all Infantry Units gain +1WS, and +2Ld when in Close Combat Range. HQ units can take Improved LCBWs at no additional cost.</description>
         </rule>
         <rule id="a393-8782-ccc4-2cdf" name="Cellean Relics" hidden="false">
-          <description>Unique Units: Experimental Close Combat Squadron, Old Cellean Elites
+          <description>Unique Units: 
+- Experimental Close Combat Squadron
+- Old Cellean Elites
 Unique Wargear:
-Obliterax-Class Rifle - +10pts, HQ Only, Support Weapon Choice/Command Squad choice
-Cluster Frag Cannons: - +30pts, non-Aircraft only
-Thunderblast Hammer: - +30pts, Pneumatic Cannon replacement option
-Incineration Rifle: - +25pts, Support Weapon Choice
-HQ Traits:
-Champion of Cellea
-The Resurgent</description>
+- Obliterax-Class Rifle - +10pts, HQ Only, Support Weapon Choice/Command Squad choice
+- Cluster Frag Cannons: - +30pts, non-Aircraft only
+- Thunderblast Hammer: - +30pts, Pneumatic Cannon replacement option
+- Incineration Rifle (Weapon): - +10pts, Support Weapon Choice
+Commander Traits:
+- Champion of Cellea
+- The Resurgent</description>
         </rule>
       </rules>
       <costs>
@@ -5663,9 +5666,6 @@ The Resurgent</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="7724-2c84-7d5c-d749" name="Artillery Battery" hidden="false" collective="false" import="true" type="unit">
-      <infoLinks>
-        <infoLink id="bf66-1389-f3d4-6c00" name="Tracked" hidden="false" targetId="fb8e-2662-6d89-8230" type="rule"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="8a0a-f5c2-0c01-27f3" name="Vehicles" hidden="false" targetId="62ea-a052-d768-3ca1" primary="false"/>
         <categoryLink id="4e1c-42a3-6a15-a489" name="Support Elements" hidden="false" targetId="8adc-f774-8adb-f07d" primary="false"/>
@@ -6004,7 +6004,6 @@ The Resurgent</description>
     </selectionEntry>
     <selectionEntry id="7bdb-d298-6708-c5d4" name="SAM Platforms" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="92cc-2b95-8ebc-6cc8" name="Tracked" hidden="false" targetId="fb8e-2662-6d89-8230" type="rule"/>
         <infoLink id="effc-b152-2f5e-875b" name="PD(x)" hidden="false" targetId="0e08-93ac-d607-9391" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="PD(1)"/>
@@ -6881,17 +6880,19 @@ The Resurgent</description>
           <description>Each detachment (excluding Superheavy) may take one extra Elites choice. When a Unit is in range of an Objective, for every point of damage they are to take, they may roll a d6. On a 6+, that damage is ignored.</description>
         </rule>
         <rule id="2b01-d5e1-4de5-f7d2" name="Rimward Innovations" hidden="false">
-          <description>nique Units: Scavenger Group 
-Eviscerators 
-Sniper Squad
+          <description>Unique Units: 
+- Scavenger Group 
+- Eviscerators 
+- Sniper Squad
 Unique Wargear:
-Etriaris Pattern-Composites: - +50pts
-Revenant Chem-Hurler (Weapon): - +30pts, Heavy Weapon Choice
-Rad-Caster: - +70pts, Maximum one Unit, HQ Only
-Reinforced Communication Lines: - +40pts
-HQ Traits:
-Lord of the Frost
-Master of the Wastes</description>
+- Heavy Armour: - +10pts per Squad, Armour Choice
+- Etriaris Pattern-Composites: - +50pts
+- Revenant Chem-Hurler (Weapon): - +30pts, Heavy Weapon Choice
+- Rad-Caster: - +70pts, Maximum one Unit, HQ Only
+- Reinforced Communication Lines: - +40pts
+Commander Traits:
+- Lord of the Frost
+- Master of the Wastes</description>
         </rule>
       </rules>
       <costs>
@@ -6905,14 +6906,16 @@ Master of the Wastes</description>
         </rule>
         <rule id="8e67-3845-d1cb-0d64" name="Special Purchases" hidden="false">
           <description>Unique Units: 
-PMC Commander
-Bodyguard Formation
+- PMC Commander
+- Bodyguard Formation
 Unique Wargear:
-Machine Signal-Casters - 60pts: One Unit maximum.
-Nanomantic Discipline: - +40pts, HQ Unit Only, One Unit Maximum
-HQ Traits:
-Merchant Lord
-Mental-Linked Loyalty</description>
+- Machine Signal-Casters - 60pts: One Unit maximum.
+- Amprhan-Lock Shield: - 20pts, Pistol Replacement and HAST suit option
+- Nanomantic Discipline: - +40pts, HQ Unit Only, One Unit Maximum
+- High-Density Disruption Arrays: - 60pts, HQ only.
+Commander Traits:
+- Merchant Lord
+- Mental-Linked Loyalty</description>
         </rule>
       </rules>
       <costs>
@@ -9987,15 +9990,16 @@ Mental-Linked Loyalty</description>
         </rule>
         <rule id="dbe8-dd75-f6ac-acc5" name="Esoteric Machine-Tech" hidden="false">
           <description>Unique Units: 
-Logimagi
-Siege Automata
+- Logimagi
+- Siege Automata
 Unique Wargear:
-Nano-Alloy Construction: - +50pts, Vehicle only
-Proteus Neurotoxin Emitter: - +30pts, Vehicle Weapon Choice
-Titan of Steel: - +80pts, Massive Unit Only, Maximum one Unit.
-Structure-Carbon Reinforcement: - +45pts, Infantry Unit Only
-HQ Traits:
-Machinist-Prime</description>
+- Nano-Alloy Construction: - +50pts, Vehicle only
+- Proteus Neurotoxin Emitter: - +30pts, Vehicle Weapon Choice
+- Titan of Steel: - +80pts, Massive Unit Only, Maximum one Unit.
+- Structure-Carbon Reinforcement: - +45pts, Infantry Unit Only
+Commander Traits:
+- Machinist-Prime
+- Terrifying Presence</description>
         </rule>
       </rules>
       <costs>
@@ -11530,7 +11534,7 @@ Machinist-Prime</description>
       <profiles>
         <profile id="a6fe-d087-4623-0cfe" name="Radial Scanner" hidden="false" typeId="6aff-fae8-88fc-a7f0" typeName="Command Wargear">
           <characteristics>
-            <characteristic name="Description" typeId="ff8d-1504-fb82-c241">In the Command Phase, this Unit can choose an enemy Unit. Until the end of the Shooting Phase, all friendly Units make Shooting Attacks at that Unit gain +1 to their FS.
+            <characteristic name="Description" typeId="ff8d-1504-fb82-c241">In the Command Phase, this Unit can choose an enemy Unit. Until the end of the Shooting Phase, all friendly Units that make Shooting Attacks at that Unit gain +1 to their FS for that attack.
 In addition, Once per Round, this Unit may make the Suppressive Fire or Overwatch Fire reactions, ignoring the reaction limit (being able to react despite a unit having reacted, or another unit being able to react after this one, in the same phase).</characteristic>
           </characteristics>
         </profile>
@@ -12303,7 +12307,7 @@ In addition, Once per Round, this Unit may make the Suppressive Fire or Overwatc
               <profiles>
                 <profile id="277f-1d02-986d-a506" name="Machinist-Prime" hidden="false" typeId="7299-d224-fc7e-7593" typeName="Commander Trait">
                   <characteristics>
-                    <characteristic name="Description" typeId="8866-d72c-fd6f-830b">This Unit gains the Repair and SHD(2) Abilities. When it uses Repair, the Unit rolls 5d6, and the roll succeeds on a 5+. It may use Repair and shoot in the same round as well.</characteristic>
+                    <characteristic name="Description" typeId="8866-d72c-fd6f-830b">This Unit&apos;s model gains the Repair and SHD(2) Abilities. It may use Repair on Infantry Units, and when it uses Repair, the Unit rolls 5d6. It may use Repair and shoot in the same round as well.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
