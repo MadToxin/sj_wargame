@@ -252,7 +252,7 @@ Vehicles have a AV stat, which represents their armour. They also sometimes have
       <description>A unit may choose to do an Action to use this ability on a friendly Vehicle within 2&quot;. If it does so, roll a d6 for each Squad or Vehicle with this Ability in the Unit. For each roll of 6, restore 1 HP in the targeted Unit. If restored when all Vehicles are at full HP, place a new Vehicle of the same type into the unit within Cohesion, with 1 HP remaining. This Vehicle is part of the target unit, and behaves as normal. New Vehicles may only be added up to as many as the original number of them in the Unit.</description>
     </rule>
     <rule id="8de0-307b-38db-ffcb" name="Very Heavy" hidden="false">
-      <description>If an Infantry Squad firing this weapon has moved, it shoots this weapon at FS1, regardless of keywords. Vehicles are not affected.</description>
+      <description>An Infantry Squad that has moved this Turn may not fire a Weapon with this Keyword.</description>
     </rule>
     <rule id="95bb-698d-55d1-0096" name="Bodyguard" hidden="false">
       <description>This unit must be taken as an option for an HQ unit. If taken this way, it takes up no unit slot. In addition, when joined by an HQ Unit, it can re-roll hit rolls (Guided weapons instead gain +1 to hit) and every time a Squad in this Unit with this Ability would take Damage, roll a d6 for each point of Damage. On a 6+, it does not take that Damage.</description>

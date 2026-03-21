@@ -493,7 +493,7 @@
                     </modifier>
                   </modifiers>
                   <characteristics>
-                    <characteristic name="Unit Type" typeId="f675-b24b-16d8-b6b7">Infantry, HQ</characteristic>
+                    <characteristic name="Unit Type" typeId="f675-b24b-16d8-b6b7">Infantry, Command</characteristic>
                     <characteristic name="Mv" typeId="673c-5d70-a8e1-bdf7">7</characteristic>
                     <characteristic name="Sv" typeId="b361-03f5-e0f7-ce4e">4+</characteristic>
                     <characteristic name="WS" typeId="0e5d-59f9-2959-d962">4</characteristic>
@@ -828,7 +828,7 @@
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d6cd-3de9-647e-e1e3" type="max"/>
+            <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d6cd-3de9-647e-e1e3" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="4cb0-1f08-0ccb-c86f" name="Subatmospheric Dispersion Targeting Arrays" hidden="false" collective="false" import="true" targetId="889e-1695-7b73-ae28" type="selectionEntry">
@@ -2786,6 +2786,7 @@ Commander Traits:
       </profiles>
       <infoLinks>
         <infoLink id="8be0-2bbf-e5ac-9ff4" name="Indirect Fire" hidden="false" targetId="1bc8-4a61-b424-0d67" type="rule"/>
+        <infoLink id="9bf5-3176-c00f-8072" name="Suppression" hidden="false" targetId="f4af-829f-39d0-e64d" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="10.0"/>
@@ -3191,7 +3192,7 @@ Commander Traits:
       <profiles>
         <profile id="2533-c0bd-5a21-6c68" name="Jetpacks" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
           <characteristics>
-            <characteristic name="Description" typeId="dc90-7f60-c435-a043">When selected to Move, a unit where all models are equipped with this wargear may choose to increase its Mv Value by 6&quot; and gain the Flying Ability for this Round&apos;s Movement and Shooting Phases. For that Round, that Unit, if it is an Infantry Unit, reduces their FS by 1 and may not fire Heavy or Very Heavy Weapons unless they have the Relentless Ability.</characteristic>
+            <characteristic name="Description" typeId="dc90-7f60-c435-a043">When selected to Move, a unit where all models are equipped with this wargear may choose to increase its Mv Value by 6&quot; and gain the Flying Ability for this Round&apos;s Movement and Shooting Phases. For that Round, that Unit, if it is an Infantry Unit, reduces their FS by 1 and may not fire Heavy Weapons unless they have the Relentless Ability.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3349,7 +3350,7 @@ Commander Traits:
                     </modifier>
                   </modifiers>
                   <characteristics>
-                    <characteristic name="Unit Type" typeId="f675-b24b-16d8-b6b7">Infantry, HQ</characteristic>
+                    <characteristic name="Unit Type" typeId="f675-b24b-16d8-b6b7">Infantry, Command</characteristic>
                     <characteristic name="Mv" typeId="673c-5d70-a8e1-bdf7">7</characteristic>
                     <characteristic name="Sv" typeId="b361-03f5-e0f7-ce4e">4+</characteristic>
                     <characteristic name="WS" typeId="0e5d-59f9-2959-d962">4</characteristic>
@@ -3616,7 +3617,7 @@ Commander Traits:
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a955-8802-c1f6-5f1d" type="max"/>
+            <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a955-8802-c1f6-5f1d" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="192f-323b-e0ba-ccb2" name="Subatmospheric Dispersion Targeting Arrays" hidden="false" collective="false" import="true" targetId="889e-1695-7b73-ae28" type="selectionEntry">
@@ -3775,7 +3776,7 @@ Commander Traits:
             </modifier>
           </modifiers>
           <characteristics>
-            <characteristic name="Unit Type" typeId="f675-b24b-16d8-b6b7">Vehicle, HQ</characteristic>
+            <characteristic name="Unit Type" typeId="f675-b24b-16d8-b6b7">Vehicle, Command</characteristic>
             <characteristic name="Mv" typeId="673c-5d70-a8e1-bdf7">12</characteristic>
             <characteristic name="Sv" typeId="b361-03f5-e0f7-ce4e">14</characteristic>
             <characteristic name="WS" typeId="0e5d-59f9-2959-d962">-</characteristic>
@@ -3874,7 +3875,7 @@ Commander Traits:
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1f21-3142-2cf2-e961" type="max"/>
+            <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1f21-3142-2cf2-e961" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="6343-d03b-67f0-ffd7" name="Subatmospheric Dispersion Targeting Arrays" hidden="true" collective="false" import="true" targetId="889e-1695-7b73-ae28" type="selectionEntry">
@@ -5260,7 +5261,7 @@ Commander Traits:
       <selectionEntryGroups>
         <selectionEntryGroup id="ce49-2f53-f13b-10ea" name="HASTs" hidden="false" collective="false" import="true" defaultSelectionEntryId="1407-dc43-c6cc-777a">
           <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8d4-c6b9-8873-e093" type="max"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8d4-c6b9-8873-e093" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="581f-0e09-36b9-8dbe" type="min"/>
           </constraints>
           <selectionEntries>
@@ -5380,6 +5381,7 @@ Commander Traits:
                   <entryLinks>
                     <entryLink id="19c7-557d-f770-29ed" name="Coilrifle" hidden="false" collective="false" import="true" targetId="ef15-e272-754d-8328" type="selectionEntry"/>
                     <entryLink id="33d3-222a-64c7-966e" name="Improved LCBW" hidden="false" collective="false" import="true" targetId="545c-2931-29c5-87e1" type="selectionEntry"/>
+                    <entryLink id="0fb0-db50-448f-afc2" name="Amprham-Lock Shield" hidden="false" collective="false" import="true" targetId="e971-0075-dcc1-ea3d" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="1df6-166e-4567-19e0" name="HAST 2" hidden="false" collective="false" import="true" defaultSelectionEntryId="c66a-99e4-b8ba-4e67">
@@ -5466,6 +5468,7 @@ Commander Traits:
                   <entryLinks>
                     <entryLink id="c66a-99e4-b8ba-4e67" name="Coilrifle" hidden="false" collective="false" import="true" targetId="ef15-e272-754d-8328" type="selectionEntry"/>
                     <entryLink id="b1f4-4269-d811-7145" name="Improved LCBW" hidden="false" collective="false" import="true" targetId="545c-2931-29c5-87e1" type="selectionEntry"/>
+                    <entryLink id="6079-2355-bf50-4c61" name="Amprham-Lock Shield" hidden="false" collective="false" import="true" targetId="e971-0075-dcc1-ea3d" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -5839,6 +5842,7 @@ Commander Traits:
       <categoryLinks>
         <categoryLink id="9bbc-f074-2d7e-82d4" name="Aircraft" hidden="false" targetId="2879-21a4-8d0e-49f4" primary="false"/>
         <categoryLink id="8f11-dd28-8631-7493" name="Support Elements" hidden="false" targetId="8adc-f774-8adb-f07d" primary="false"/>
+        <categoryLink id="7207-ae7c-c5bd-eb41" name="Vehicle" hidden="false" targetId="62ea-a052-d768-3ca1" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="2542-9867-b414-5623" name="Gunship" hidden="false" collective="false" import="true" type="model">
@@ -5868,6 +5872,7 @@ Commander Traits:
           </profiles>
           <categoryLinks>
             <categoryLink id="29d7-318a-4a51-3a28" name="Vehicles" hidden="false" targetId="62ea-a052-d768-3ca1" primary="false"/>
+            <categoryLink id="febd-b878-05aa-383d" name="Aircraft (Sub-Type)" hidden="false" targetId="2879-21a4-8d0e-49f4" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="74be-bcf3-3765-ee89" name="Weapons" hidden="false" collective="false" import="true">
@@ -6197,6 +6202,16 @@ Commander Traits:
                 <entryLink id="7783-3101-9310-5504" name="Mortar" hidden="false" collective="false" import="true" targetId="0663-7c33-6140-9603" type="selectionEntry"/>
                 <entryLink id="8314-bb26-5a86-8492" name="Micromissile Launcher" hidden="false" collective="false" import="true" targetId="bec5-50d2-e4b8-37d9" type="selectionEntry"/>
                 <entryLink id="41d6-0777-26f1-229c" name="Neurotoxin Cannon" hidden="false" collective="false" import="true" targetId="bf64-25a8-de7f-22ed" type="selectionEntry"/>
+                <entryLink id="6062-ceae-9b51-85e4" name="Autocannon" hidden="false" collective="false" import="true" targetId="b38a-1168-fa5a-e094" type="selectionEntry"/>
+                <entryLink id="e1e4-b7cc-7c1a-aee8" name="Revenant Chem-Hurler" hidden="true" collective="false" import="true" targetId="91e4-c766-7b27-bdae" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6680-03aa-fbff-c208" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -6491,17 +6506,6 @@ Commander Traits:
               <constraints>
                 <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d33a-85ff-e672-ffc8" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="72f0-cf8e-664d-b385" name="Heavy Killbot" hidden="false" targetId="2b45-a39a-0e22-5e31" type="profile">
-                  <modifiers>
-                    <modifier type="increment" field="7d36-54ca-0214-fea2" value="1">
-                      <conditions>
-                        <condition field="selections" scope="ba9f-853e-c15e-9d4c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9fa1-082a-4a67-4920" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="9245-7bb4-2f38-a0c7" name="Heavy Weapons Choice" hidden="false" collective="false" import="true">
                   <constraints>
@@ -6533,6 +6537,26 @@ Commander Traits:
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cff-69ce-9d2e-91c6" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c9d-65dd-7f5d-5d85" type="max"/>
                   </constraints>
+                  <profiles>
+                    <profile id="11c5-8186-b399-9383" name="Heavy Killbot" hidden="false" typeId="b3d8-25bf-3513-55f7" typeName="Vehicle">
+                      <modifiers>
+                        <modifier type="increment" field="7d36-54ca-0214-fea2" value="1">
+                          <conditions>
+                            <condition field="selections" scope="ba9f-853e-c15e-9d4c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9fa1-082a-4a67-4920" type="equalTo"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <characteristics>
+                        <characteristic name="Unit Type" typeId="1a20-e2e4-fd8b-bde3">Vehicle</characteristic>
+                        <characteristic name="Mv" typeId="d4ef-5bd1-fbdc-6395">10</characteristic>
+                        <characteristic name="AV" typeId="7d36-54ca-0214-fea2">11</characteristic>
+                        <characteristic name="WS" typeId="75c8-dfe4-77ef-6cf8">4</characteristic>
+                        <characteristic name="FS" typeId="a907-0ee6-2b58-f103">2</characteristic>
+                        <characteristic name="HP" typeId="38f2-690b-8326-2263">1</characteristic>
+                        <characteristic name="Ld" typeId="1da7-7ee1-a03b-cb95">5</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                 </entryLink>
               </entryLinks>
               <costs>
@@ -7134,6 +7158,7 @@ Commander Traits:
           </constraints>
         </entryLink>
         <entryLink id="2e5a-dff2-9bcb-0323" name="Unique Wargear" hidden="false" collective="false" import="true" targetId="4e44-c416-c9c7-d9ac" type="selectionEntryGroup"/>
+        <entryLink id="448b-25c6-630b-aea2" name="Transport Selection" hidden="false" collective="false" import="true" targetId="10fa-0d74-0ce0-48d8" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="0.0"/>
@@ -7176,7 +7201,7 @@ Commander Traits:
       <selectionEntries>
         <selectionEntry id="bf68-a120-0bf4-34ec" name="Executioner" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f9e-b318-b35e-f0d8" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f9e-b318-b35e-f0d8" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a644-f479-ba87-4d55" type="min"/>
           </constraints>
           <profiles>
@@ -7274,6 +7299,7 @@ Commander Traits:
             <modifier type="set" field="name" value="Thunderous Charge (1)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="990b-5f7e-8644-db97" name="Close Combat Specialists" hidden="false" targetId="d83b-8850-6009-1008" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="81e9-5438-5708-49d3" name="Elites" hidden="false" targetId="e144-251f-52ad-6a90" primary="false"/>
@@ -7371,6 +7397,35 @@ Commander Traits:
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="089b-4ca0-89cf-b906" name="Heavy Weapons" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="a465-9cad-406e-5e8c" name="Pneumatic Cannon" hidden="false" collective="false" import="true" targetId="4916-1f67-3d22-cecb" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="b5c9-6a5d-5ca8-0464" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5c9-6a5d-5ca8-0464" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="a87f-6dab-b2ab-3115" name="Thunderblast Hammer" hidden="false" collective="false" import="true" targetId="52c3-d00c-653c-941a" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="d80a-08f8-8bcc-cef9" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" field="0d75-bf50-2c92-2db9" value="20.0"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d80a-08f8-8bcc-cef9" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="bcb1-da27-5fcc-a6a4" name="Layered Chain Blade Weapon" hidden="false" collective="false" import="true" targetId="127d-46ee-76ee-d47b" type="selectionEntry">
@@ -7380,18 +7435,6 @@ Commander Traits:
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83e1-902d-3d30-2ae8" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6efe-a213-7316-bb2c" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="0a19-2627-dec3-1db5" name="Pneumatic Cannon" hidden="false" collective="false" import="true" targetId="4916-1f67-3d22-cecb" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="6c25-bbb7-4c25-4cf5" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c25-bbb7-4c25-4cf5" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="355d-c194-abd5-4042" name="Coilrifle" hidden="false" collective="false" import="true" targetId="ef15-e272-754d-8328" type="selectionEntry">
@@ -7891,7 +7934,7 @@ Commander Traits:
                 </modifier>
               </modifiers>
               <characteristics>
-                <characteristic name="Unit Type" typeId="f675-b24b-16d8-b6b7">Infantry, HQ</characteristic>
+                <characteristic name="Unit Type" typeId="f675-b24b-16d8-b6b7">Infantry, Command</characteristic>
                 <characteristic name="Mv" typeId="673c-5d70-a8e1-bdf7">8</characteristic>
                 <characteristic name="Sv" typeId="b361-03f5-e0f7-ce4e">3+</characteristic>
                 <characteristic name="WS" typeId="0e5d-59f9-2959-d962">5</characteristic>
@@ -7966,7 +8009,7 @@ Commander Traits:
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2733-2850-f5d1-f946" type="max"/>
+            <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2733-2850-f5d1-f946" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="58fd-f5a3-7579-62e0" name="Subatmospheric Dispersion Targeting Arrays" hidden="false" collective="false" import="true" targetId="889e-1695-7b73-ae28" type="selectionEntry">
@@ -8517,7 +8560,7 @@ Commander Traits:
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3d63-6a45-dfbd-7d9c" type="max"/>
+            <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3d63-6a45-dfbd-7d9c" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="64ad-d140-dc85-abe3" name="Nano-Scale Composite Shielding" hidden="false" collective="false" import="true" targetId="6f02-a09c-c354-3d15" type="selectionEntry">
@@ -8585,6 +8628,23 @@ Commander Traits:
         </entryLink>
         <entryLink id="08e0-623d-490a-c898" name="Transport Selection" hidden="false" collective="false" import="true" targetId="10fa-0d74-0ce0-48d8" type="selectionEntryGroup"/>
         <entryLink id="e67d-82e1-055d-bb24" name="Unique Wargear" hidden="false" collective="false" import="true" targetId="4e44-c416-c9c7-d9ac" type="selectionEntryGroup"/>
+        <entryLink id="4fee-a85b-93c3-a26d" name="Orbital Insertion Backpack" hidden="true" collective="false" import="true" targetId="27ea-7ed8-f536-7e0b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="6b7e-5b01-97b6-bd31" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="61a2-2e63-edd7-44ee" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="0d75-bf50-2c92-2db9" value="15.0">
+              <repeats>
+                <repeat field="selections" scope="6b7e-5b01-97b6-bd31" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d17-b7e4-3bfa-7555" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cc5-017d-4d6d-ead6" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="0.0"/>
@@ -8891,6 +8951,7 @@ Commander Traits:
           </constraints>
         </entryLink>
         <entryLink id="fc44-e1d6-d779-de74" name="Unique Wargear" hidden="false" collective="false" import="true" targetId="4e44-c416-c9c7-d9ac" type="selectionEntryGroup"/>
+        <entryLink id="4c5a-5c1e-bfd3-1f3a" name="Transport Selection" hidden="false" collective="false" import="true" targetId="10fa-0d74-0ce0-48d8" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="0.0"/>
@@ -9162,7 +9223,7 @@ Commander Traits:
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba05-c7cc-b4e7-dfbb" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba05-c7cc-b4e7-dfbb" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e26-189e-7664-e5cd" type="max"/>
           </constraints>
         </entryLink>
@@ -10186,6 +10247,23 @@ Commander Traits:
               <costs>
                 <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="25.0"/>
               </costs>
+            </entryLink>
+            <entryLink id="f223-8116-0237-2d45" name="Orbital Insertion Backpack" hidden="true" collective="false" import="true" targetId="27ea-7ed8-f536-7e0b" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="9477-51ef-5453-c596" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20f9-d4dc-5a4a-60fb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="0d75-bf50-2c92-2db9" value="15.0">
+                  <repeats>
+                    <repeat field="selections" scope="9477-51ef-5453-c596" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1087-5c10-4be5-76f3" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d701-461e-0ba1-eacd" type="max"/>
+              </constraints>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -11477,6 +11555,7 @@ Commander Traits:
             <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e43d-5545-c3a7-69fd" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="410e-d397-e04d-a79f" name="Transport Selection" hidden="false" collective="false" import="true" targetId="10fa-0d74-0ce0-48d8" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="0.0"/>
@@ -11559,7 +11638,7 @@ In addition, Once per Round, this Unit may make the Suppressive Fire or Overwatc
       <profiles>
         <profile id="0e6a-ab95-40e5-c2f6" name="Targeting Arrays" hidden="false" typeId="6aff-fae8-88fc-a7f0" typeName="Command Wargear">
           <characteristics>
-            <characteristic name="Description" typeId="ff8d-1504-fb82-c241">In the Command Phase, this Unit can activate this Wargear. Until the end of the Shooting Phase, this Unit can ignore any modifiers to its FS (excluding penalties from Reactions).</characteristic>
+            <characteristic name="Description" typeId="ff8d-1504-fb82-c241">In the Command Phase, this Unit can improve the FS of a friendly Unit within 6&quot; by 1 until the end of the Round.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -11813,6 +11892,7 @@ In addition, Once per Round, this Unit may make the Suppressive Fire or Overwatc
           </constraints>
         </entryLink>
         <entryLink id="1b9b-d0cb-5f7a-e9cb" name="Unique Wargear" hidden="false" collective="false" import="true" targetId="4e44-c416-c9c7-d9ac" type="selectionEntryGroup"/>
+        <entryLink id="d562-7f1d-7177-8c2e" name="Transport Selection" hidden="false" collective="false" import="true" targetId="10fa-0d74-0ce0-48d8" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="0.0"/>
@@ -12372,9 +12452,14 @@ In addition, Once per Round, this Unit may make the Suppressive Fire or Overwatc
         <entryLink id="84b8-9ebd-c776-e80a" name="Cluster Frag Cannons" hidden="true" collective="false" import="true" targetId="7e8c-b73f-14ec-d2cb" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1c7-4be0-a950-1acf" type="equalTo"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1c7-4be0-a950-1acf" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2879-21a4-8d0e-49f4" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
