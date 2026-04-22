@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4192-c0ad-311f-32c8" name="Generic Forces" revision="18" battleScribeVersion="2.03" authorName="MadToxin" authorContact="https://www.worldanvil.com/author/MadToxin" authorUrl="https://www.worldanvil.com/w/stellar-journey-madtoxin/a/wargame-prototype-article" library="false" gameSystemId="c1c8-3310-c638-7238" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4192-c0ad-311f-32c8" name="Generic Forces" revision="19" battleScribeVersion="2.03" authorName="MadToxin" authorContact="https://www.worldanvil.com/author/MadToxin" authorUrl="https://www.worldanvil.com/w/stellar-journey-madtoxin/a/wargame-prototype-article" library="false" gameSystemId="c1c8-3310-c638-7238" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="eeda-0700-45a6-9d5b" name="Line Detachment" hidden="false">
       <categoryLinks>
@@ -253,7 +253,7 @@
         <categoryLink id="cfba-91c5-20af-c42a" name="Elites" hidden="false" targetId="e144-251f-52ad-6a90" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="088b-0261-639a-ad34" name="Artillery Group" hidden="false" collective="false" import="true" targetId="7724-2c84-7d5c-d749" type="selectionEntry">
+    <entryLink id="088b-0261-639a-ad34" name="Artillery Battery" hidden="false" collective="false" import="true" targetId="7724-2c84-7d5c-d749" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="daca-a32e-e5c1-7677" name="New CategoryLink" hidden="false" targetId="8adc-f774-8adb-f07d" primary="true"/>
       </categoryLinks>
@@ -394,6 +394,11 @@
         <categoryLink id="a0a5-5496-4318-73a6" name="New CategoryLink" hidden="false" targetId="8adc-f774-8adb-f07d" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="3b9a-8808-7f48-665c" name="Scout Fliers" hidden="false" collective="false" import="true" targetId="0c87-97e9-e182-68ad" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="8c2f-1b58-5400-6090" name="New CategoryLink" hidden="false" targetId="e144-251f-52ad-6a90" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="b4e0-8d0a-4c03-2c15" name="Captain and Command Squad" publicationId="53d2-8b59-fd84-65d1" hidden="false" collective="false" import="true" type="unit">
@@ -441,11 +446,6 @@
                         <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1c7-4be0-a950-1acf" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="673c-5d70-a8e1-bdf7" value="9">
-                      <conditions>
-                        <condition field="selections" scope="b4e0-8d0a-4c03-2c15" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8312-e007-f07a-7808" type="equalTo"/>
-                      </conditions>
-                    </modifier>
                     <modifier type="set" field="b361-03f5-e0f7-ce4e" value="5+">
                       <conditions>
                         <condition field="selections" scope="b4e0-8d0a-4c03-2c15" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3b43-1008-69d3-4e56" type="equalTo"/>
@@ -471,11 +471,6 @@
                         <condition field="selections" scope="b4e0-8d0a-4c03-2c15" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16ea-d4ec-8797-6681" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="673c-5d70-a8e1-bdf7" value="5">
-                      <conditions>
-                        <condition field="selections" scope="b4e0-8d0a-4c03-2c15" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16ea-d4ec-8797-6681" type="equalTo"/>
-                      </conditions>
-                    </modifier>
                     <modifier type="increment" field="0e5d-59f9-2959-d962" value="1">
                       <conditions>
                         <condition field="selections" scope="b4e0-8d0a-4c03-2c15" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4893-4f19-42d8-c649" type="equalTo"/>
@@ -491,10 +486,15 @@
                         <condition field="selections" scope="b4e0-8d0a-4c03-2c15" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="29f3-74d2-a6f8-4d93" type="equalTo"/>
                       </conditions>
                     </modifier>
+                    <modifier type="set" field="673c-5d70-a8e1-bdf7" value="5">
+                      <conditions>
+                        <condition field="selections" scope="b4e0-8d0a-4c03-2c15" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1478-1ade-449f-f403" type="equalTo"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="f675-b24b-16d8-b6b7">Infantry, Command</characteristic>
-                    <characteristic name="Mv" typeId="673c-5d70-a8e1-bdf7">7</characteristic>
+                    <characteristic name="Mv" typeId="673c-5d70-a8e1-bdf7">4</characteristic>
                     <characteristic name="Sv" typeId="b361-03f5-e0f7-ce4e">4+</characteristic>
                     <characteristic name="WS" typeId="0e5d-59f9-2959-d962">4</characteristic>
                     <characteristic name="FS" typeId="7ef2-dead-7cf6-5b23">4</characteristic>
@@ -956,6 +956,7 @@
         </entryLink>
         <entryLink id="762a-3533-b998-09d2" name="Commander" hidden="false" collective="false" import="true" targetId="6da5-d7f3-3808-678c" type="selectionEntryGroup"/>
         <entryLink id="b43d-77ce-1c76-8486" name="Unique Wargear" hidden="false" collective="false" import="true" targetId="4e44-c416-c9c7-d9ac" type="selectionEntryGroup"/>
+        <entryLink id="c935-4cae-9cde-b08e" name="Transport Selection" hidden="false" collective="false" import="true" targetId="10fa-0d74-0ce0-48d8" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="0.0"/>
@@ -965,7 +966,7 @@
       <profiles>
         <profile id="9c79-dfe3-eac6-05ba" name="Railgun" page="" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">24&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">12&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">1</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">2/8</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">6</characteristic>
@@ -1023,11 +1024,6 @@
                         <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="18a1-58ab-85c1-9bbc" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="5">
-                      <conditions>
-                        <condition field="selections" scope="b471-1f31-cc31-6e9f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e8-ac5b-b8ab-2990" type="equalTo"/>
-                      </conditions>
-                    </modifier>
                     <modifier type="set" field="0f78-b21c-a7c1-8fc6" value="3+">
                       <conditions>
                         <condition field="selections" scope="b471-1f31-cc31-6e9f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e8-ac5b-b8ab-2990" type="equalTo"/>
@@ -1038,14 +1034,9 @@
                         <condition field="selections" scope="b471-1f31-cc31-6e9f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="143e-509e-0c44-f74b" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="9">
+                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="5">
                       <conditions>
                         <condition field="selections" scope="b471-1f31-cc31-6e9f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7864-381a-ac9f-dcf2" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="6">
-                      <conditions>
-                        <condition field="selections" scope="b471-1f31-cc31-6e9f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="143e-509e-0c44-f74b" type="equalTo"/>
                       </conditions>
                     </modifier>
                     <modifier type="increment" field="4151-68d2-a08d-d1c8" value="1">
@@ -1056,7 +1047,7 @@
                   </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="e935-9a84-4b80-06e6">Infantry, Line</characteristic>
-                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">7</characteristic>
+                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">4</characteristic>
                     <characteristic name="Sv" typeId="0f78-b21c-a7c1-8fc6">4+</characteristic>
                     <characteristic name="WS" typeId="5278-8770-e2e8-da31">4</characteristic>
                     <characteristic name="FS" typeId="439d-645b-d6e0-46b8">3</characteristic>
@@ -1093,11 +1084,6 @@
                         <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="18a1-58ab-85c1-9bbc" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="5">
-                      <conditions>
-                        <condition field="selections" scope="b471-1f31-cc31-6e9f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e8-ac5b-b8ab-2990" type="equalTo"/>
-                      </conditions>
-                    </modifier>
                     <modifier type="set" field="0f78-b21c-a7c1-8fc6" value="3+">
                       <conditions>
                         <condition field="selections" scope="b471-1f31-cc31-6e9f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e8-ac5b-b8ab-2990" type="equalTo"/>
@@ -1108,14 +1094,9 @@
                         <condition field="selections" scope="b471-1f31-cc31-6e9f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="143e-509e-0c44-f74b" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="9">
+                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="5">
                       <conditions>
                         <condition field="selections" scope="b471-1f31-cc31-6e9f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7864-381a-ac9f-dcf2" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="6">
-                      <conditions>
-                        <condition field="selections" scope="b471-1f31-cc31-6e9f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="143e-509e-0c44-f74b" type="equalTo"/>
                       </conditions>
                     </modifier>
                     <modifier type="increment" field="4151-68d2-a08d-d1c8" value="1">
@@ -1126,7 +1107,7 @@
                   </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="e935-9a84-4b80-06e6">Infantry, Line</characteristic>
-                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">7</characteristic>
+                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">4</characteristic>
                     <characteristic name="Sv" typeId="0f78-b21c-a7c1-8fc6">4+</characteristic>
                     <characteristic name="WS" typeId="5278-8770-e2e8-da31">4</characteristic>
                     <characteristic name="FS" typeId="439d-645b-d6e0-46b8">3</characteristic>
@@ -1174,11 +1155,6 @@
                         <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="18a1-58ab-85c1-9bbc" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="5">
-                      <conditions>
-                        <condition field="selections" scope="b471-1f31-cc31-6e9f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e8-ac5b-b8ab-2990" type="equalTo"/>
-                      </conditions>
-                    </modifier>
                     <modifier type="set" field="0f78-b21c-a7c1-8fc6" value="3+">
                       <conditions>
                         <condition field="selections" scope="b471-1f31-cc31-6e9f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="46e8-ac5b-b8ab-2990" type="equalTo"/>
@@ -1189,14 +1165,9 @@
                         <condition field="selections" scope="b471-1f31-cc31-6e9f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="143e-509e-0c44-f74b" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="9">
+                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="5">
                       <conditions>
                         <condition field="selections" scope="b471-1f31-cc31-6e9f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7864-381a-ac9f-dcf2" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="6">
-                      <conditions>
-                        <condition field="selections" scope="b471-1f31-cc31-6e9f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="143e-509e-0c44-f74b" type="equalTo"/>
                       </conditions>
                     </modifier>
                     <modifier type="increment" field="4151-68d2-a08d-d1c8" value="1">
@@ -1207,7 +1178,7 @@
                   </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="e935-9a84-4b80-06e6">Infantry, Line</characteristic>
-                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">7</characteristic>
+                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">4</characteristic>
                     <characteristic name="Sv" typeId="0f78-b21c-a7c1-8fc6">4+</characteristic>
                     <characteristic name="WS" typeId="5278-8770-e2e8-da31">4</characteristic>
                     <characteristic name="FS" typeId="439d-645b-d6e0-46b8">3</characteristic>
@@ -1400,7 +1371,7 @@
       <profiles>
         <profile id="e8db-19bc-0c78-f5ae" name="Coilrifle" page="" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">12&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">6&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">1</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">6/3</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">5</characteristic>
@@ -1416,7 +1387,7 @@
       <profiles>
         <profile id="6898-3667-e45c-6cad" name="Power Armour" page="" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
           <characteristics>
-            <characteristic name="Description" typeId="dc90-7f60-c435-a043">Confers a 4+ Save and +1 Mv.</characteristic>
+            <characteristic name="Description" typeId="dc90-7f60-c435-a043">Confers a 4+ Save.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1428,7 +1399,7 @@
       <profiles>
         <profile id="58b6-2fa4-3d5b-1a84" name="Machine Gun" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">18&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">12&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">2</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">3/5</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">5</characteristic>
@@ -1647,11 +1618,6 @@ Commander Traits:
           <profiles>
             <profile id="2eeb-fdd6-bac0-9e9c" name="Heavy Weapon Squad" hidden="false" typeId="0954-3b9f-8020-7034" typeName="Infantry">
               <modifiers>
-                <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="7">
-                  <conditions>
-                    <condition field="selections" scope="44bc-3165-b48d-5993" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7889-eb8b-9c07-a8f5" type="equalTo"/>
-                  </conditions>
-                </modifier>
                 <modifier type="set" field="0f78-b21c-a7c1-8fc6" value="4+">
                   <conditions>
                     <condition field="selections" scope="44bc-3165-b48d-5993" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7889-eb8b-9c07-a8f5" type="equalTo"/>
@@ -1672,14 +1638,9 @@ Commander Traits:
                     <condition field="selections" scope="44bc-3165-b48d-5993" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bf36-5cc6-ebf1-1359" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="9">
-                  <conditions>
-                    <condition field="selections" scope="44bc-3165-b48d-5993" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3fc3-155f-451f-cceb" type="equalTo"/>
-                  </conditions>
-                </modifier>
                 <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="5">
                   <conditions>
-                    <condition field="selections" scope="44bc-3165-b48d-5993" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="813d-5c86-f0f3-a92d" type="equalTo"/>
+                    <condition field="selections" scope="44bc-3165-b48d-5993" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3fc3-155f-451f-cceb" type="equalTo"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" field="0f78-b21c-a7c1-8fc6" value="4+">
@@ -1695,7 +1656,7 @@ Commander Traits:
               </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="e935-9a84-4b80-06e6">Infantry</characteristic>
-                <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">6</characteristic>
+                <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">4</characteristic>
                 <characteristic name="Sv" typeId="0f78-b21c-a7c1-8fc6">5+</characteristic>
                 <characteristic name="WS" typeId="5278-8770-e2e8-da31">3</characteristic>
                 <characteristic name="FS" typeId="439d-645b-d6e0-46b8">2</characteristic>
@@ -1918,11 +1879,6 @@ Commander Traits:
                         <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1c7-4be0-a950-1acf" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="7">
-                      <conditions>
-                        <condition field="selections" scope="c141-4181-69cb-c180" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82b6-94ef-450c-dcd2" type="equalTo"/>
-                      </conditions>
-                    </modifier>
                     <modifier type="set" field="0f78-b21c-a7c1-8fc6" value="3+">
                       <conditions>
                         <condition field="selections" scope="c141-4181-69cb-c180" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e81e-184e-aa2f-f368" type="equalTo"/>
@@ -1943,20 +1899,15 @@ Commander Traits:
                         <condition field="selections" scope="c141-4181-69cb-c180" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="563f-d3ab-dfb0-b81d" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="9">
-                      <conditions>
-                        <condition field="selections" scope="c141-4181-69cb-c180" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="563f-d3ab-dfb0-b81d" type="equalTo"/>
-                      </conditions>
-                    </modifier>
                     <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="5">
                       <conditions>
-                        <condition field="selections" scope="c141-4181-69cb-c180" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e81e-184e-aa2f-f368" type="equalTo"/>
+                        <condition field="selections" scope="c141-4181-69cb-c180" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="563f-d3ab-dfb0-b81d" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="e935-9a84-4b80-06e6">Infantry</characteristic>
-                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">6</characteristic>
+                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">4</characteristic>
                     <characteristic name="Sv" typeId="0f78-b21c-a7c1-8fc6">5+</characteristic>
                     <characteristic name="WS" typeId="5278-8770-e2e8-da31">4</characteristic>
                     <characteristic name="FS" typeId="439d-645b-d6e0-46b8">2</characteristic>
@@ -1998,11 +1949,6 @@ Commander Traits:
                         <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1c7-4be0-a950-1acf" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="7">
-                      <conditions>
-                        <condition field="selections" scope="c141-4181-69cb-c180" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82b6-94ef-450c-dcd2" type="equalTo"/>
-                      </conditions>
-                    </modifier>
                     <modifier type="set" field="0f78-b21c-a7c1-8fc6" value="3+">
                       <conditions>
                         <condition field="selections" scope="c141-4181-69cb-c180" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e81e-184e-aa2f-f368" type="equalTo"/>
@@ -2023,20 +1969,15 @@ Commander Traits:
                         <condition field="selections" scope="c141-4181-69cb-c180" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="563f-d3ab-dfb0-b81d" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="9">
-                      <conditions>
-                        <condition field="selections" scope="c141-4181-69cb-c180" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="563f-d3ab-dfb0-b81d" type="equalTo"/>
-                      </conditions>
-                    </modifier>
                     <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="5">
                       <conditions>
-                        <condition field="selections" scope="c141-4181-69cb-c180" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e81e-184e-aa2f-f368" type="equalTo"/>
+                        <condition field="selections" scope="c141-4181-69cb-c180" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="563f-d3ab-dfb0-b81d" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="e935-9a84-4b80-06e6">Infantry</characteristic>
-                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">6</characteristic>
+                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">4</characteristic>
                     <characteristic name="Sv" typeId="0f78-b21c-a7c1-8fc6">5+</characteristic>
                     <characteristic name="WS" typeId="5278-8770-e2e8-da31">4</characteristic>
                     <characteristic name="FS" typeId="439d-645b-d6e0-46b8">2</characteristic>
@@ -2094,11 +2035,6 @@ Commander Traits:
                         <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1c7-4be0-a950-1acf" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="7">
-                      <conditions>
-                        <condition field="selections" scope="c141-4181-69cb-c180" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82b6-94ef-450c-dcd2" type="equalTo"/>
-                      </conditions>
-                    </modifier>
                     <modifier type="set" field="0f78-b21c-a7c1-8fc6" value="3+">
                       <conditions>
                         <condition field="selections" scope="c141-4181-69cb-c180" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e81e-184e-aa2f-f368" type="equalTo"/>
@@ -2119,20 +2055,15 @@ Commander Traits:
                         <condition field="selections" scope="c141-4181-69cb-c180" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="563f-d3ab-dfb0-b81d" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="9">
-                      <conditions>
-                        <condition field="selections" scope="c141-4181-69cb-c180" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="563f-d3ab-dfb0-b81d" type="equalTo"/>
-                      </conditions>
-                    </modifier>
                     <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="5">
                       <conditions>
-                        <condition field="selections" scope="c141-4181-69cb-c180" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e81e-184e-aa2f-f368" type="equalTo"/>
+                        <condition field="selections" scope="c141-4181-69cb-c180" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="563f-d3ab-dfb0-b81d" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="e935-9a84-4b80-06e6">Infantry</characteristic>
-                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">6</characteristic>
+                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">4</characteristic>
                     <characteristic name="Sv" typeId="0f78-b21c-a7c1-8fc6">5+</characteristic>
                     <characteristic name="WS" typeId="5278-8770-e2e8-da31">4</characteristic>
                     <characteristic name="FS" typeId="439d-645b-d6e0-46b8">2</characteristic>
@@ -2182,11 +2113,6 @@ Commander Traits:
                         <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1c7-4be0-a950-1acf" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="7">
-                      <conditions>
-                        <condition field="selections" scope="c141-4181-69cb-c180" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82b6-94ef-450c-dcd2" type="equalTo"/>
-                      </conditions>
-                    </modifier>
                     <modifier type="set" field="0f78-b21c-a7c1-8fc6" value="3+">
                       <conditions>
                         <condition field="selections" scope="c141-4181-69cb-c180" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e81e-184e-aa2f-f368" type="equalTo"/>
@@ -2207,20 +2133,15 @@ Commander Traits:
                         <condition field="selections" scope="c141-4181-69cb-c180" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="563f-d3ab-dfb0-b81d" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="9">
-                      <conditions>
-                        <condition field="selections" scope="c141-4181-69cb-c180" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="563f-d3ab-dfb0-b81d" type="equalTo"/>
-                      </conditions>
-                    </modifier>
                     <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="5">
                       <conditions>
-                        <condition field="selections" scope="c141-4181-69cb-c180" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e81e-184e-aa2f-f368" type="equalTo"/>
+                        <condition field="selections" scope="c141-4181-69cb-c180" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="563f-d3ab-dfb0-b81d" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="e935-9a84-4b80-06e6">Infantry</characteristic>
-                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">6</characteristic>
+                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">4</characteristic>
                     <characteristic name="Sv" typeId="0f78-b21c-a7c1-8fc6">5+</characteristic>
                     <characteristic name="WS" typeId="5278-8770-e2e8-da31">4</characteristic>
                     <characteristic name="FS" typeId="439d-645b-d6e0-46b8">2</characteristic>
@@ -2270,11 +2191,6 @@ Commander Traits:
                         <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1c7-4be0-a950-1acf" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="7">
-                      <conditions>
-                        <condition field="selections" scope="c141-4181-69cb-c180" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="82b6-94ef-450c-dcd2" type="equalTo"/>
-                      </conditions>
-                    </modifier>
                     <modifier type="set" field="0f78-b21c-a7c1-8fc6" value="3+">
                       <conditions>
                         <condition field="selections" scope="c141-4181-69cb-c180" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e81e-184e-aa2f-f368" type="equalTo"/>
@@ -2295,20 +2211,15 @@ Commander Traits:
                         <condition field="selections" scope="c141-4181-69cb-c180" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="563f-d3ab-dfb0-b81d" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="9">
-                      <conditions>
-                        <condition field="selections" scope="c141-4181-69cb-c180" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="563f-d3ab-dfb0-b81d" type="equalTo"/>
-                      </conditions>
-                    </modifier>
                     <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="5">
                       <conditions>
-                        <condition field="selections" scope="c141-4181-69cb-c180" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e81e-184e-aa2f-f368" type="equalTo"/>
+                        <condition field="selections" scope="c141-4181-69cb-c180" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="563f-d3ab-dfb0-b81d" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="e935-9a84-4b80-06e6">Infantry</characteristic>
-                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">6</characteristic>
+                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">4</characteristic>
                     <characteristic name="Sv" typeId="0f78-b21c-a7c1-8fc6">5+</characteristic>
                     <characteristic name="WS" typeId="5278-8770-e2e8-da31">4</characteristic>
                     <characteristic name="FS" typeId="439d-645b-d6e0-46b8">2</characteristic>
@@ -2475,7 +2386,7 @@ Commander Traits:
           <characteristics>
             <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">-</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">1</characteristic>
-            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">2/9</characteristic>
+            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">2/7</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">-</characteristic>
             <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Melee, Stun</characteristic>
           </characteristics>
@@ -2493,9 +2404,9 @@ Commander Traits:
       <profiles>
         <profile id="0f6c-7da5-7d03-8d06" name="Coilpistol" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">6&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">2&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">1</characteristic>
-            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">6/2</characteristic>
+            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">-/-</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">6</characteristic>
             <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Pistol</characteristic>
           </characteristics>
@@ -2512,7 +2423,7 @@ Commander Traits:
       <profiles>
         <profile id="584b-bfcc-e350-4b2b" name="Missile Launcher" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">36&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">24&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">1</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">4/8</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">4</characteristic>
@@ -2531,7 +2442,7 @@ Commander Traits:
       <profiles>
         <profile id="b696-dfb2-6c58-4ce2" name="Heavy Coilrifle" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">18&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">10&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">2</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">5/4</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">5</characteristic>
@@ -2566,11 +2477,6 @@ Commander Traits:
           <profiles>
             <profile id="73a2-49ca-e887-2a2c" name="Support Weapon Squad" hidden="false" typeId="0954-3b9f-8020-7034" typeName="Infantry">
               <modifiers>
-                <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="7">
-                  <conditions>
-                    <condition field="selections" scope="a838-7056-5d14-938f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c8df-b2b9-05f6-1523" type="equalTo"/>
-                  </conditions>
-                </modifier>
                 <modifier type="set" field="0f78-b21c-a7c1-8fc6" value="4+">
                   <conditions>
                     <condition field="selections" scope="a838-7056-5d14-938f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c8df-b2b9-05f6-1523" type="equalTo"/>
@@ -2603,18 +2509,13 @@ Commander Traits:
                 </modifier>
                 <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="5">
                   <conditions>
-                    <condition field="selections" scope="a838-7056-5d14-938f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20cf-a1df-291b-9520" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="9">
-                  <conditions>
                     <condition field="selections" scope="a838-7056-5d14-938f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1f0-48ef-b84f-25cb" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="e935-9a84-4b80-06e6">Infantry</characteristic>
-                <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">6</characteristic>
+                <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">4</characteristic>
                 <characteristic name="Sv" typeId="0f78-b21c-a7c1-8fc6">5</characteristic>
                 <characteristic name="WS" typeId="5278-8770-e2e8-da31">3</characteristic>
                 <characteristic name="FS" typeId="439d-645b-d6e0-46b8">2</characteristic>
@@ -2641,9 +2542,6 @@ Commander Traits:
                   <repeats>
                     <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a65e-44a3-10ed-d9a5" repeats="1" roundUp="false"/>
                   </repeats>
-                  <conditions>
-                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8a82-8636-0f53-b59b" type="equalTo"/>
-                  </conditions>
                 </modifier>
               </modifiers>
               <constraints>
@@ -2745,9 +2643,9 @@ Commander Traits:
       <profiles>
         <profile id="2f9f-e7dd-9ac6-167a" name="Flamethrower" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">6&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">3&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">2</characteristic>
-            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">6/3</characteristic>
+            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">-/3</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">-</characteristic>
             <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Ignores Cover, Incineration (2), Dangerous, Rout, Panic (1)</characteristic>
           </characteristics>
@@ -2776,7 +2674,7 @@ Commander Traits:
       <profiles>
         <profile id="56a1-b2e6-d358-034a" name="Grenade Launcher" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">18&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">10&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">2</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">5/5</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">3</characteristic>
@@ -2803,7 +2701,7 @@ Commander Traits:
       <profiles>
         <profile id="00ae-5744-a3a5-28f9" name="Plasma Cannon" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">12&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">6&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">2</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">1/9</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">-</characteristic>
@@ -2834,7 +2732,7 @@ Commander Traits:
       <profiles>
         <profile id="a18a-b180-0120-32c8" name="Micromissile Launcher" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">12&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">8&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">-</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">6/4</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">2</characteristic>
@@ -2864,8 +2762,8 @@ Commander Traits:
       <profiles>
         <profile id="6e5e-2d1f-a6bd-075b" name="Laser Cannon" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">36&quot;</characteristic>
-            <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">3</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">24&quot;</characteristic>
+            <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">2</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">5/4</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">-</characteristic>
             <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Heavy, Anti-Air</characteristic>
@@ -2886,7 +2784,7 @@ Commander Traits:
           <characteristics>
             <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">24&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">-</characteristic>
-            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">5/4</characteristic>
+            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">5/5</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">3</characteristic>
             <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Heavy, Blast (2), Suppression, Indirect Fire</characteristic>
           </characteristics>
@@ -3067,7 +2965,7 @@ Commander Traits:
       <profiles>
         <profile id="3d62-676b-6f69-d529" name="Railcannon" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">36&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">18&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">1</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">1/10</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">6</characteristic>
@@ -3088,7 +2986,7 @@ Commander Traits:
       <profiles>
         <profile id="e918-6c01-378d-0e87" name="Missile Pod System" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">48&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">36&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">2</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">3/9</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">5</characteristic>
@@ -3108,7 +3006,7 @@ Commander Traits:
       <profiles>
         <profile id="ba18-dbd6-a789-271a" name="Icarus Missile Pod" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">48&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">36&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">2</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">5/8</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">5</characteristic>
@@ -3122,7 +3020,7 @@ Commander Traits:
         <infoLink id="8087-23cf-6994-89be" name="Very Heavy" hidden="false" targetId="8de0-307b-38db-ffcb" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="15.0"/>
+        <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="20.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a454-5781-03d6-7049" name="Heavy Plasma Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -3136,7 +3034,7 @@ Commander Traits:
       <profiles>
         <profile id="b51a-d8a3-e13b-703e" name="Heavy Plasma Cannon" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">18&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">8&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">2</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">1/12</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">-</characteristic>
@@ -3167,7 +3065,7 @@ Commander Traits:
       <profiles>
         <profile id="ae2c-1cee-3825-e597" name="Heavy Autocannon" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">24&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">18&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">3</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">4/6</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">6</characteristic>
@@ -3192,7 +3090,7 @@ Commander Traits:
       <profiles>
         <profile id="2533-c0bd-5a21-6c68" name="Jetpacks" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
           <characteristics>
-            <characteristic name="Description" typeId="dc90-7f60-c435-a043">When selected to Move, a unit where all models are equipped with this wargear may choose to increase its Mv Value by 6&quot; and gain the Flying Ability for this Round&apos;s Movement and Shooting Phases. For that Round, that Unit, if it is an Infantry Unit, reduces their FS by 1 and may not fire Heavy Weapons unless they have the Relentless Ability.</characteristic>
+            <characteristic name="Description" typeId="dc90-7f60-c435-a043">When selected to Move, a unit where all models are equipped with this wargear may choose to increase its Mv Value by 4&quot; and gain the Flying Ability for this Round&apos;s Movement and Shooting Phases. For that Round, that Unit, if it is an Infantry Unit, reduces their FS by 1 and may not fire Heavy Weapons unless they have the Relentless Ability.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3259,7 +3157,7 @@ Commander Traits:
       <profiles>
         <profile id="bc11-8a68-c5a3-8c28" name="Comms Array" hidden="false" typeId="6aff-fae8-88fc-a7f0" typeName="Command Wargear">
           <characteristics>
-            <characteristic name="Description" typeId="ff8d-1504-fb82-c241">In the Command Phase, a Unit with this wargear may select an enemy unit within 24&quot; that they can see. Until the end of the turn, attacks made with weapons with the Indirect Fire may subtract their FS from scatter distance.</characteristic>
+            <characteristic name="Description" typeId="ff8d-1504-fb82-c241">In the Command Phase, a Unit with this wargear may select an enemy unit within 24&quot; that they can see. Until the end of the turn, attacks made with weapons with the Ordnance Keyword may make a Shooting Attack against that target without needing the normal targeting attack. In addition, weapons firing Indirect Fire (that do not have the Ordnance Keyword) may subtract their FS from the scatter distance.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3298,19 +3196,9 @@ Commander Traits:
                         <condition field="selections" scope="2c30-b6e5-76e5-0a5c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="04df-5933-d983-0ece" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="673c-5d70-a8e1-bdf7" value="5">
-                      <conditions>
-                        <condition field="selections" scope="2c30-b6e5-76e5-0a5c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="04df-5933-d983-0ece" type="equalTo"/>
-                      </conditions>
-                    </modifier>
                     <modifier type="increment" field="0e5d-59f9-2959-d962" value="1">
                       <conditions>
                         <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1c7-4be0-a950-1acf" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="673c-5d70-a8e1-bdf7" value="9">
-                      <conditions>
-                        <condition field="selections" scope="2c30-b6e5-76e5-0a5c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="91b4-3a18-0c76-eec8" type="equalTo"/>
                       </conditions>
                     </modifier>
                     <modifier type="set" field="b361-03f5-e0f7-ce4e" value="5+">
@@ -3333,11 +3221,6 @@ Commander Traits:
                         <condition field="selections" scope="2c30-b6e5-76e5-0a5c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="37b0-7f01-17f5-a7a6" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="673c-5d70-a8e1-bdf7" value="5">
-                      <conditions>
-                        <condition field="selections" scope="2c30-b6e5-76e5-0a5c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8a8c-4503-a3cf-0477" type="equalTo"/>
-                      </conditions>
-                    </modifier>
                     <modifier type="increment" field="0e5d-59f9-2959-d962" value="1">
                       <conditions>
                         <condition field="selections" scope="2c30-b6e5-76e5-0a5c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4893-4f19-42d8-c649" type="equalTo"/>
@@ -3348,10 +3231,15 @@ Commander Traits:
                         <condition field="selections" scope="2c30-b6e5-76e5-0a5c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0b7a-a896-8ee0-3474" type="equalTo"/>
                       </conditions>
                     </modifier>
+                    <modifier type="set" field="673c-5d70-a8e1-bdf7" value="5">
+                      <conditions>
+                        <condition field="selections" scope="2c30-b6e5-76e5-0a5c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1478-1ade-449f-f403" type="equalTo"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="f675-b24b-16d8-b6b7">Infantry, Command</characteristic>
-                    <characteristic name="Mv" typeId="673c-5d70-a8e1-bdf7">7</characteristic>
+                    <characteristic name="Mv" typeId="673c-5d70-a8e1-bdf7">4</characteristic>
                     <characteristic name="Sv" typeId="b361-03f5-e0f7-ce4e">4+</characteristic>
                     <characteristic name="WS" typeId="0e5d-59f9-2959-d962">4</characteristic>
                     <characteristic name="FS" typeId="7ef2-dead-7cf6-5b23">3</characteristic>
@@ -3745,6 +3633,7 @@ Commander Traits:
         </entryLink>
         <entryLink id="e5c3-42fe-270a-0e6a" name="Commander" hidden="false" collective="false" import="true" targetId="6da5-d7f3-3808-678c" type="selectionEntryGroup"/>
         <entryLink id="2f3d-54bf-21ee-483f" name="Unique Wargear" hidden="false" collective="false" import="true" targetId="4e44-c416-c9c7-d9ac" type="selectionEntryGroup"/>
+        <entryLink id="77b9-c28a-3f9c-21fa" name="Transport Selection" hidden="false" collective="false" import="true" targetId="10fa-0d74-0ce0-48d8" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="0.0"/>
@@ -3777,7 +3666,7 @@ Commander Traits:
           </modifiers>
           <characteristics>
             <characteristic name="Unit Type" typeId="f675-b24b-16d8-b6b7">Vehicle, Command</characteristic>
-            <characteristic name="Mv" typeId="673c-5d70-a8e1-bdf7">12</characteristic>
+            <characteristic name="Mv" typeId="673c-5d70-a8e1-bdf7">10</characteristic>
             <characteristic name="Sv" typeId="b361-03f5-e0f7-ce4e">14</characteristic>
             <characteristic name="WS" typeId="0e5d-59f9-2959-d962">-</characteristic>
             <characteristic name="FS" typeId="7ef2-dead-7cf6-5b23">4</characteristic>
@@ -4144,7 +4033,7 @@ Commander Traits:
                   </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="e935-9a84-4b80-06e6">Infantry, Line</characteristic>
-                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">9</characteristic>
+                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">6</characteristic>
                     <characteristic name="Sv" typeId="0f78-b21c-a7c1-8fc6">5+</characteristic>
                     <characteristic name="WS" typeId="5278-8770-e2e8-da31">3</characteristic>
                     <characteristic name="FS" typeId="439d-645b-d6e0-46b8">2</characteristic>
@@ -4188,7 +4077,7 @@ Commander Traits:
                   </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="e935-9a84-4b80-06e6">Infantry, Line</characteristic>
-                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">9</characteristic>
+                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">6</characteristic>
                     <characteristic name="Sv" typeId="0f78-b21c-a7c1-8fc6">5+</characteristic>
                     <characteristic name="WS" typeId="5278-8770-e2e8-da31">3</characteristic>
                     <characteristic name="FS" typeId="439d-645b-d6e0-46b8">2</characteristic>
@@ -4333,24 +4222,9 @@ Commander Traits:
                         <condition field="selections" scope="4233-841c-1be3-2e2e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="22fb-91b1-fc64-dbba" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="9">
-                      <conditions>
-                        <condition field="selections" scope="4233-841c-1be3-2e2e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7cb9-3600-0255-134b" type="equalTo"/>
-                      </conditions>
-                    </modifier>
                     <modifier type="set" field="0f78-b21c-a7c1-8fc6" value="4+">
                       <conditions>
                         <condition field="selections" scope="4233-841c-1be3-2e2e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7cb9-3600-0255-134b" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="7">
-                      <conditions>
-                        <condition field="selections" scope="4233-841c-1be3-2e2e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bc62-0b95-38cc-a827" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="5">
-                      <conditions>
-                        <condition field="selections" scope="4233-841c-1be3-2e2e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="22fb-91b1-fc64-dbba" type="equalTo"/>
                       </conditions>
                     </modifier>
                     <modifier type="set" field="4151-68d2-a08d-d1c8" value="5">
@@ -4368,10 +4242,15 @@ Commander Traits:
                         <condition field="selections" scope="4233-841c-1be3-2e2e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b6c1-ab77-40e5-e8b6" type="equalTo"/>
                       </conditions>
                     </modifier>
+                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="5">
+                      <conditions>
+                        <condition field="selections" scope="4233-841c-1be3-2e2e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7cb9-3600-0255-134b" type="equalTo"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="e935-9a84-4b80-06e6">Infantry, Line</characteristic>
-                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">6</characteristic>
+                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">4</characteristic>
                     <characteristic name="Sv" typeId="0f78-b21c-a7c1-8fc6">5+</characteristic>
                     <characteristic name="WS" typeId="5278-8770-e2e8-da31">3</characteristic>
                     <characteristic name="FS" typeId="439d-645b-d6e0-46b8">2</characteristic>
@@ -4403,11 +4282,6 @@ Commander Traits:
               <infoLinks>
                 <infoLink id="102f-f303-bbcb-c807" name="Infantry Squad" hidden="false" targetId="de04-f076-d30f-474e" type="profile">
                   <modifiers>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="7">
-                      <conditions>
-                        <condition field="selections" scope="4233-841c-1be3-2e2e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bc62-0b95-38cc-a827" type="equalTo"/>
-                      </conditions>
-                    </modifier>
                     <modifier type="set" field="0f78-b21c-a7c1-8fc6" value="4+">
                       <conditions>
                         <condition field="selections" scope="4233-841c-1be3-2e2e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bc62-0b95-38cc-a827" type="equalTo"/>
@@ -4423,19 +4297,9 @@ Commander Traits:
                         <condition field="selections" scope="4233-841c-1be3-2e2e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7cb9-3600-0255-134b" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="9">
+                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="5">
                       <conditions>
                         <condition field="selections" scope="4233-841c-1be3-2e2e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7cb9-3600-0255-134b" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="5">
-                      <conditions>
-                        <condition field="selections" scope="4233-841c-1be3-2e2e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="22fb-91b1-fc64-dbba" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="5">
-                      <conditions>
-                        <condition field="selections" scope="4233-841c-1be3-2e2e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8cbc-8ee7-0339-8174" type="equalTo"/>
                       </conditions>
                     </modifier>
                     <modifier type="set" field="4151-68d2-a08d-d1c8" value="5">
@@ -4622,7 +4486,7 @@ Commander Traits:
                   </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="1a20-e2e4-fd8b-bde3">Vehicle</characteristic>
-                    <characteristic name="Mv" typeId="d4ef-5bd1-fbdc-6395">12</characteristic>
+                    <characteristic name="Mv" typeId="d4ef-5bd1-fbdc-6395">10</characteristic>
                     <characteristic name="AV" typeId="7d36-54ca-0214-fea2">11</characteristic>
                     <characteristic name="WS" typeId="75c8-dfe4-77ef-6cf8">-</characteristic>
                     <characteristic name="FS" typeId="a907-0ee6-2b58-f103">2</characteristic>
@@ -4827,7 +4691,7 @@ Commander Traits:
                   </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="1a20-e2e4-fd8b-bde3">Vehicle</characteristic>
-                    <characteristic name="Mv" typeId="d4ef-5bd1-fbdc-6395">12</characteristic>
+                    <characteristic name="Mv" typeId="d4ef-5bd1-fbdc-6395">10</characteristic>
                     <characteristic name="AV" typeId="7d36-54ca-0214-fea2">12</characteristic>
                     <characteristic name="WS" typeId="75c8-dfe4-77ef-6cf8">-</characteristic>
                     <characteristic name="FS" typeId="a907-0ee6-2b58-f103">2</characteristic>
@@ -4894,6 +4758,7 @@ Commander Traits:
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink id="257c-d460-4029-5930" name="Icarus Missile Launcher" hidden="false" collective="false" import="true" targetId="0cf2-a4ab-5654-531a" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -5000,7 +4865,7 @@ Commander Traits:
                   </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="1a20-e2e4-fd8b-bde3">Vehicle</characteristic>
-                    <characteristic name="Mv" typeId="d4ef-5bd1-fbdc-6395">14</characteristic>
+                    <characteristic name="Mv" typeId="d4ef-5bd1-fbdc-6395">12</characteristic>
                     <characteristic name="AV" typeId="7d36-54ca-0214-fea2">13</characteristic>
                     <characteristic name="WS" typeId="75c8-dfe4-77ef-6cf8">6</characteristic>
                     <characteristic name="FS" typeId="a907-0ee6-2b58-f103">3</characteristic>
@@ -5136,7 +5001,7 @@ Commander Traits:
           <characteristics>
             <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">-</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">2</characteristic>
-            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">1/11</characteristic>
+            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">1/10</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">-</characteristic>
             <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Melee, Powerful</characteristic>
           </characteristics>
@@ -5174,7 +5039,7 @@ Commander Traits:
           <selectionEntries>
             <selectionEntry id="6cb4-689d-fb7a-ef7f" name="Destroyer" hidden="false" collective="false" import="true" type="model">
               <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa84-895e-04b3-d7ec" type="max"/>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa84-895e-04b3-d7ec" type="max"/>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3223-b374-4dcf-7a2c" type="min"/>
               </constraints>
               <profiles>
@@ -5205,8 +5070,27 @@ Commander Traits:
               <categoryLinks>
                 <categoryLink id="0d15-2ec7-431d-53bc" name="Vehicles" hidden="false" targetId="62ea-a052-d768-3ca1" primary="false"/>
               </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="64e6-1f97-6a8c-f9c4" name="Secondary Weapons" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00cb-042a-3391-2b8c" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="9a21-ef54-3b69-c979" name="Icarus Missile Launcher" hidden="false" collective="false" import="true" targetId="0cf2-a4ab-5654-531a" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c5d-253e-7642-0bfe" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="371e-9f8d-468c-2d25" name="Missile Launcher" hidden="false" collective="false" import="true" targetId="0bd9-9a0e-5978-9503" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a64-1454-ab46-8932" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
-                <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="90.0"/>
+                <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="60.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -5217,15 +5101,6 @@ Commander Traits:
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d020-a3d4-31bf-d6a9" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af78-6b15-66d9-0066" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="11c7-be11-6d6f-c8ac" name="Missile Launcher" hidden="false" collective="false" import="true" targetId="0bd9-9a0e-5978-9503" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="0d75-bf50-2c92-2db9" value="0.0"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bf9-9969-ea24-cb78" type="min"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="867f-e092-c8b9-715e" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="d2ef-9e0a-81e1-4ba1" name="Railcannon" hidden="false" collective="false" import="true" targetId="52e8-c782-6a2d-f443" type="selectionEntry">
@@ -5287,7 +5162,7 @@ Commander Traits:
                   </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="e935-9a84-4b80-06e6">Infantry</characteristic>
-                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">5</characteristic>
+                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">3</characteristic>
                     <characteristic name="Sv" typeId="0f78-b21c-a7c1-8fc6">2+</characteristic>
                     <characteristic name="WS" typeId="5278-8770-e2e8-da31">4</characteristic>
                     <characteristic name="FS" typeId="439d-645b-d6e0-46b8">3</characteristic>
@@ -5342,6 +5217,7 @@ Commander Traits:
                             </modifier>
                           </modifiers>
                         </entryLink>
+                        <entryLink id="652e-eaef-0ea6-b5ba" name="Icarus Missile Launcher" hidden="false" collective="false" import="true" targetId="0cf2-a4ab-5654-531a" type="selectionEntry"/>
                       </entryLinks>
                     </selectionEntryGroup>
                     <selectionEntryGroup id="fab5-965b-fa43-f90e" name="Heavy Weapons (max 1 per Fireteam)" hidden="false" collective="false" import="true">
@@ -5462,6 +5338,7 @@ Commander Traits:
                             </modifier>
                           </modifiers>
                         </entryLink>
+                        <entryLink id="c986-e5e0-3549-b6cb" name="Icarus Missile Launcher" hidden="false" collective="false" import="true" targetId="0cf2-a4ab-5654-531a" type="selectionEntry"/>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
@@ -5565,8 +5442,8 @@ Commander Traits:
                 <profile id="d3f3-c5dc-e514-e031" name="Killbot Squad" hidden="false" typeId="0954-3b9f-8020-7034" typeName="Infantry">
                   <characteristics>
                     <characteristic name="Unit Type" typeId="e935-9a84-4b80-06e6">Infantry</characteristic>
-                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">6</characteristic>
-                    <characteristic name="Sv" typeId="0f78-b21c-a7c1-8fc6">4+</characteristic>
+                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">4</characteristic>
+                    <characteristic name="Sv" typeId="0f78-b21c-a7c1-8fc6">3+</characteristic>
                     <characteristic name="WS" typeId="5278-8770-e2e8-da31">1</characteristic>
                     <characteristic name="FS" typeId="439d-645b-d6e0-46b8">2</characteristic>
                     <characteristic name="HP" typeId="032c-dcbd-3324-1426">1</characteristic>
@@ -5720,7 +5597,7 @@ Commander Traits:
           <entryLinks>
             <entryLink id="a771-8fec-04de-d664" name="MLRS Rack" hidden="false" collective="false" import="true" targetId="f56f-1ed0-bd74-4701" type="selectionEntry">
               <modifiers>
-                <modifier type="increment" field="0d75-bf50-2c92-2db9" value="15.0">
+                <modifier type="increment" field="0d75-bf50-2c92-2db9" value="20.0">
                   <repeats>
                     <repeat field="selections" scope="7724-2c84-7d5c-d749" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ff87-c50e-3621-86fc" repeats="1" roundUp="false"/>
                   </repeats>
@@ -5733,6 +5610,24 @@ Commander Traits:
             <entryLink id="03e8-5636-c7e8-3a0a" name="Artillery Cannon" hidden="false" collective="false" import="true" targetId="6025-d42e-e466-4893" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="651f-dde2-2075-ba0d" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="e573-218f-afdc-b9c0" name="Skyshatter Cannon" hidden="true" collective="false" import="true" targetId="731a-e53c-45e0-25ac" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="34e0-ae97-f0dc-5eb8" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="0d75-bf50-2c92-2db9" value="25.0">
+                  <repeats>
+                    <repeat field="selections" scope="7724-2c84-7d5c-d749" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ff87-c50e-3621-86fc" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="decrement" field="0d75-bf50-2c92-2db9" value="25.0"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9904-fbb1-965c-8830" type="max"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -5768,11 +5663,11 @@ Commander Traits:
       <profiles>
         <profile id="b954-a438-1d2a-fbb9" name="Artillery Cannon" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">60&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">24-60&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">-</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">3/7</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">4</characteristic>
-            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Stun, Blast (2), Indirect Fire, Suppression, Incineration(4)</characteristic>
+            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Stun, Blast (3), Indirect Fire, Suppression, Incineration(4), Panic(1), Ordnance</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5785,9 +5680,15 @@ Commander Traits:
         <infoLink id="d7d3-4b76-1b1d-2e40" name="Stun" hidden="false" targetId="5bc0-cd89-de72-6647" type="rule"/>
         <infoLink id="ab48-ea1f-af18-ed09" name="Suppression" hidden="false" targetId="f4af-829f-39d0-e64d" type="rule"/>
         <infoLink id="32de-9064-5061-0394" name="Indirect Fire" hidden="false" targetId="1bc8-4a61-b424-0d67" type="rule"/>
-        <infoLink id="4154-e3af-0f82-1238" name="Inceneration (x)" hidden="false" targetId="5c0d-855c-51f7-77f7" type="rule">
+        <infoLink id="4154-e3af-0f82-1238" name="Incineration (x)" hidden="false" targetId="5c0d-855c-51f7-77f7" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Incineration (4)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="e1d1-3f8b-b71b-7328" name="Ordnance" hidden="false" targetId="0afc-3456-e623-24bc" type="rule"/>
+        <infoLink id="2ee2-9cc9-a23d-c841" name="Panic (x)" hidden="false" targetId="f0be-b368-bd26-5fb5" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Panic (1)"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -5799,11 +5700,11 @@ Commander Traits:
       <profiles>
         <profile id="4819-0fb4-2287-78f9" name="MLRS Rack" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">60&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">24-60&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">-</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">6/5</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">3</characteristic>
-            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Suppression, Indirect Fire, Incineration(4), Blast (4), Panic (2)	</characteristic>
+            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Suppression, Indirect Fire, Incineration(6), Blast (4), Panic (3), Ordnance</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5814,7 +5715,7 @@ Commander Traits:
           </modifiers>
         </infoLink>
         <infoLink id="78d3-536f-b718-e685" name="Suppression" hidden="false" targetId="f4af-829f-39d0-e64d" type="rule"/>
-        <infoLink id="a376-91c1-3fb4-0ad5" name="Inceneration (x)" hidden="false" targetId="5c0d-855c-51f7-77f7" type="rule">
+        <infoLink id="a376-91c1-3fb4-0ad5" name="Incineration (x)" hidden="false" targetId="5c0d-855c-51f7-77f7" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Incineration (4)"/>
           </modifiers>
@@ -5825,6 +5726,7 @@ Commander Traits:
             <modifier type="set" field="name" value="Panic (2)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="6b39-a313-056e-7158" name="Ordnance" hidden="false" targetId="0afc-3456-e623-24bc" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="0.0"/>
@@ -5838,6 +5740,7 @@ Commander Traits:
             <modifier type="set" field="name" value="PD(2)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="3e9c-f92d-2548-5d50" name="Fire Support Craft" hidden="false" targetId="bade-290c-0399-184e" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9bbc-f074-2d7e-82d4" name="Aircraft" hidden="false" targetId="2879-21a4-8d0e-49f4" primary="false"/>
@@ -6155,7 +6058,7 @@ Commander Traits:
                 <profile id="902c-1fc2-fe3f-718e" name="Strike Drones" hidden="false" typeId="0954-3b9f-8020-7034" typeName="Infantry">
                   <characteristics>
                     <characteristic name="Unit Type" typeId="e935-9a84-4b80-06e6">Infantry</characteristic>
-                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">16</characteristic>
+                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">8</characteristic>
                     <characteristic name="Sv" typeId="0f78-b21c-a7c1-8fc6">6+</characteristic>
                     <characteristic name="WS" typeId="5278-8770-e2e8-da31">1</characteristic>
                     <characteristic name="FS" typeId="439d-645b-d6e0-46b8">2</characteristic>
@@ -6175,14 +6078,14 @@ Commander Traits:
         </selectionEntryGroup>
         <selectionEntryGroup id="1bba-f3aa-2b53-2e91" name="Weapons" hidden="false" collective="false" import="true">
           <modifiers>
-            <modifier type="increment" field="5f6f-530d-d69b-4b9e" value="2.0">
+            <modifier type="increment" field="e983-0fc4-d7da-5032" value="2.0">
               <repeats>
                 <repeat field="selections" scope="b996-38c5-f59e-2452" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f6f-530d-d69b-4b9e" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e983-0fc4-d7da-5032" type="max"/>
           </constraints>
           <selectionEntryGroups>
             <selectionEntryGroup id="7e6b-ee66-d301-af8a" name="Support Weapons Choice (Single)" hidden="false" collective="false" import="true">
@@ -6191,6 +6094,7 @@ Commander Traits:
                 <entryLink id="87fd-46cb-2ae3-fbde" name="Missile Launcher" hidden="false" collective="false" import="true" targetId="0bd9-9a0e-5978-9503" type="selectionEntry"/>
                 <entryLink id="fb58-048d-7101-d151" name="Flamethrower" hidden="false" collective="false" import="true" targetId="bb55-6bdf-777d-9f34" type="selectionEntry"/>
                 <entryLink id="5fc3-4513-8aa6-b447" name="Grenade Launcher" hidden="false" collective="false" import="true" targetId="30fd-531d-93a1-3781" type="selectionEntry"/>
+                <entryLink id="b642-5859-884e-d2a8" name="Icarus Missile Launcher" hidden="false" collective="false" import="true" targetId="0cf2-a4ab-5654-531a" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="c986-b7fb-d341-cd63" name="Heavy Weapons Choice" hidden="false" collective="false" import="true">
@@ -6453,7 +6357,7 @@ Commander Traits:
                   </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="1a20-e2e4-fd8b-bde3">Vehicle</characteristic>
-                    <characteristic name="Mv" typeId="d4ef-5bd1-fbdc-6395">10</characteristic>
+                    <characteristic name="Mv" typeId="d4ef-5bd1-fbdc-6395">8</characteristic>
                     <characteristic name="AV" typeId="7d36-54ca-0214-fea2">11</characteristic>
                     <characteristic name="WS" typeId="75c8-dfe4-77ef-6cf8">4</characteristic>
                     <characteristic name="FS" typeId="a907-0ee6-2b58-f103">2</characteristic>
@@ -6506,6 +6410,26 @@ Commander Traits:
               <constraints>
                 <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d33a-85ff-e672-ffc8" type="max"/>
               </constraints>
+              <profiles>
+                <profile id="7bfd-45de-70c7-bb9d" name="Heavy Killbot" hidden="false" typeId="b3d8-25bf-3513-55f7" typeName="Vehicle">
+                  <modifiers>
+                    <modifier type="increment" field="7d36-54ca-0214-fea2" value="1">
+                      <conditions>
+                        <condition field="selections" scope="ba9f-853e-c15e-9d4c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9fa1-082a-4a67-4920" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="1a20-e2e4-fd8b-bde3">Vehicle</characteristic>
+                    <characteristic name="Mv" typeId="d4ef-5bd1-fbdc-6395">8</characteristic>
+                    <characteristic name="AV" typeId="7d36-54ca-0214-fea2">11</characteristic>
+                    <characteristic name="WS" typeId="75c8-dfe4-77ef-6cf8">4</characteristic>
+                    <characteristic name="FS" typeId="a907-0ee6-2b58-f103">2</characteristic>
+                    <characteristic name="HP" typeId="38f2-690b-8326-2263">1</characteristic>
+                    <characteristic name="Ld" typeId="1da7-7ee1-a03b-cb95">5</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <selectionEntryGroups>
                 <selectionEntryGroup id="9245-7bb4-2f38-a0c7" name="Heavy Weapons Choice" hidden="false" collective="false" import="true">
                   <constraints>
@@ -6537,26 +6461,6 @@ Commander Traits:
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cff-69ce-9d2e-91c6" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c9d-65dd-7f5d-5d85" type="max"/>
                   </constraints>
-                  <profiles>
-                    <profile id="11c5-8186-b399-9383" name="Heavy Killbot" hidden="false" typeId="b3d8-25bf-3513-55f7" typeName="Vehicle">
-                      <modifiers>
-                        <modifier type="increment" field="7d36-54ca-0214-fea2" value="1">
-                          <conditions>
-                            <condition field="selections" scope="ba9f-853e-c15e-9d4c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9fa1-082a-4a67-4920" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                      <characteristics>
-                        <characteristic name="Unit Type" typeId="1a20-e2e4-fd8b-bde3">Vehicle</characteristic>
-                        <characteristic name="Mv" typeId="d4ef-5bd1-fbdc-6395">10</characteristic>
-                        <characteristic name="AV" typeId="7d36-54ca-0214-fea2">11</characteristic>
-                        <characteristic name="WS" typeId="75c8-dfe4-77ef-6cf8">4</characteristic>
-                        <characteristic name="FS" typeId="a907-0ee6-2b58-f103">2</characteristic>
-                        <characteristic name="HP" typeId="38f2-690b-8326-2263">1</characteristic>
-                        <characteristic name="Ld" typeId="1da7-7ee1-a03b-cb95">5</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
                 </entryLink>
               </entryLinks>
               <costs>
@@ -6681,7 +6585,7 @@ Commander Traits:
                   </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="1a20-e2e4-fd8b-bde3">Vehicle</characteristic>
-                    <characteristic name="Mv" typeId="d4ef-5bd1-fbdc-6395">16</characteristic>
+                    <characteristic name="Mv" typeId="d4ef-5bd1-fbdc-6395">12</characteristic>
                     <characteristic name="AV" typeId="7d36-54ca-0214-fea2">10</characteristic>
                     <characteristic name="WS" typeId="75c8-dfe4-77ef-6cf8">2</characteristic>
                     <characteristic name="FS" typeId="a907-0ee6-2b58-f103">2</characteristic>
@@ -6722,6 +6626,7 @@ Commander Traits:
                     <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="20.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="2678-1022-eb3f-75c7" name="Icarus Missile Launcher" hidden="false" collective="false" import="true" targetId="0cf2-a4ab-5654-531a" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -6793,7 +6698,7 @@ Commander Traits:
       <profiles>
         <profile id="13ab-64f7-8e7e-6897" name="Neurotoxin Projector" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">24&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">18&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">-</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">-/4</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">-</characteristic>
@@ -6820,7 +6725,7 @@ Commander Traits:
       <profiles>
         <profile id="54bb-c305-681a-a56b" name="Neurotoxin Cannon" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">12&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">8&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">-</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">-/3</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">-</characteristic>
@@ -6844,9 +6749,9 @@ Commander Traits:
     </selectionEntry>
     <selectionEntry id="7d3b-d509-1fd3-ca69" name="Heavy Armour" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="f205-9301-9761-1662" name="Crude Heavy Armour" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
+        <profile id="f205-9301-9761-1662" name="Heavy Armour" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
           <characteristics>
-            <characteristic name="Description" typeId="dc90-7f60-c435-a043">Confers a 3+ Save, -1mv, and the Slow Ability. For melee attacks, this armour is considered a HAST Suit. For other rules purposes, this armour is considered Combat Armour.</characteristic>
+            <characteristic name="Description" typeId="dc90-7f60-c435-a043">Confers a 3+ Save and the Slow Ability. For melee attacks, this armour is considered a HAST Suit. For other rules purposes, this armour is considered Combat Armour.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6873,7 +6778,7 @@ Commander Traits:
       <profiles>
         <profile id="5627-d6ea-52c4-08c6" name="Plasma Rifle" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">8&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">4&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">1</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">2/7</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">-</characteristic>
@@ -6970,11 +6875,6 @@ Commander Traits:
               <profiles>
                 <profile id="dba6-95a6-4d00-9b10" name="Mobile Engineer" hidden="false" typeId="0954-3b9f-8020-7034" typeName="Infantry">
                   <modifiers>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="7">
-                      <conditions>
-                        <condition field="selections" scope="3baa-7d7d-400c-7339" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c8be-c5f0-6761-a9b8" type="equalTo"/>
-                      </conditions>
-                    </modifier>
                     <modifier type="set" field="0f78-b21c-a7c1-8fc6" value="4+">
                       <conditions>
                         <condition field="selections" scope="3baa-7d7d-400c-7339" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c8be-c5f0-6761-a9b8" type="equalTo"/>
@@ -6990,14 +6890,9 @@ Commander Traits:
                         <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f99-5539-6d1c-462f" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="9">
-                      <conditions>
-                        <condition field="selections" scope="3baa-7d7d-400c-7339" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3085-24e8-ce4b-4c94" type="equalTo"/>
-                      </conditions>
-                    </modifier>
                     <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="5">
                       <conditions>
-                        <condition field="selections" scope="3baa-7d7d-400c-7339" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="813d-5c86-f0f3-a92d" type="equalTo"/>
+                        <condition field="selections" scope="3baa-7d7d-400c-7339" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3085-24e8-ce4b-4c94" type="equalTo"/>
                       </conditions>
                     </modifier>
                     <modifier type="set" field="0f78-b21c-a7c1-8fc6" value="4+">
@@ -7013,7 +6908,7 @@ Commander Traits:
                   </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="e935-9a84-4b80-06e6">Infantry</characteristic>
-                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">6</characteristic>
+                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">4</characteristic>
                     <characteristic name="Sv" typeId="0f78-b21c-a7c1-8fc6">5+</characteristic>
                     <characteristic name="WS" typeId="5278-8770-e2e8-da31">2</characteristic>
                     <characteristic name="FS" typeId="439d-645b-d6e0-46b8">2</characteristic>
@@ -7208,7 +7103,7 @@ Commander Traits:
             <profile id="346c-ebd8-3d8a-f050" name="Executioner AB-FSP" hidden="false" typeId="b3d8-25bf-3513-55f7" typeName="Vehicle">
               <characteristics>
                 <characteristic name="Unit Type" typeId="1a20-e2e4-fd8b-bde3">Vehicle</characteristic>
-                <characteristic name="Mv" typeId="d4ef-5bd1-fbdc-6395">16</characteristic>
+                <characteristic name="Mv" typeId="d4ef-5bd1-fbdc-6395">12</characteristic>
                 <characteristic name="AV" typeId="7d36-54ca-0214-fea2">13</characteristic>
                 <characteristic name="WS" typeId="75c8-dfe4-77ef-6cf8">6</characteristic>
                 <characteristic name="FS" typeId="a907-0ee6-2b58-f103">3</characteristic>
@@ -7260,7 +7155,7 @@ Commander Traits:
       <profiles>
         <profile id="ad83-43b6-4f4f-d892" name="Executioner Plasma Cannon" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">36&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">18&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">2</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">1/12</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">-</characteristic>
@@ -7343,7 +7238,7 @@ Commander Traits:
                   </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="e935-9a84-4b80-06e6">Infantry</characteristic>
-                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">7</characteristic>
+                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">4</characteristic>
                     <characteristic name="Sv" typeId="0f78-b21c-a7c1-8fc6">4+</characteristic>
                     <characteristic name="WS" typeId="5278-8770-e2e8-da31">6</characteristic>
                     <characteristic name="FS" typeId="439d-645b-d6e0-46b8">3</characteristic>
@@ -7382,7 +7277,7 @@ Commander Traits:
                   </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="e935-9a84-4b80-06e6">Infantry</characteristic>
-                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">7</characteristic>
+                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">4</characteristic>
                     <characteristic name="Sv" typeId="0f78-b21c-a7c1-8fc6">4+</characteristic>
                     <characteristic name="WS" typeId="5278-8770-e2e8-da31">6</characteristic>
                     <characteristic name="FS" typeId="439d-645b-d6e0-46b8">3</characteristic>
@@ -7492,11 +7387,6 @@ Commander Traits:
               <profiles>
                 <profile id="14bc-bae8-9cd9-2467" name="Scavenger" hidden="false" typeId="0954-3b9f-8020-7034" typeName="Infantry">
                   <modifiers>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="5">
-                      <conditions>
-                        <condition field="selections" scope="6ab0-a29c-018d-f4c3" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7f2a-e292-f17e-a7a8" type="equalTo"/>
-                      </conditions>
-                    </modifier>
                     <modifier type="set" field="0f78-b21c-a7c1-8fc6" value="3+">
                       <conditions>
                         <condition field="selections" scope="6ab0-a29c-018d-f4c3" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7f2a-e292-f17e-a7a8" type="equalTo"/>
@@ -7505,7 +7395,7 @@ Commander Traits:
                   </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="e935-9a84-4b80-06e6">Infantry</characteristic>
-                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">6</characteristic>
+                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">4</characteristic>
                     <characteristic name="Sv" typeId="0f78-b21c-a7c1-8fc6">4+</characteristic>
                     <characteristic name="WS" typeId="5278-8770-e2e8-da31">3</characteristic>
                     <characteristic name="FS" typeId="439d-645b-d6e0-46b8">2</characteristic>
@@ -7559,6 +7449,7 @@ Commander Traits:
                 <entryLink id="6fb3-d134-0eda-084c" name="Missile Launcher" hidden="false" collective="false" import="true" targetId="0bd9-9a0e-5978-9503" type="selectionEntry"/>
                 <entryLink id="8c6f-1ff5-e874-3ad8" name="Flamethrower" hidden="false" collective="false" import="true" targetId="bb55-6bdf-777d-9f34" type="selectionEntry"/>
                 <entryLink id="314c-00a1-0d73-b37f" name="Grenade Launcher" hidden="false" collective="false" import="true" targetId="30fd-531d-93a1-3781" type="selectionEntry"/>
+                <entryLink id="0f62-2dd6-0ce5-8ccf" name="Icarus Missile Launcher" hidden="false" collective="false" import="true" targetId="0cf2-a4ab-5654-531a" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -7648,7 +7539,7 @@ Commander Traits:
                 <profile id="f9d0-ec54-2180-76bf" name="Squad" hidden="false" typeId="0954-3b9f-8020-7034" typeName="Infantry">
                   <characteristics>
                     <characteristic name="Unit Type" typeId="e935-9a84-4b80-06e6">Infantry</characteristic>
-                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">8</characteristic>
+                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">5</characteristic>
                     <characteristic name="Sv" typeId="0f78-b21c-a7c1-8fc6">3+</characteristic>
                     <characteristic name="WS" typeId="5278-8770-e2e8-da31">3</characteristic>
                     <characteristic name="FS" typeId="439d-645b-d6e0-46b8">3</characteristic>
@@ -7704,6 +7595,7 @@ Commander Traits:
                     <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="20.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="20d5-8d0e-6ad9-bfa8" name="Icarus Missile Launcher" hidden="false" collective="false" import="true" targetId="0cf2-a4ab-5654-531a" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -7771,6 +7663,7 @@ Commander Traits:
             <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="70.0"/>
           </costs>
         </entryLink>
+        <entryLink id="c6b9-1bae-fc02-404a" name="Transport Selection" hidden="false" collective="false" import="true" targetId="10fa-0d74-0ce0-48d8" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="0.0"/>
@@ -7935,7 +7828,7 @@ Commander Traits:
               </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="f675-b24b-16d8-b6b7">Infantry, Command</characteristic>
-                <characteristic name="Mv" typeId="673c-5d70-a8e1-bdf7">8</characteristic>
+                <characteristic name="Mv" typeId="673c-5d70-a8e1-bdf7">5</characteristic>
                 <characteristic name="Sv" typeId="b361-03f5-e0f7-ce4e">3+</characteristic>
                 <characteristic name="WS" typeId="0e5d-59f9-2959-d962">5</characteristic>
                 <characteristic name="FS" typeId="7ef2-dead-7cf6-5b23">5</characteristic>
@@ -7969,6 +7862,7 @@ Commander Traits:
                 <entryLink id="f0b9-2117-0717-2f8c" name="Flamethrower" hidden="false" collective="false" import="true" targetId="bb55-6bdf-777d-9f34" type="selectionEntry"/>
                 <entryLink id="820e-768e-d16b-7ed6" name="Grenade Launcher" hidden="false" collective="false" import="true" targetId="30fd-531d-93a1-3781" type="selectionEntry"/>
                 <entryLink id="142b-3966-9beb-2a9a" name="Heavy Coilrifle" hidden="false" collective="false" import="true" targetId="4347-4e96-af04-b614" type="selectionEntry"/>
+                <entryLink id="3724-51c3-17c1-d44d" name="Icarus Missile Launcher" hidden="false" collective="false" import="true" targetId="0cf2-a4ab-5654-531a" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="af83-d189-71ea-74b0" name="Main Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="c3d9-6e44-53e1-06c0">
@@ -8222,6 +8116,7 @@ Commander Traits:
         </entryLink>
         <entryLink id="c998-a14d-b514-82ef" name="Commander" hidden="false" collective="false" import="true" targetId="6da5-d7f3-3808-678c" type="selectionEntryGroup"/>
         <entryLink id="3571-c130-c25e-b09b" name="Unique Wargear" hidden="false" collective="false" import="true" targetId="4e44-c416-c9c7-d9ac" type="selectionEntryGroup"/>
+        <entryLink id="4a07-766c-130d-92d7" name="Transport Selection" hidden="false" collective="false" import="true" targetId="10fa-0d74-0ce0-48d8" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="0.0"/>
@@ -8266,11 +8161,6 @@ Commander Traits:
                     <modifier type="set" field="0f78-b21c-a7c1-8fc6" value="2+">
                       <conditions>
                         <condition field="selections" scope="6b7e-5b01-97b6-bd31" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="61a2-2e63-edd7-44ee" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="7">
-                      <conditions>
-                        <condition field="selections" scope="6b7e-5b01-97b6-bd31" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e4e-bc7f-d03f-0ecd" type="equalTo"/>
                       </conditions>
                     </modifier>
                     <modifier type="set" field="0f78-b21c-a7c1-8fc6" value="4+">
@@ -8322,6 +8212,7 @@ Commander Traits:
                             <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="20.0"/>
                           </costs>
                         </entryLink>
+                        <entryLink id="e3e3-0807-885e-1e4a" name="Icarus Missile Launcher" hidden="false" collective="false" import="true" targetId="0cf2-a4ab-5654-531a" type="selectionEntry"/>
                       </entryLinks>
                     </selectionEntryGroup>
                     <selectionEntryGroup id="7ab0-66c2-b72e-4ceb" name="Heavy Weapons Choice" hidden="false" collective="false" import="true">
@@ -8360,11 +8251,6 @@ Commander Traits:
                     <modifier type="set" field="0f78-b21c-a7c1-8fc6" value="2+">
                       <conditions>
                         <condition field="selections" scope="6b7e-5b01-97b6-bd31" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="61a2-2e63-edd7-44ee" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="7">
-                      <conditions>
-                        <condition field="selections" scope="6b7e-5b01-97b6-bd31" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e4e-bc7f-d03f-0ecd" type="equalTo"/>
                       </conditions>
                     </modifier>
                     <modifier type="set" field="0f78-b21c-a7c1-8fc6" value="4+">
@@ -8416,11 +8302,6 @@ Commander Traits:
                         <condition field="selections" scope="6b7e-5b01-97b6-bd31" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="61a2-2e63-edd7-44ee" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="7">
-                      <conditions>
-                        <condition field="selections" scope="6b7e-5b01-97b6-bd31" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e4e-bc7f-d03f-0ecd" type="equalTo"/>
-                      </conditions>
-                    </modifier>
                     <modifier type="set" field="0f78-b21c-a7c1-8fc6" value="4+">
                       <conditions>
                         <condition field="selections" scope="6b7e-5b01-97b6-bd31" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e4e-bc7f-d03f-0ecd" type="equalTo"/>
@@ -8462,11 +8343,6 @@ Commander Traits:
                     <modifier type="set" field="0f78-b21c-a7c1-8fc6" value="2+">
                       <conditions>
                         <condition field="selections" scope="6b7e-5b01-97b6-bd31" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="61a2-2e63-edd7-44ee" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="7">
-                      <conditions>
-                        <condition field="selections" scope="6b7e-5b01-97b6-bd31" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e4e-bc7f-d03f-0ecd" type="equalTo"/>
                       </conditions>
                     </modifier>
                     <modifier type="set" field="0f78-b21c-a7c1-8fc6" value="4+">
@@ -8780,11 +8656,6 @@ Commander Traits:
                         <condition field="selections" scope="4d41-4001-a71e-d7cf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa1c-018e-7d20-5d55" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="7">
-                      <conditions>
-                        <condition field="selections" scope="4d41-4001-a71e-d7cf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ed6-1de0-72e1-9cec" type="equalTo"/>
-                      </conditions>
-                    </modifier>
                     <modifier type="set" field="0f78-b21c-a7c1-8fc6" value="4+">
                       <conditions>
                         <condition field="selections" scope="4d41-4001-a71e-d7cf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ed6-1de0-72e1-9cec" type="equalTo"/>
@@ -8809,11 +8680,6 @@ Commander Traits:
                         <condition field="selections" scope="4d41-4001-a71e-d7cf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa1c-018e-7d20-5d55" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="7">
-                      <conditions>
-                        <condition field="selections" scope="4d41-4001-a71e-d7cf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ed6-1de0-72e1-9cec" type="equalTo"/>
-                      </conditions>
-                    </modifier>
                     <modifier type="set" field="0f78-b21c-a7c1-8fc6" value="4+">
                       <conditions>
                         <condition field="selections" scope="4d41-4001-a71e-d7cf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ed6-1de0-72e1-9cec" type="equalTo"/>
@@ -8822,7 +8688,7 @@ Commander Traits:
                   </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="e935-9a84-4b80-06e6">Infantry</characteristic>
-                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">6</characteristic>
+                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">4</characteristic>
                     <characteristic name="Sv" typeId="0f78-b21c-a7c1-8fc6">5+</characteristic>
                     <characteristic name="WS" typeId="5278-8770-e2e8-da31">3</characteristic>
                     <characteristic name="FS" typeId="439d-645b-d6e0-46b8">2</characteristic>
@@ -8854,19 +8720,9 @@ Commander Traits:
                         <condition field="selections" scope="4d41-4001-a71e-d7cf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa1c-018e-7d20-5d55" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="7">
-                      <conditions>
-                        <condition field="selections" scope="4d41-4001-a71e-d7cf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ed6-1de0-72e1-9cec" type="equalTo"/>
-                      </conditions>
-                    </modifier>
                     <modifier type="set" field="0f78-b21c-a7c1-8fc6" value="4+">
                       <conditions>
                         <condition field="selections" scope="4d41-4001-a71e-d7cf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ed6-1de0-72e1-9cec" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="5">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16ea-d4ec-8797-6681" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -8991,7 +8847,7 @@ Commander Traits:
                 <profile id="c04f-177d-1a1d-3fdd" name="Close Combat Mech" hidden="false" typeId="b3d8-25bf-3513-55f7" typeName="Vehicle">
                   <characteristics>
                     <characteristic name="Unit Type" typeId="1a20-e2e4-fd8b-bde3">Vehicle</characteristic>
-                    <characteristic name="Mv" typeId="d4ef-5bd1-fbdc-6395">12</characteristic>
+                    <characteristic name="Mv" typeId="d4ef-5bd1-fbdc-6395">10</characteristic>
                     <characteristic name="AV" typeId="7d36-54ca-0214-fea2">11</characteristic>
                     <characteristic name="WS" typeId="75c8-dfe4-77ef-6cf8">5</characteristic>
                     <characteristic name="FS" typeId="a907-0ee6-2b58-f103">2</characteristic>
@@ -9146,7 +9002,7 @@ Commander Traits:
                 <profile id="c9c0-d277-b4d3-a40a" name="Mode Fireteam" hidden="false" typeId="0954-3b9f-8020-7034" typeName="Infantry">
                   <characteristics>
                     <characteristic name="Unit Type" typeId="e935-9a84-4b80-06e6">Infantry</characteristic>
-                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">7</characteristic>
+                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">4</characteristic>
                     <characteristic name="Sv" typeId="0f78-b21c-a7c1-8fc6">3+</characteristic>
                     <characteristic name="WS" typeId="5278-8770-e2e8-da31">3</characteristic>
                     <characteristic name="FS" typeId="439d-645b-d6e0-46b8">2</characteristic>
@@ -9165,6 +9021,7 @@ Commander Traits:
                     <entryLink id="b2f0-9325-ed3e-e7f5" name="Missile Launcher" hidden="false" collective="false" import="true" targetId="0bd9-9a0e-5978-9503" type="selectionEntry"/>
                     <entryLink id="c253-d107-25e3-31fe" name="Flamethrower" hidden="false" collective="false" import="true" targetId="bb55-6bdf-777d-9f34" type="selectionEntry"/>
                     <entryLink id="618d-3860-5d07-120a" name="Grenade Launcher" hidden="false" collective="false" import="true" targetId="30fd-531d-93a1-3781" type="selectionEntry"/>
+                    <entryLink id="f2b0-edb6-8277-52be" name="Icarus Missile Launcher" hidden="false" collective="false" import="true" targetId="0cf2-a4ab-5654-531a" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -9824,7 +9681,7 @@ Commander Traits:
       <profiles>
         <profile id="dbb7-dd99-8630-8a95" name="Obliterator Rifle" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">36&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">30&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">1</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">4/7</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">6</characteristic>
@@ -9850,7 +9707,7 @@ Commander Traits:
       <profiles>
         <profile id="d307-0e7f-e866-c3f8" name="Eliminator Rifle" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">48&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">24&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">1</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">4/-</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">-</characteristic>
@@ -9905,7 +9762,7 @@ Commander Traits:
                 <profile id="49b0-1b14-4f6a-d23a" name="Fireteam" hidden="false" typeId="0954-3b9f-8020-7034" typeName="Infantry">
                   <characteristics>
                     <characteristic name="Unit Type" typeId="e935-9a84-4b80-06e6">Infantry</characteristic>
-                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">9</characteristic>
+                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">6</characteristic>
                     <characteristic name="Sv" typeId="0f78-b21c-a7c1-8fc6">5+</characteristic>
                     <characteristic name="WS" typeId="5278-8770-e2e8-da31">3</characteristic>
                     <characteristic name="FS" typeId="439d-645b-d6e0-46b8">2</characteristic>
@@ -10024,7 +9881,7 @@ Commander Traits:
       <profiles>
         <profile id="7622-cbff-0447-f735" name="Logic Plague Caster" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
           <characteristics>
-            <characteristic name="Description" typeId="dc90-7f60-c435-a043">A Unit where all Squads or Vehicles are equipped with this wargear (ones in Joined Units do not need to have it, and vice versa) may choose to use it instead of Shooting. When it does so, select one enemy Vehicle or Drones unit within 36&quot;. Roll as many d6 as the attacking unit&apos;s FS (including bonuses from e.g. the Take Aim Order), and for each 5+, the target unit suffers a penalty of -2 Ld, -1WS, and -1FS, as well as -1AV if it is a Vehicle, until the end of that Unit&apos;s next turn. </characteristic>
+            <characteristic name="Description" typeId="dc90-7f60-c435-a043">A Unit where all Squads or Vehicles are equipped with this wargear (ones in Joined Units do not need to have it, and vice versa) may choose to use it instead of Shooting. When it does so, select one enemy Vehicle or Drones unit within 24&quot;. Roll as many d6 as the attacking unit&apos;s FS (including bonuses from e.g. the Take Aim Order), and for each 5+, the target unit suffers a penalty of -2 Ld, -1WS, and -1FS, as well as -1AV if it is a Vehicle, until the end of that Unit&apos;s next turn. </characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -10144,7 +10001,10 @@ Commander Traits:
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="396d-6ded-6812-c63f" name="Logimagi" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="396d-6ded-6812-c63f" name="Logimagi" hidden="false" collective="false" import="true" defaultSelectionEntryId="1087-5c10-4be5-76f3">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52d2-7daf-b586-24c5" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="1087-5c10-4be5-76f3" name="Logimagos" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -10159,14 +10019,9 @@ Commander Traits:
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8e7-620b-2d4e-a5e7" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="5">
+                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="4">
                       <conditions>
                         <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20f9-d4dc-5a4a-60fb" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="7">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8e7-620b-2d4e-a5e7" type="equalTo"/>
                       </conditions>
                     </modifier>
                     <modifier type="set" field="0f78-b21c-a7c1-8fc6" value="2+">
@@ -10177,7 +10032,7 @@ Commander Traits:
                   </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="e935-9a84-4b80-06e6">Infantry</characteristic>
-                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">8</characteristic>
+                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">5</characteristic>
                     <characteristic name="Sv" typeId="0f78-b21c-a7c1-8fc6">5+</characteristic>
                     <characteristic name="WS" typeId="5278-8770-e2e8-da31">2</characteristic>
                     <characteristic name="FS" typeId="439d-645b-d6e0-46b8">2</characteristic>
@@ -10488,11 +10343,11 @@ Commander Traits:
         <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c37f-0ea7-1542-0a96" name="Iolos Logic Mortar" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="c37f-0ea7-1542-0a96" name="Iolos Logic-Mortar" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="5231-95ab-f9c8-8ea6" name="Iolos Logic Mortar" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
+        <profile id="5231-95ab-f9c8-8ea6" name="Iolos Logic-Mortar" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">36&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">24&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">-</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">3/8</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">5</characteristic>
@@ -10518,7 +10373,7 @@ Commander Traits:
       <profiles>
         <profile id="1d55-bca9-f44e-66cf" name="Destructor Gun" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">36&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">18&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">1</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">1/10</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">6</characteristic>
@@ -10541,7 +10396,7 @@ Commander Traits:
       <profiles>
         <profile id="3050-e07e-f65f-92a3" name="Revenant Chem-Hurler" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">12&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">6&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">-</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">2/3</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">3</characteristic>
@@ -10573,7 +10428,7 @@ Commander Traits:
       <profiles>
         <profile id="fccf-56ca-b4f5-1b46" name="Proteus Neurotoxin Emitter" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">36&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">24&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">-</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">-/5</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">-</characteristic>
@@ -10602,7 +10457,7 @@ Commander Traits:
           <characteristics>
             <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">-</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">1</characteristic>
-            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">2/10</characteristic>
+            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">2/9</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">-</characteristic>
             <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Melee, Stun, Powerful, Risky (4+)</characteristic>
           </characteristics>
@@ -10626,7 +10481,7 @@ Commander Traits:
       <profiles>
         <profile id="803c-975c-ad0f-27c4" name="Arc-Flash Pistol" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">4&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">2&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">-</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">5/8</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">-</characteristic>
@@ -10670,7 +10525,7 @@ Commander Traits:
       <profiles>
         <profile id="b348-5423-94ef-67f8" name="Enhanced Power Armour" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
           <characteristics>
-            <characteristic name="Description" typeId="dc90-7f60-c435-a043">Enhanced Power Armour: Confers a 4+ Save and +3 Mv, and gain +1 to Cover Saves (or a 6+ Cover Save if they have none) when not issued the Dig In order.</characteristic>
+            <characteristic name="Description" typeId="dc90-7f60-c435-a043">Enhanced Power Armour: Confers a 4+ Save and +1 Mv, and gain +1 to Cover Saves (or a 6+ Cover Save if they have none) when not issued the Dig In order.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -10884,7 +10739,7 @@ Commander Traits:
       <profiles>
         <profile id="80cb-1a66-1e3f-2681" name="Autocannon" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">24&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">12&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">2</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">4/6</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">6</characteristic>
@@ -10946,7 +10801,7 @@ Commander Traits:
                   </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="1a20-e2e4-fd8b-bde3">Vehicle</characteristic>
-                    <characteristic name="Mv" typeId="d4ef-5bd1-fbdc-6395">14</characteristic>
+                    <characteristic name="Mv" typeId="d4ef-5bd1-fbdc-6395">12</characteristic>
                     <characteristic name="AV" typeId="7d36-54ca-0214-fea2">12</characteristic>
                     <characteristic name="WS" typeId="75c8-dfe4-77ef-6cf8">4</characteristic>
                     <characteristic name="FS" typeId="a907-0ee6-2b58-f103">2</characteristic>
@@ -11049,6 +10904,11 @@ Commander Traits:
                       <costs>
                         <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="20.0"/>
                       </costs>
+                    </entryLink>
+                    <entryLink id="e692-2dc4-11cf-47a9" name="Icarus Missile Launcher" hidden="false" collective="false" import="true" targetId="0cf2-a4ab-5654-531a" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36ea-6717-bfb0-8738" type="max"/>
+                      </constraints>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
@@ -11189,9 +11049,9 @@ Commander Traits:
       <profiles>
         <profile id="eb50-e0e3-2612-d45d" name="Skyshatter Cannon" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">48&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">36&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">1</characteristic>
-            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">2/10</characteristic>
+            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">d3/d6+3</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">4</characteristic>
             <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Powerful, Incineration (2d6), Indirect Fire, Very Heavy</characteristic>
           </characteristics>
@@ -11215,7 +11075,7 @@ Commander Traits:
       <profiles>
         <profile id="3ce2-b850-55d2-2376" name="Incineration Rifle" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">12&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">6&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">1</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">4/-</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">-</characteristic>
@@ -11281,7 +11141,7 @@ Commander Traits:
       <profiles>
         <profile id="f59f-36ee-78c2-fa65" name="Nanomachine Swarm" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">6&quot;</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">2&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">-</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">-/6</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">-</characteristic>
@@ -11344,7 +11204,7 @@ Commander Traits:
                         <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1c7-4be0-a950-1acf" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="9">
+                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="6">
                       <conditions>
                         <condition field="selections" scope="f4f7-b908-375e-9170" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f6ba-e615-cd1a-10c0" type="equalTo"/>
                       </conditions>
@@ -11352,16 +11212,6 @@ Commander Traits:
                     <modifier type="set" field="0f78-b21c-a7c1-8fc6" value="4+">
                       <conditions>
                         <condition field="selections" scope="f4f7-b908-375e-9170" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f6ba-e615-cd1a-10c0" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="5">
-                      <conditions>
-                        <condition field="selections" scope="f4f7-b908-375e-9170" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ff5e-9f19-5fad-a503" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="7">
-                      <conditions>
-                        <condition field="selections" scope="f4f7-b908-375e-9170" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7e15-c04a-e506-ab9c" type="equalTo"/>
                       </conditions>
                     </modifier>
                     <modifier type="set" field="0f78-b21c-a7c1-8fc6" value="3+">
@@ -11377,7 +11227,7 @@ Commander Traits:
                   </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="e935-9a84-4b80-06e6">Infantry</characteristic>
-                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">8</characteristic>
+                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">5</characteristic>
                     <characteristic name="Sv" typeId="0f78-b21c-a7c1-8fc6">5+</characteristic>
                     <characteristic name="WS" typeId="5278-8770-e2e8-da31">4</characteristic>
                     <characteristic name="FS" typeId="439d-645b-d6e0-46b8">2</characteristic>
@@ -11589,7 +11439,7 @@ Commander Traits:
       <profiles>
         <profile id="553a-6aea-23de-f6c5" name="Medical Gear" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
           <characteristics>
-            <characteristic name="Description" typeId="dc90-7f60-c435-a043">Once per Phase, when this Unit is targeted by a Shooting Attack, it can ignore the damage from as many failed armour saves as the Unit with this Wargear has Squads in it. (Damage from failed Cover Saves or ignored Armour Saves cannot be ignored, nor can damage from attacks with the Powerful keyword).</characteristic>
+            <characteristic name="Description" typeId="dc90-7f60-c435-a043">Once per Phase, when this Unit is targeted by a Shooting Attack or Close Combat Attack, it can ignore the damage from as many failed armour saves as the Unit with this Wargear has Squads in it. for the duration of that Attack (Damage from failed Cover Saves or ignored Armour Saves cannot be ignored, nor can damage from attacks with the Powerful keyword).</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -11601,7 +11451,7 @@ Commander Traits:
       <profiles>
         <profile id="dabb-39dc-01c5-d919" name="Orbital Comms Relay" hidden="false" typeId="6aff-fae8-88fc-a7f0" typeName="Command Wargear">
           <characteristics>
-            <characteristic name="Description" typeId="ff8d-1504-fb82-c241">In the Command Phase, this Unit can activate this Wargear. Until the end of the Shooting Phase, any scatter rolls (deep strike, indirect fire) made within 18&quot; and in Line of Sight of this Unit may re-roll the scatter roll.</characteristic>
+            <characteristic name="Description" typeId="ff8d-1504-fb82-c241">In the Command Phase, this Unit can activate this Wargear. Until the end of the Shooting Phase, any scatter rolls (deep strike, indirect fire) targeting a point or Unit within 18&quot; and in Line of Sight of this Unit may re-roll the scatter roll.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -11613,7 +11463,7 @@ Commander Traits:
       <profiles>
         <profile id="a6fe-d087-4623-0cfe" name="Radial Scanner" hidden="false" typeId="6aff-fae8-88fc-a7f0" typeName="Command Wargear">
           <characteristics>
-            <characteristic name="Description" typeId="ff8d-1504-fb82-c241">In the Command Phase, this Unit can choose an enemy Unit. Until the end of the Shooting Phase, all friendly Units that make Shooting Attacks at that Unit gain +1 to their FS for that attack.
+            <characteristic name="Description" typeId="ff8d-1504-fb82-c241">In the Command Phase, this Unit can choose an enemy Unit within Line of Sight. Until the end of the Shooting Phase, all friendly Units make Shooting Attacks at that Unit gain +1 to their FS.
 In addition, Once per Round, this Unit may make the Suppressive Fire or Overwatch Fire reactions, ignoring the reaction limit (being able to react despite a unit having reacted, or another unit being able to react after this one, in the same phase).</characteristic>
           </characteristics>
         </profile>
@@ -11668,11 +11518,6 @@ In addition, Once per Round, this Unit may make the Suppressive Fire or Overwatc
               <profiles>
                 <profile id="b0c4-f345-517f-73c6" name="Medical Squad" hidden="false" typeId="0954-3b9f-8020-7034" typeName="Infantry">
                   <modifiers>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="7">
-                      <conditions>
-                        <condition field="selections" scope="6eb1-dedb-adac-8318" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="24bb-4df8-26df-2f24" type="equalTo"/>
-                      </conditions>
-                    </modifier>
                     <modifier type="set" field="0f78-b21c-a7c1-8fc6" value="4+">
                       <conditions>
                         <condition field="selections" scope="6eb1-dedb-adac-8318" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a8b2-5602-483a-73ed" type="equalTo"/>
@@ -11693,14 +11538,9 @@ In addition, Once per Round, this Unit may make the Suppressive Fire or Overwatc
                         <condition field="selections" scope="6eb1-dedb-adac-8318" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e9e-2047-a973-4049" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="9">
-                      <conditions>
-                        <condition field="selections" scope="6eb1-dedb-adac-8318" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a8b2-5602-483a-73ed" type="equalTo"/>
-                      </conditions>
-                    </modifier>
                     <modifier type="set" field="aa9f-fbb6-4fba-15fb" value="5">
                       <conditions>
-                        <condition field="selections" scope="6eb1-dedb-adac-8318" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="25ca-54f1-645b-7b44" type="equalTo"/>
+                        <condition field="selections" scope="6eb1-dedb-adac-8318" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1478-1ade-449f-f403" type="equalTo"/>
                       </conditions>
                     </modifier>
                     <modifier type="set" field="0f78-b21c-a7c1-8fc6" value="4+">
@@ -11716,7 +11556,7 @@ In addition, Once per Round, this Unit may make the Suppressive Fire or Overwatc
                   </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="e935-9a84-4b80-06e6">Infantry</characteristic>
-                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">6</characteristic>
+                    <characteristic name="Mv" typeId="aa9f-fbb6-4fba-15fb">4</characteristic>
                     <characteristic name="Sv" typeId="0f78-b21c-a7c1-8fc6">5+</characteristic>
                     <characteristic name="WS" typeId="5278-8770-e2e8-da31">2</characteristic>
                     <characteristic name="FS" typeId="439d-645b-d6e0-46b8">2</characteristic>
@@ -11917,6 +11757,139 @@ In addition, Once per Round, this Unit may make the Suppressive Fire or Overwatc
         <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="0cf2-a4ab-5654-531a" name="Icarus Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="6a58-85bd-8347-82a1" name="Icarus Missile Launcher" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">36&quot;</characteristic>
+            <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">1</characteristic>
+            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">5/7</characteristic>
+            <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">5</characteristic>
+            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Anti-Air, Guided</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="8490-ef04-e5f0-9b69" name="Guided" hidden="false" targetId="bb39-1aa2-857f-dd2b" type="rule"/>
+        <infoLink id="0467-0f89-5752-4055" name="Anti-Air" hidden="false" targetId="2dab-a7af-aaf7-45ea" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="15.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0c87-97e9-e182-68ad" name="Scout Fliers" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="fc5d-e9a4-90c7-546a" name="Flying" hidden="false" targetId="a2c0-6575-efe5-eff7" type="rule"/>
+        <infoLink id="b7e6-e565-6486-14ad" name="PD(x)" hidden="false" targetId="0e08-93ac-d607-9391" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="PD(1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="2f0d-99b4-4e7a-602e" name="Fire Support Craft" hidden="false" targetId="bade-290c-0399-184e" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e559-23f1-dd6c-6271" name="Aircraft (Sub-Type)" hidden="false" targetId="2879-21a4-8d0e-49f4" primary="false"/>
+        <categoryLink id="d026-c060-c5e9-ea71" name="Elites" hidden="false" targetId="e144-251f-52ad-6a90" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5623-44f1-548c-aa58" name="Scout Fliers" hidden="false" collective="false" import="true" defaultSelectionEntryId="a61f-5ad8-2d5c-773d">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="767c-d192-4474-94fa" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="a61f-5ad8-2d5c-773d" name="Scout Flier" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebad-28dc-1d25-7f09" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a191-5084-fb08-c46e" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="1196-036d-ee60-48b0" name="Scout Flier" hidden="false" typeId="b3d8-25bf-3513-55f7" typeName="Vehicle">
+                  <modifiers>
+                    <modifier type="set" field="1da7-7ee1-a03b-cb95" value="5">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f99-5539-6d1c-462f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="7d36-54ca-0214-fea2" value="1">
+                      <conditions>
+                        <condition field="selections" scope="0c87-97e9-e182-68ad" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a31a-d674-653f-f7a8" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="1a20-e2e4-fd8b-bde3">Vehicle, Aircraft</characteristic>
+                    <characteristic name="Mv" typeId="d4ef-5bd1-fbdc-6395">40*</characteristic>
+                    <characteristic name="AV" typeId="7d36-54ca-0214-fea2">9</characteristic>
+                    <characteristic name="WS" typeId="75c8-dfe4-77ef-6cf8">-</characteristic>
+                    <characteristic name="FS" typeId="a907-0ee6-2b58-f103">2</characteristic>
+                    <characteristic name="HP" typeId="38f2-690b-8326-2263">1</characteristic>
+                    <characteristic name="Ld" typeId="1da7-7ee1-a03b-cb95">7</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="30.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="0092-fd1c-4fab-17d8" name="Weapons" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="increment" field="b840-d2f5-ad09-f936" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b840-d2f5-ad09-f936" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="e973-9549-c6fd-a6bb" name="Autocannon" hidden="false" collective="false" import="true" targetId="b38a-1168-fa5a-e094" type="selectionEntry"/>
+            <entryLink id="5081-ddbf-ff65-b06c" name="Icarus Missile Launcher" hidden="false" collective="false" import="true" targetId="0cf2-a4ab-5654-531a" type="selectionEntry"/>
+            <entryLink id="fc60-09f5-c894-584c" name="Laser Cannon" hidden="false" collective="false" import="true" targetId="3aa3-c3fc-2e5e-19cc" type="selectionEntry"/>
+            <entryLink id="3f0f-c3ab-aec8-ef75" name="Missile Launcher" hidden="false" collective="false" import="true" targetId="0bd9-9a0e-5978-9503" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="ae40-ef85-bda7-2a97" name="Wargear" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2118-d20b-08c8-6f60" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="7b8d-1c6a-bea0-869a" name="Jamming Systems" hidden="false" collective="false" import="true" targetId="b73f-08e6-aa23-d413" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="0d75-bf50-2c92-2db9" value="40.0"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a188-414d-179f-b113" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="5342-bab6-57d6-19c3" name="Comms Array" hidden="false" collective="false" import="true" targetId="47e4-05c5-300c-77a0" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="0d75-bf50-2c92-2db9" value="45.0"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e275-24be-2716-51cf" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="6676-8098-6d70-a679" name="Radial Scanner" hidden="false" collective="false" import="true" targetId="9b62-62bc-b19d-827e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="0d75-bf50-2c92-2db9" value="50.0"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe51-7a66-2cae-342f" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="8603-862e-a13f-4bc9" name="Unique Wargear" hidden="false" collective="false" import="true" targetId="4e44-c416-c9c7-d9ac" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="585c-1f0a-d071-4ba0" name="Heavy Weapons Choice" hidden="false" collective="false" import="true">
@@ -12041,6 +12014,11 @@ In addition, Once per Round, this Unit may make the Suppressive Fire or Overwatc
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cc6-981b-5512-22cd" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8130-a318-b870-6118" name="Icarus Missile Launcher" hidden="false" collective="false" import="true" targetId="0cf2-a4ab-5654-531a" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be10-ab01-79fd-4014" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -12230,7 +12208,7 @@ In addition, Once per Round, this Unit may make the Suppressive Fire or Overwatc
               <profiles>
                 <profile id="2c9a-e7bb-4da6-9e2d" name="Lord of the Frost" hidden="false" typeId="7299-d224-fc7e-7593" typeName="Commander Trait">
                   <characteristics>
-                    <characteristic name="Description" typeId="8866-d72c-fd6f-830b">This Unit and every friendly Unit within 12&quot; gains +3&quot; to Mv when they are not in any Terrain.</characteristic>
+                    <characteristic name="Description" typeId="8866-d72c-fd6f-830b">This Unit and every friendly Unit within 12&quot; gains +2&quot; to Mv when they are not in any Terrain.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
