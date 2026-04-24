@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="c1c8-3310-c638-7238" name="SJ wargame" revision="19" battleScribeVersion="2.03" authorName="MadToxin" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="c1c8-3310-c638-7238" name="SJ wargame" revision="20" battleScribeVersion="2.03" authorName="MadToxin" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>SJ Wargame list builder</readme>
   <publications>
     <publication id="53d2-8b59-fd84-65d1" name="Wargame Prototype" shortName="SJ Wargame" publisher="Stellar Journey Wargame Prototype Design Doc" publicationDate="9.11.2024" publisherUrl="https://www.worldanvil.com/w/stellar-journey-madtoxin/a/wargame-prototype-article"/>
@@ -145,7 +145,7 @@ Vehicles have a AV stat, which represents their armour. They also sometimes have
       <description>If an Infantry Squad firing this weapon has moved, it shoots this weapon at FS1.</description>
     </rule>
     <rule id="5bc0-cd89-de72-6647" name="Stun" hidden="false">
-      <description>When an attack wounds a Vehicle successfully, that Vehicle suffers a -2 FS and -2 WS (if it has a WS stat) penalty, and cannot be included in Reactions that involve Shooting Attacks, until the end of the next Round.</description>
+      <description>When an attack wounds a Vehicle successfully, that Vehicle suffers a -2 FS and -2 WS (if it has a WS stat) penalty, and cannot be included in Reactions that involve Shooting Attacks, until the end of its next activation</description>
     </rule>
     <rule id="2f4f-58e6-4cd5-942a" name="Scouts" hidden="false">
       <description>This unit gains a +1 to any Cover Save it gains, and enemy Units shooting it reduce their FS by 1.</description>
@@ -154,7 +154,7 @@ Vehicles have a AV stat, which represents their armour. They also sometimes have
       <description>This unit is always treated as if it is in Command Range.</description>
     </rule>
     <rule id="f4af-829f-39d0-e64d" name="Suppression" hidden="false">
-      <description>If an enemy Infantry unit suffers a Wound from an attack due to this weapon, that unit must make a Leadership Test. If failed, it reduces its WS and FS by 1 and halves its movement and cannot React until the end of the next Round. In addition, attackers in combat against the target gain a +1 to Combat Initiative tests until the end of the next Round.</description>
+      <description>If an enemy Infantry unit suffers a Wound from an attack due to this weapon, that unit must make a Leadership Test. If failed, it reduces its WS and FS by 1 and halves its movement and cannot React until the end of its next activation. In addition, attackers in combat against the target gain a +1 to Combat Initiative tests until the end of the next Round. Suppressed Units must make a Leadership Test before using any Command Wargear it may have.</description>
     </rule>
     <rule id="4792-5dbf-12c0-dddf" name="Relentless" hidden="false">
       <description>Squads with this Ability can fire Heavy weapons at full FS even despite having moved. </description>
@@ -199,7 +199,8 @@ Vehicles have a AV stat, which represents their armour. They also sometimes have
       <description>If this unit embarks into a Transport with friendly units within, each Squad within does not take up space for every other friendly Squad inside (i.e. Two Deployable Squads would gain two free transport spaces in a Transport with two other Squads inside. Each Squad gives one free space for the Deployable Unit).</description>
     </rule>
     <rule id="4a86-2dcd-4bc0-9d9e" name="Sniper" hidden="false">
-      <description>When selecting targets for this Unit, treat its weapons&apos; range as 1.5 times the range they would be (I.e: a Railcannon&apos;s 18&quot; becomes 27&quot;)</description>
+      <description>When selecting targets for this Unit, treat its Weapons&apos; Range as double what it normally would be.
+</description>
     </rule>
     <rule id="af9c-3abb-e521-f6e3" name="Pistol" hidden="false">
       <description>This weapon can be shot even when in Close Combat Range.</description>
@@ -223,7 +224,7 @@ Vehicles have a AV stat, which represents their armour. They also sometimes have
       <description>The hit rolls for this attack may be re-rolled once.</description>
     </rule>
     <rule id="1bc8-4a61-b424-0d67" name="Indirect Fire" hidden="false">
-      <description>This Weapon may be fired even if the firing unit does not see the target. When choosing to fire, any Models in the Unit may fire Indirectly or Normally. When firing Indirectly, before making attacks, pick any point within 1&quot; of the Target Unit&apos;s Models. Then, scatter (with the same process as Deep Strike, scattering 2D3&quot;). Then, from that point, measure the same distance as the weapon&apos;s Incineration(x) rule&apos;s value (1&quot; if none listed), subtracted by 2 (to a minimum of 1&quot;) in every direction. Do this once, and use the resulting point for all of the same type of Weapon in the Unit. If any Squads of the target unit are within it, the attacks proceed as normal, following all normal rules and keywords except counting Blast(x) with the amount of Squads within the area. Any non-target Units that are within the area, friendly, enemy, or othewise, are hit the same way. </description>
+      <description>This Weapon may be fired even if the firing unit does not see the target. When choosing to fire, any Models in the Unit may fire Indirectly or Normally. When firing Indirectly, before making attacks, pick any point within 1&quot; of the Target Unit&apos;s Models. Then, scatter (with the same process as Deep Strike, scattering 2D3&quot;, D3&quot; if any Friendly Units can see the target point.). Then, from that point, measure the same distance as the weapon&apos;s Incineration(x) rule&apos;s value (1&quot; if none listed), subtracted by 2 (to a minimum of 1&quot;) in every direction. Do this once, and use the resulting point for all of the same type of Weapon in the Unit. If any Squads of the target unit are within it, the attacks proceed as normal, following all normal rules and keywords except counting Blast(x) with the amount of Squads within the area. Any non-target Units that are within the area, friendly, enemy, or othewise, are hit the same way.</description>
     </rule>
     <rule id="de72-d220-8c83-4e19" name="One Use" hidden="false">
       <description>This Weapon can only be used once per battle.</description>
@@ -265,7 +266,7 @@ Vehicles have a AV stat, which represents their armour. They also sometimes have
       <description>Models with this Ability add the Corrosion Keyword to all of their Weapons.</description>
     </rule>
     <rule id="0a32-dd65-f129-a22e" name="Logic Plague Injection" hidden="false">
-      <description>Any Vehicle or Drones Unit that suffers a wound from this weapon reduces their leadership, WS, FS, and Mv, by 2 until their next turn.</description>
+      <description>Any Vehicle or Drones Unit that suffers a wound from this weapon reduces their Ld, WS, FS, and Mv, by 2 until the end of its next activation.</description>
     </rule>
     <rule id="7233-6ca5-17cb-b578" name="Bomb" hidden="false">
       <description>This Weapon can be shot as if the Unit is anywhere on the path it moved this turn (i.e. if it moved past an enemy unit and was 3&quot; from it at closest, you can shoot the weapon as if it was at that closest point, assuming it was in range).</description>
@@ -289,11 +290,10 @@ Vehicles have a AV stat, which represents their armour. They also sometimes have
       <description>After attacks made with this Weapon are resolved, draw a line from each Model that had a Weapon with this Keyword that was shot, to the target Unit. Any Squads or Vehicles underneath any line suffer a single hit from that Weapon. </description>
     </rule>
     <rule id="fc90-39c4-c466-f8f2" name="Nanomantic Manipulation" hidden="false">
-      <description>In the Command Phase, this Unit may choose between three effects that last until the end of the Round:
-- Select one enemy Unit within 12&quot;. That Unit reduces their Mv by 2&quot;, and any Combat Initiative Rolls by 2.
-- Every Friendly Unit within 6&quot; gains +1 to its Cover Saves.
-- Models with this Ability double their Mv and gain +1 Ws.
-</description>
+      <description>In the Command Phase, this Unit may choose between three effects:
+- Select one enemy Unit within 12&quot;. That Unit reduces their Mv by 2&quot;, and any Combat Initiative Rolls by 2 until the end of its next activation.
+- This Unit gains +1 to its Cover Saves until the end of the Round.
+- Models in a Unit with this Ability double their Mv and gain +1 Ws until the end of the Round.</description>
     </rule>
     <rule id="2e08-89c4-09c9-ac8b" name="Overwatch" hidden="false">
       <description>This Unit gains +2 Ld when making Leadership tests for Reactions and models with this Ability do not take FS penalties when making the Suppressive Fire or Return Fire Reactions.
