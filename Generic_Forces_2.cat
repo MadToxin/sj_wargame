@@ -498,7 +498,7 @@
                     <characteristic name="Sv" typeId="b361-03f5-e0f7-ce4e">4+</characteristic>
                     <characteristic name="WS" typeId="0e5d-59f9-2959-d962">4</characteristic>
                     <characteristic name="FS" typeId="7ef2-dead-7cf6-5b23">4</characteristic>
-                    <characteristic name="HP" typeId="4c39-4e3c-3211-daec">2</characteristic>
+                    <characteristic name="HP" typeId="4c39-4e3c-3211-daec">1</characteristic>
                     <characteristic name="Ld" typeId="3682-130c-2e5d-b2e5">10</characteristic>
                     <characteristic name="Command Range" typeId="8933-3932-6a97-7aca">24&quot;</characteristic>
                   </characteristics>
@@ -970,16 +970,17 @@
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">1</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">2/8</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">6</characteristic>
-            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Heavy, Stun</characteristic>
+            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Heavy, Stun, Powerful</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink id="a39f-5324-9e4b-aaef" name="Heavy" publicationId="53d2-8b59-fd84-65d1" hidden="false" targetId="c75e-3438-9bd3-0761" type="rule"/>
         <infoLink id="6e52-45ea-c26e-6a65" name="Stun" publicationId="53d2-8b59-fd84-65d1" hidden="false" targetId="5bc0-cd89-de72-6647" type="rule"/>
+        <infoLink id="7c83-de1d-b037-a216" name="Powerful" hidden="false" targetId="e0fd-fd5b-92ee-4c64" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="15.0"/>
+        <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="20.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b471-1f31-cc31-6e9f" name="Special Combat Platoon" publicationId="53d2-8b59-fd84-65d1" hidden="false" collective="false" import="true" type="unit">
@@ -1416,7 +1417,7 @@
           <characteristics>
             <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">12&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">2</characteristic>
-            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">3/5</characteristic>
+            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">4/5</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">5</characteristic>
             <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Heavy, Suppression</characteristic>
           </characteristics>
@@ -2438,13 +2439,10 @@ Commander Traits:
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">1</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">-/-</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">6</characteristic>
-            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Pistol</characteristic>
+            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">-</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="e4c8-b1fb-2118-45b1" name="Pistol" hidden="false" targetId="af9c-3abb-e521-f6e3" type="rule"/>
-      </infoLinks>
       <costs>
         <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="0.0"/>
       </costs>
@@ -2794,7 +2792,7 @@ Commander Traits:
           <characteristics>
             <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">24&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">2</characteristic>
-            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">5/4</characteristic>
+            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">5/5</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">-</characteristic>
             <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Heavy, Anti-Air</characteristic>
           </characteristics>
@@ -3009,7 +3007,7 @@ Commander Traits:
         <infoLink id="8292-80c1-bd23-0a50" name="Very Heavy" hidden="false" targetId="8de0-307b-38db-ffcb" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="20.0"/>
+        <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="25.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6629-70cc-c15d-1ecf" name="Missile Pod System" hidden="false" collective="false" import="true" type="upgrade">
@@ -3095,9 +3093,9 @@ Commander Traits:
       <profiles>
         <profile id="ae2c-1cee-3825-e597" name="Heavy Autocannon" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">18&quot;</characteristic>
-            <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">3</characteristic>
-            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">4/6</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">24&quot;</characteristic>
+            <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">2</characteristic>
+            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">3/7</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">6</characteristic>
             <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Very Heavy, Suppression, Piercing (5+)</characteristic>
           </characteristics>
@@ -3749,17 +3747,13 @@ Commander Traits:
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="8480-24bd-2abd-d75d" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="10d2-14ad-0228-69ac">
+        <selectionEntryGroup id="8480-24bd-2abd-d75d" name="Weapon" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="636c-76a7-26c3-a20b" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="953f-551a-2c6f-03f7" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="10d2-14ad-0228-69ac" name="Railcannon" hidden="false" collective="false" import="true" targetId="52e8-c782-6a2d-f443" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="0d75-bf50-2c92-2db9" value="0.0"/>
-              </modifiers>
-            </entryLink>
+            <entryLink id="10d2-14ad-0228-69ac" name="Railcannon" hidden="false" collective="false" import="true" targetId="52e8-c782-6a2d-f443" type="selectionEntry"/>
             <entryLink id="5dd1-3326-6c21-8955" name="Heavy Plasma Cannon" hidden="false" collective="false" import="true" targetId="a454-5781-03d6-7049" type="selectionEntry"/>
             <entryLink id="c272-b59c-3c16-bb7a" name="Heavy Autocannon" hidden="false" collective="false" import="true" targetId="c787-4eca-b353-702c" type="selectionEntry"/>
             <entryLink id="2d02-57d1-78f8-dcf8" name="Missile Pod System" hidden="false" collective="false" import="true" targetId="6629-70cc-c15d-1ecf" type="selectionEntry"/>
@@ -4020,7 +4014,7 @@ Commander Traits:
         <entryLink id="1cac-6917-918c-164f" name="Unique Wargear" hidden="false" collective="false" import="true" targetId="4e44-c416-c9c7-d9ac" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="80.0"/>
+        <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="60.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="72bc-2b15-a8c2-a972" name="Scout Squads" hidden="false" collective="false" import="true" type="unit">
@@ -5571,6 +5565,7 @@ Commander Traits:
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink id="6ee1-b4b6-7b0d-c6dc" name="Autocannon" hidden="false" collective="false" import="true" targetId="b38a-1168-fa5a-e094" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -5843,7 +5838,7 @@ Commander Traits:
               <characteristics>
                 <characteristic name="Unit Type" typeId="1a20-e2e4-fd8b-bde3">Vehicle, Aircraft</characteristic>
                 <characteristic name="Mv" typeId="d4ef-5bd1-fbdc-6395">30*</characteristic>
-                <characteristic name="AV" typeId="7d36-54ca-0214-fea2">12</characteristic>
+                <characteristic name="AV" typeId="7d36-54ca-0214-fea2">11</characteristic>
                 <characteristic name="WS" typeId="75c8-dfe4-77ef-6cf8">-</characteristic>
                 <characteristic name="FS" typeId="a907-0ee6-2b58-f103">3</characteristic>
                 <characteristic name="HP" typeId="38f2-690b-8326-2263">2</characteristic>
@@ -5910,6 +5905,7 @@ Commander Traits:
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink id="59d5-ad4f-5cbc-9ee4" name="Autocannon" hidden="false" collective="false" import="true" targetId="b38a-1168-fa5a-e094" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="b046-f6b6-8ec2-5c08" name="Heavy Weapons Choice 1" hidden="false" collective="false" import="true">
@@ -5933,6 +5929,7 @@ Commander Traits:
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink id="7818-7412-f144-a2f2" name="Autocannon" hidden="false" collective="false" import="true" targetId="b38a-1168-fa5a-e094" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -6227,7 +6224,11 @@ Commander Traits:
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="8e4a-ddfa-3b59-d06a" name="One Use" hidden="false" targetId="de72-d220-8c83-4e19" type="rule"/>
+        <infoLink id="8e4a-ddfa-3b59-d06a" name="Limited (x)" hidden="false" targetId="de72-d220-8c83-4e19" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Limited (1)"/>
+          </modifiers>
+        </infoLink>
         <infoLink id="6094-cab2-e670-7cb1" name="Inceneration (x)" hidden="false" targetId="5c0d-855c-51f7-77f7" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Incineration (6)"/>
@@ -6278,7 +6279,7 @@ Commander Traits:
                   <characteristics>
                     <characteristic name="Unit Type" typeId="1a20-e2e4-fd8b-bde3">Vehicle, Aircraft</characteristic>
                     <characteristic name="Mv" typeId="d4ef-5bd1-fbdc-6395">40</characteristic>
-                    <characteristic name="AV" typeId="7d36-54ca-0214-fea2">11</characteristic>
+                    <characteristic name="AV" typeId="7d36-54ca-0214-fea2">10</characteristic>
                     <characteristic name="WS" typeId="75c8-dfe4-77ef-6cf8">-</characteristic>
                     <characteristic name="FS" typeId="a907-0ee6-2b58-f103">3</characteristic>
                     <characteristic name="HP" typeId="38f2-690b-8326-2263">2</characteristic>
@@ -6445,6 +6446,7 @@ Commander Traits:
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink id="b86e-bef2-20b2-9343" name="Autocannon" hidden="false" collective="false" import="true" targetId="b38a-1168-fa5a-e094" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="89b7-1867-0813-ba96" name="Secondary Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="2acc-9b4a-601a-e330">
@@ -6462,6 +6464,9 @@ Commander Traits:
                           </constraints>
                         </entryLink>
                       </entryLinks>
+                      <costs>
+                        <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="0.0"/>
+                      </costs>
                     </selectionEntry>
                   </selectionEntries>
                   <entryLinks>
@@ -7474,6 +7479,8 @@ Commander Traits:
                 <entryLink id="c0d2-be80-6b32-6e38" name="Micromissile Launcher" hidden="false" collective="false" import="true" targetId="bec5-50d2-e4b8-37d9" type="selectionEntry"/>
                 <entryLink id="1d09-11d9-53b2-bc0d" name="Mortar" hidden="false" collective="false" import="true" targetId="0663-7c33-6140-9603" type="selectionEntry"/>
                 <entryLink id="1673-e0c8-2d2d-13fb" name="Neurotoxin Cannon" hidden="false" collective="false" import="true" targetId="bf64-25a8-de7f-22ed" type="selectionEntry"/>
+                <entryLink id="797d-6a93-62f6-6f09" name="Autocannon" hidden="false" collective="false" import="true" targetId="b38a-1168-fa5a-e094" type="selectionEntry"/>
+                <entryLink id="a03b-ad5a-7214-262f" name="Revenant Chem-Hurler" hidden="false" collective="false" import="true" targetId="91e4-c766-7b27-bdae" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="10f6-283e-f126-982f" name="Support Weapons Choice" hidden="false" collective="false" import="true">
@@ -7618,6 +7625,7 @@ Commander Traits:
                 <entryLink id="5c69-2ab7-3669-c735" name="Micromissile Launcher" hidden="false" collective="false" import="true" targetId="bec5-50d2-e4b8-37d9" type="selectionEntry"/>
                 <entryLink id="a5dc-32d7-04d0-4b1b" name="Mortar" hidden="false" collective="false" import="true" targetId="0663-7c33-6140-9603" type="selectionEntry"/>
                 <entryLink id="1ba6-67b8-767b-c3ca" name="Neurotoxin Cannon" hidden="false" collective="false" import="true" targetId="bf64-25a8-de7f-22ed" type="selectionEntry"/>
+                <entryLink id="4ce7-751b-774d-3d38" name="Autocannon" hidden="false" collective="false" import="true" targetId="b38a-1168-fa5a-e094" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="915b-2fa2-dbdb-5a80" name="Support Weapons Choice" hidden="false" collective="false" import="true">
@@ -7661,6 +7669,9 @@ Commander Traits:
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="aaea-bea8-0764-72c8" name="Plasma Rifle" hidden="false" collective="false" import="true" targetId="691b-3b7b-1121-0987" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="0d75-bf50-2c92-2db9" value="0.0"/>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dafa-9887-956b-7b12" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca5c-ee00-dea8-687c" type="min"/>
@@ -7764,7 +7775,7 @@ Commander Traits:
                   <characteristics>
                     <characteristic name="Unit Type" typeId="1a20-e2e4-fd8b-bde3">Vehicle, Aircraft</characteristic>
                     <characteristic name="Mv" typeId="d4ef-5bd1-fbdc-6395">45</characteristic>
-                    <characteristic name="AV" typeId="7d36-54ca-0214-fea2">10</characteristic>
+                    <characteristic name="AV" typeId="7d36-54ca-0214-fea2">9</characteristic>
                     <characteristic name="WS" typeId="75c8-dfe4-77ef-6cf8">-</characteristic>
                     <characteristic name="FS" typeId="a907-0ee6-2b58-f103">3</characteristic>
                     <characteristic name="HP" typeId="38f2-690b-8326-2263">1</characteristic>
@@ -7886,7 +7897,7 @@ Commander Traits:
                 <characteristic name="Sv" typeId="b361-03f5-e0f7-ce4e">3+</characteristic>
                 <characteristic name="WS" typeId="0e5d-59f9-2959-d962">5</characteristic>
                 <characteristic name="FS" typeId="7ef2-dead-7cf6-5b23">5</characteristic>
-                <characteristic name="HP" typeId="4c39-4e3c-3211-daec">3</characteristic>
+                <characteristic name="HP" typeId="4c39-4e3c-3211-daec">1</characteristic>
                 <characteristic name="Ld" typeId="3682-130c-2e5d-b2e5">11</characteristic>
                 <characteristic name="Command Range" typeId="8933-3932-6a97-7aca">24&quot;</characteristic>
               </characteristics>
@@ -7905,6 +7916,7 @@ Commander Traits:
                 <entryLink id="8692-c3ce-752d-bc16" name="Micromissile Launcher" hidden="false" collective="false" import="true" targetId="bec5-50d2-e4b8-37d9" type="selectionEntry"/>
                 <entryLink id="ffd5-4862-faf2-2b91" name="Mortar" hidden="false" collective="false" import="true" targetId="0663-7c33-6140-9603" type="selectionEntry"/>
                 <entryLink id="934b-a2c5-10d5-1f7e" name="Neurotoxin Cannon" hidden="false" collective="false" import="true" targetId="bf64-25a8-de7f-22ed" type="selectionEntry"/>
+                <entryLink id="67e0-fa9b-a93d-277c" name="Autocannon" hidden="false" collective="false" import="true" targetId="b38a-1168-fa5a-e094" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="f2a1-f50f-f741-4a99" name="Support Weapons Choice" hidden="false" collective="false" import="true">
@@ -8281,6 +8293,7 @@ Commander Traits:
                         <entryLink id="86c1-9542-c6e4-d74c" name="Micromissile Launcher" hidden="false" collective="false" import="true" targetId="bec5-50d2-e4b8-37d9" type="selectionEntry"/>
                         <entryLink id="e3d1-cc16-492a-1415" name="Mortar" hidden="false" collective="false" import="true" targetId="0663-7c33-6140-9603" type="selectionEntry"/>
                         <entryLink id="04aa-e151-c394-5096" name="Neurotoxin Cannon" hidden="false" collective="false" import="true" targetId="bf64-25a8-de7f-22ed" type="selectionEntry"/>
+                        <entryLink id="a4eb-cc4f-d239-b12a" name="Autocannon" hidden="false" collective="false" import="true" targetId="b38a-1168-fa5a-e094" type="selectionEntry"/>
                       </entryLinks>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
@@ -8658,6 +8671,7 @@ Commander Traits:
                     <entryLink id="5fe8-7d37-5c3a-e2de" name="Micromissile Launcher" hidden="false" collective="false" import="true" targetId="bec5-50d2-e4b8-37d9" type="selectionEntry"/>
                     <entryLink id="aa57-466c-a234-7318" name="Mortar" hidden="false" collective="false" import="true" targetId="0663-7c33-6140-9603" type="selectionEntry"/>
                     <entryLink id="4f71-e28a-9289-d72c" name="Neurotoxin Cannon" hidden="false" collective="false" import="true" targetId="bf64-25a8-de7f-22ed" type="selectionEntry"/>
+                    <entryLink id="2a75-19a6-ff61-450c" name="Autocannon" hidden="false" collective="false" import="true" targetId="b38a-1168-fa5a-e094" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -9112,6 +9126,7 @@ Commander Traits:
             <entryLink id="c35b-9402-802a-9c3e" name="Micromissile Launcher" hidden="false" collective="false" import="true" targetId="bec5-50d2-e4b8-37d9" type="selectionEntry"/>
             <entryLink id="093d-09d7-83f1-904c" name="Mortar" hidden="false" collective="false" import="true" targetId="0663-7c33-6140-9603" type="selectionEntry"/>
             <entryLink id="e69e-4266-c632-a75b" name="Neurotoxin Cannon" hidden="false" collective="false" import="true" targetId="bf64-25a8-de7f-22ed" type="selectionEntry"/>
+            <entryLink id="22b8-65db-0893-0dde" name="Autocannon" hidden="false" collective="false" import="true" targetId="b38a-1168-fa5a-e094" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="5f83-e6fe-afa3-2487" name="Transport Selection" hidden="false" collective="false" import="true">
@@ -9945,12 +9960,12 @@ Commander Traits:
       <profiles>
         <profile id="4349-defc-7824-5d32" name="Control Node" hidden="false" typeId="2df9-ada2-2f80-f352" typeName="Wargear">
           <characteristics>
-            <characteristic name="Description" typeId="dc90-7f60-c435-a043">This Unit, and Units within 12&quot; of this Unit are considered to be within Command Range, only for the purposes of the Drones Ability.</characteristic>
+            <characteristic name="Description" typeId="dc90-7f60-c435-a043">This Unit and Units within 12&quot; of this Unit are considered to be within Command Range.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <costs>
-        <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="20.0"/>
+        <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="50.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="712b-1ff6-430f-a97c" name="Logic Plague Caster" hidden="false" collective="false" import="true" type="upgrade">
@@ -10362,7 +10377,79 @@ Commander Traits:
                     <entryLink id="d33b-165c-c7f1-be3d" name="Proteus Neurotoxin Emitter" hidden="false" collective="false" import="true" targetId="fa1e-7164-d7bc-b7ba" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
+                <selectionEntryGroup id="9562-fa6a-caf8-a2bf" name="Auxiliary Weapons" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="195c-e2e2-3d69-3277" type="max"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup id="d87a-846b-87a6-6dd5" name="Heavy Weapons" hidden="false" collective="false" import="true">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c053-5887-2e19-157b" type="max"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink id="8b19-8eb0-d14c-bbf0" name="Railgun" hidden="false" collective="false" import="true" targetId="b387-8a4f-368b-1f2f" type="selectionEntry"/>
+                        <entryLink id="4481-c6f3-8be7-25ca" name="Machine Gun" hidden="false" collective="false" import="true" targetId="a577-7d25-415c-d4fc" type="selectionEntry"/>
+                        <entryLink id="2cd4-fa41-7d8a-e9ae" name="Laser Cannon" hidden="false" collective="false" import="true" targetId="3aa3-c3fc-2e5e-19cc" type="selectionEntry"/>
+                        <entryLink id="7713-f92a-03b4-b1ca" name="Micromissile Launcher" hidden="false" collective="false" import="true" targetId="bec5-50d2-e4b8-37d9" type="selectionEntry"/>
+                        <entryLink id="d1a8-b176-d027-6ba6" name="Mortar" hidden="false" collective="false" import="true" targetId="0663-7c33-6140-9603" type="selectionEntry"/>
+                        <entryLink id="7450-ade6-e3a7-ad58" name="Neurotoxin Cannon" hidden="false" collective="false" import="true" targetId="bf64-25a8-de7f-22ed" type="selectionEntry"/>
+                        <entryLink id="3383-958b-8072-5732" name="Autocannon" hidden="false" collective="false" import="true" targetId="b38a-1168-fa5a-e094" type="selectionEntry">
+                          <costs>
+                            <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="15.0"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink id="6034-7bd2-fa13-ea12" name="Plasma Cannon" hidden="false" collective="false" import="true" targetId="5d8c-1a32-3588-53cd" type="selectionEntry"/>
+                        <entryLink id="ac91-9405-33ee-8c6e" name="Revenant Chem-Hurler" hidden="true" collective="false" import="true" targetId="91e4-c766-7b27-bdae" type="selectionEntry">
+                          <modifiers>
+                            <modifier type="set" field="hidden" value="false">
+                              <conditions>
+                                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6680-03aa-fbff-c208" type="equalTo"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f974-e486-fdf1-5d57" type="max"/>
+                          </constraints>
+                          <costs>
+                            <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="20.0"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup id="870c-4c21-eaec-8533" name="Support Weapons" hidden="false" collective="false" import="true">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bd5-082f-d6c1-aa65" type="max"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink id="09d4-b9d8-001e-bc1b" name="Heavy Coilrifle" hidden="false" collective="false" import="true" targetId="4347-4e96-af04-b614" type="selectionEntry"/>
+                        <entryLink id="a92f-0cf3-41ea-ca37" name="Missile Launcher" hidden="false" collective="false" import="true" targetId="0bd9-9a0e-5978-9503" type="selectionEntry"/>
+                        <entryLink id="ab13-d115-c836-35dc" name="Flamethrower" hidden="false" collective="false" import="true" targetId="bb55-6bdf-777d-9f34" type="selectionEntry"/>
+                        <entryLink id="3688-d663-43e4-761b" name="Grenade Launcher" hidden="false" collective="false" import="true" targetId="30fd-531d-93a1-3781" type="selectionEntry"/>
+                        <entryLink id="dcab-d136-931e-f67c" name="Plasma Rifle" hidden="true" collective="false" import="true" targetId="691b-3b7b-1121-0987" type="selectionEntry">
+                          <modifiers>
+                            <modifier type="set" field="hidden" value="false">
+                              <conditions>
+                                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8a82-8636-0f53-b59b" type="equalTo"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                          <costs>
+                            <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="20.0"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink id="491c-1aac-8bc7-ed1c" name="Icarus Missile Launcher" hidden="false" collective="false" import="true" targetId="0cf2-a4ab-5654-531a" type="selectionEntry"/>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
               </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="f830-5df7-cc6d-132d" name="Disposable Rocket" hidden="false" collective="false" import="true" targetId="73f5-4db6-6a7c-58ac" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e548-3c49-6ffd-c7ab" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
               <costs>
                 <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="130.0"/>
               </costs>
@@ -10381,15 +10468,6 @@ Commander Traits:
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="645f-23c5-a630-5949" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="cdf1-14a6-138e-ad91" name="Heavy Coilrifle" hidden="false" collective="false" import="true" targetId="4347-4e96-af04-b614" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="0d75-bf50-2c92-2db9" value="0.0"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="caf5-458b-0f93-f808" type="max"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4341-71bb-e1e4-04f2" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="f467-a0d7-e600-60d0" name="Control Node" hidden="true" collective="false" import="true" targetId="dda6-592c-8302-f39a" type="selectionEntry">
@@ -10561,13 +10639,12 @@ Commander Traits:
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">-</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">5/8</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">-</characteristic>
-            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Pistol, Powerful, Blast (2), Risky (5+), Dangerous</characteristic>
+            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Powerful, Blast (2), Risky (5+), Dangerous</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink id="fd22-1e0f-39c9-9890" name="Suppression" hidden="false" targetId="f4af-829f-39d0-e64d" type="rule"/>
-        <infoLink id="8479-2060-5efb-a993" name="Pistol" hidden="false" targetId="af9c-3abb-e521-f6e3" type="rule"/>
         <infoLink id="fefa-c7c2-2a04-ff19" name="Powerful" hidden="false" targetId="e0fd-fd5b-92ee-4c64" type="rule"/>
         <infoLink id="15b5-39f4-37e8-3888" name="Blast (x)" hidden="false" targetId="4e9b-aabc-f5b4-c229" type="rule">
           <modifiers>
@@ -10815,9 +10892,9 @@ Commander Traits:
       <profiles>
         <profile id="80cb-1a66-1e3f-2681" name="Autocannon" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">12&quot;</characteristic>
-            <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">2</characteristic>
-            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">4/6</characteristic>
+            <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">18&quot;</characteristic>
+            <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">1</characteristic>
+            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">4/7</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">6</characteristic>
             <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Heavy, Piercing (6+)</characteristic>
           </characteristics>
@@ -10937,6 +11014,21 @@ Commander Traits:
                       </constraints>
                       <costs>
                         <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="15.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="4e1e-bc92-6e11-89b8" name="Revenant Chem-Hurler" hidden="true" collective="false" import="true" targetId="91e4-c766-7b27-bdae" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6680-03aa-fbff-c208" type="equalTo"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3eb3-731a-8bc6-7deb" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="20.0"/>
                       </costs>
                     </entryLink>
                   </entryLinks>
@@ -11221,12 +11313,11 @@ Commander Traits:
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">-</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">-/6</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">-</characteristic>
-            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Pistol, Rout, Incineration (5), Ignores Cover, Blast (3), Corrosion, Piercing (5+)</characteristic>
+            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Rout, Incineration (5), Ignores Cover, Blast (3), Corrosion, Piercing (5+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="fd43-20d1-b33e-594d" name="Pistol" hidden="false" targetId="af9c-3abb-e521-f6e3" type="rule"/>
         <infoLink id="215f-429a-3a43-edd1" name="Rout" hidden="false" targetId="31cd-09ac-2183-d6ca" type="rule"/>
         <infoLink id="971b-a5d1-961e-ca62" name="Corrosion" hidden="false" targetId="3b56-e6ff-e898-efb7" type="rule"/>
         <infoLink id="f058-0ff4-d780-44b4" name="Blast (x)" hidden="false" targetId="4e9b-aabc-f5b4-c229" type="rule">
@@ -11234,7 +11325,7 @@ Commander Traits:
             <modifier type="set" field="name" value="Blast(3)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="870d-04a2-4889-6622" name="Inceneration (x)" hidden="false" targetId="5c0d-855c-51f7-77f7" type="rule">
+        <infoLink id="870d-04a2-4889-6622" name="Incineration (x)" hidden="false" targetId="5c0d-855c-51f7-77f7" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Incineration(5)"/>
           </modifiers>
@@ -11865,7 +11956,7 @@ In addition, Once per Round, this Unit may make the Suppressive Fire or Overwatc
           <characteristics>
             <characteristic name="Range" typeId="07c4-ec9e-5be0-4f36">36&quot;</characteristic>
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">1</characteristic>
-            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">5/7</characteristic>
+            <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">5/6</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">5</characteristic>
             <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Anti-Air, Guided</characteristic>
           </characteristics>
@@ -11921,7 +12012,7 @@ In addition, Once per Round, this Unit may make the Suppressive Fire or Overwatc
                   <characteristics>
                     <characteristic name="Unit Type" typeId="1a20-e2e4-fd8b-bde3">Vehicle, Aircraft</characteristic>
                     <characteristic name="Mv" typeId="d4ef-5bd1-fbdc-6395">40*</characteristic>
-                    <characteristic name="AV" typeId="7d36-54ca-0214-fea2">9</characteristic>
+                    <characteristic name="AV" typeId="7d36-54ca-0214-fea2">8</characteristic>
                     <characteristic name="WS" typeId="75c8-dfe4-77ef-6cf8">-</characteristic>
                     <characteristic name="FS" typeId="a907-0ee6-2b58-f103">2</characteristic>
                     <characteristic name="HP" typeId="38f2-690b-8326-2263">1</characteristic>
@@ -11992,7 +12083,7 @@ In addition, Once per Round, this Unit may make the Suppressive Fire or Overwatc
         <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="73f5-4db6-6a7c-58ac" name="Disposable Rocket" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="73f5-4db6-6a7c-58ac" name="Disposable Rocket Set" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="2ed5-4d21-5286-a7fc" name="Disposable Rocket" hidden="false" typeId="a57a-62f5-417e-6da0" typeName="Weapon">
           <characteristics>
@@ -12000,7 +12091,7 @@ In addition, Once per Round, this Unit may make the Suppressive Fire or Overwatc
             <characteristic name="Attacks" typeId="ac72-a184-446b-8b2d">1</characteristic>
             <characteristic name="AP" typeId="3ad1-9ab8-5b66-d5dd">4/6</characteristic>
             <characteristic name="Ev" typeId="5cd5-8e79-ecb7-c549">3</characteristic>
-            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">One Use, Piercing (6+)</characteristic>
+            <characteristic name="Keywords" typeId="e6f0-7d74-8040-0217">Limited (3), Piercing (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -12010,7 +12101,11 @@ In addition, Once per Round, this Unit may make the Suppressive Fire or Overwatc
             <modifier type="set" field="name" value="Piercing (6+)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="1533-3eb5-1079-221f" name="One Use" hidden="false" targetId="de72-d220-8c83-4e19" type="rule"/>
+        <infoLink id="1533-3eb5-1079-221f" name="Limited (x)" hidden="false" targetId="de72-d220-8c83-4e19" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Limited (3)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="0d75-bf50-2c92-2db9" value="5.0"/>

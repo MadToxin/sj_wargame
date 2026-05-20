@@ -102,7 +102,15 @@ Infantry have a Sv stat, representing their armour quality. They also always hav
         <rule id="5a00-080a-7c6e-e9dd" name="Aircraft (Sub-Type)" hidden="false">
           <description>Aircraft move, deploy and fight differently than other units. See more on movement from the movement section, and deployment from that section. Aircraft may be deployed in Reserves independently of their Detachment. Aircraft cannot be targeted by weapons without the Anti-Air Keyword. Other Aircraft ignore this restriction, and when targeting an Aircraft Unit with the Flying Ability, reduce their FS by 1 instead of the normal rule. Aircraft have a Coherency requirement of 5&quot;. They may only fire at targets within 20º of their front on each side.
  
-Aircraft are not affected by rules related to Leadership, do not fall back, and do not gain Injury Marks, and are always treated as having been issued the Move Out order. When Hovering, these restrictions are ignored, except that every Aircraft is always treated as having the Move Out Order.</description>
+Aircraft are not affected by rules related to Leadership, do not fall back, and do not gain Injury Marks, and are always treated as having been issued the Move Out order. When Hovering, these restrictions are ignored, except that every Aircraft is always treated as having the Move Out Order.
+
+Aircraft have two modes of movement, Hovering and non-Hovering. At the start of the Movement Phase, the controlling player must declare whether the aircraft is Hovering or not. A Vehicle can Hover if it has an asterisk next to its Mv Value. When moving, Aircraft may move through friendly and enemy Units and they may move through Aircraft. Aircraft must remain in coherency of their Unit when moving, as any other unit. They cannot Charge or be Charged.
+ 
+Non-hover movement is as follows: An Aircraft may move any distance between their maximum move value and half of it. They must move forward (where the model itself points, determined when the Unit was deployed). At any point of that move, they may pivot a maximum of 45° from the direction they started the move. If the Unit can make a Move that would take them off the board, they can move into Reserve, deploying normally later.
+ 
+When Hovering, the Aircraft moves normally as any other Unit does, though at half its normal Mv Value, and can have Units Disembark and Embark as normal.
+
+Aircraft may Dodge incoming fire. Before hits are rolled, the Aircraft&apos;s Controlling Player may reduce the attacker&apos;s FS by up to 3. They may do this up to as many times as they have a multiples of 10 Mv on their statsheet (non-Hovering Movement), rounding down, in a single Turn. (So 1 reduced FS per 10 Mv).</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -175,19 +183,21 @@ Vehicles have a AV stat, which represents their armour. They also sometimes have
       <description>While in Command Range, this Unit has a base Ld of 11.</description>
     </rule>
     <rule id="38b0-0cfb-ba12-13b5" name="Transport (x)" hidden="false">
-      <description>A Vehicle with this Ability can transport x Squads within it.</description>
+      <description>A Vehicle in a Unit with this Ability can transport x Squads within it.</description>
     </rule>
     <rule id="0e08-93ac-d607-9391" name="PD(x)" hidden="false">
-      <description>Each Model in this Unit has x PD. See PD in rulebook.</description>
+      <description>Each Model in a Unit with this Ability has x PD.
+
+After hits are rolled, the defender and any Squad or Vehicle within 2&quot; of the defender rolls an amount of dice they choose, at most either as many as the unit has total PD value (for example, two PD(2) units have a total of 4) or as many as there are incoming attacks in total. Then, each of the dice that results in a value equal or greater than the Evasion value is intercepted. This does indeed mean that there may not be enough point-defense to intercept all the attacks. Sucks to suck, that&apos;s the point of making that many attacks. If an attack has a Ev value of -, it cannot be intercepted.</description>
     </rule>
     <rule id="d5df-bc22-befb-7cd0" name="SHD(x)" hidden="false">
-      <description>Each Model in this Unit has x SHD layers. See SHD in rulebook.</description>
+      <description>Each Model with this Ability in this Unit has x SHD layers. If a wound is successful, a shield layer is destroyed instead of the Model taking Damage. Shielding regenerates in each Command Phase, to the listed value.</description>
     </rule>
     <rule id="fb8e-2662-6d89-8230" name="Tracked" hidden="false">
-      <description>Vehicles with this Ability do not suffer penalties from Rough Terrain or Forests.</description>
+      <description>A Vehicle in a Unit with this Ability does not roll for damage when Advancing through Terrain.</description>
     </rule>
     <rule id="1673-aa92-4a6a-b502" name="Walker" hidden="false">
-      <description>Vehicles with this Ability do not suffer penalties from Rough Terrain or Difficult Terrain.</description>
+      <description>A Vehicle in a Unit with this ignores all Terrain penalties to Movement, and does not does not roll for damage when Advancing through Terrain.</description>
     </rule>
     <rule id="a2c0-6575-efe5-eff7" name="Flying" hidden="false">
       <description>Models with this Ability ignore any and all Terrain penalties and restrictions and cannot gain a Cover Save from them, unless they are Embarked into a City Block, in which case they behaves as normal. They can move over any Units or Impassable Terrain, but cannot end a Move inside them or within Close Combat Range unless they Charged. In addition, any attacks made against them (save for special rules) subtract 3 from the FS.</description>
@@ -226,8 +236,8 @@ Vehicles have a AV stat, which represents their armour. They also sometimes have
     <rule id="1bc8-4a61-b424-0d67" name="Indirect Fire" hidden="false">
       <description>This Weapon may be fired even if the firing unit does not see the target. When choosing to fire, any Models in the Unit may fire Indirectly or Normally. When firing Indirectly, before making attacks, pick any point within 1&quot; of the Target Unit&apos;s Models. Then, scatter (with the same process as Deep Strike, scattering 2D3&quot;, D3&quot; if any Friendly Units can see the target point.). Then, from that point, measure the same distance as the weapon&apos;s Incineration(x) rule&apos;s value (1&quot; if none listed), subtracted by 2 (to a minimum of 1&quot;) in every direction. Do this once, and use the resulting point for all of the same type of Weapon in the Unit. If any Squads of the target unit are within it, the attacks proceed as normal, following all normal rules and keywords except counting Blast(x) with the amount of Squads within the area. Any non-target Units that are within the area, friendly, enemy, or othewise, are hit the same way.</description>
     </rule>
-    <rule id="de72-d220-8c83-4e19" name="One Use" hidden="false">
-      <description>This Weapon can only be used once per battle.</description>
+    <rule id="de72-d220-8c83-4e19" name="Limited (x)" hidden="false">
+      <description>This Weapon can only be used x times per battle.</description>
     </rule>
     <rule id="4c0e-2afa-e726-4e09" name="Annihilation" hidden="false">
       <description>After rolling to hit, the controlling player of this weapon must choose a Squad or Vehicle from the target unit of this weapon&apos;s attack. Place a marker there. If the attack Hit, continue, if it did not, then scatter it d6&quot; like a Deep Strike, then continue. Any non-Aircraft units, enemy or friendly, within 6&quot; of the marker take five 1/12 Hits (Blast(3), Ignores Cover). Every Unit within 12&quot; takes 2 2/10 (Blast (3)) hits. Any Terrain Features except City Blocks and Impassable Terrain within 12&quot; is destroyed and removed from the board, and any City Blocks and Impassable Terrain within 6&quot; is removed the same. The entire area save for other Terrain Features within 6&quot; of the marker is considered Dangerous Terrain and 18&quot; of the marker is considered Difficult Terrain from then on to the end of the game. </description>
@@ -309,7 +319,7 @@ Vehicles have a AV stat, which represents their armour. They also sometimes have
       <description>Models with this Ability may Join a Unit of its own type, like a Command Unit can. </description>
     </rule>
     <rule id="1a78-84b6-1f44-8ad2" name="Piercing (x)" hidden="false">
-      <description>A hit roll of x or higher results in that attack improving its AP to 1. Resolve these attacks separately.</description>
+      <description>For each hit scored by a hit with this Weapon, roll a d6 before the target rolls Saves. Every roll of x or higher results in that attack improving its AP to 1.</description>
     </rule>
     <rule id="b2eb-dc59-d7ea-c52c" name="Joined Unit" hidden="false">
       <description>Some Units may join a friendly Unit of the same type. By default, all Command sub-type Units may do this. A Unit may join another Unit when deploying, or by moving to within default Coherency the Unit. This is called a Joined Unit. When joined, this Model and the Models in the Unit it joined are considered a single Unit, and so all rules that concern &quot;this Unit&quot; apply to both the Command Unit and the Unit it Joined (however, rules that specify &quot;Models in this Unit&quot; or &quot;Models with this [rule]&quot; do not apply to the Joined Unit), and wounds are allocated the same way. Models within move the distance they normally would, and must remain in Cohesion as normal. When making a Leadership Check for the Unit, the Check can be made with any Ld value present in the Unit. When the Unit attacks, FS and WS are used on a model-by-model basis. When being attacked in Close Combat, the WS value of the unit is the majority, rounded up to the higher value.</description>
